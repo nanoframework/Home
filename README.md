@@ -1,4 +1,4 @@
-![nanoFramework logo](resources/logo/nanoFramework-logo-full-600-trans.png)
+![nanoFramework logo](resources/logo/nanoFramework-repo-logo.png)
 
 -----
 
