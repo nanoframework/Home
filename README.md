@@ -2,8 +2,6 @@
 
 -----
 
-# **nanoFramework** Home
-
 This _Home_ repository is the starting point for developers that want to learn about **nanoFramework**, contribute to it or open issues.
 It contains links to the various GitHub repositories used by **nanoFramework**.
 
@@ -34,9 +32,23 @@ Being a developer you'll probably will fit in one (or maybe both :wink:) of the 
 - [nf-github-bot](https://github.com/nanoframework/nf-github-bot) - this repo contains the code for the **nanoFramework** bots which help with managing various aspects of communication and pull requests workflow.
 
 
+## Build status
+
+| Component | Build Status |
+|:-|---|
+| nanoBooter | [![Build Status](https://travis-ci.org/nanoframework/nf-interpreter.svg?branch=master)](https://travis-ci.org/nanoframework/nf-interpreter) |
+| nanoCLR | [![Build Status](https://travis-ci.org/nanoframework/nf-interpreter.svg?branch=master)](https://travis-ci.org/nanoframework/nf-interpreter) |
+| Win32 test project | [![Build status](https://ci.appveyor.com/api/projects/status/94fldjinqji4w977?svg=true)](https://ci.appveyor.com/project/nfbot/nf-interpreter) |
+| Class Libraries | [![Build status](https://ci.appveyor.com/api/projects/status/terbqvfdlw8po3cm?svg=true)](https://ci.appveyor.com/project/nfbot/nf-class-libraries) |
+| Visual Studio extension | [![Build status](https://ci.appveyor.com/api/projects/status/9mtqen1wi0tv8x54?svg=true)](https://ci.appveyor.com/project/nfbot/nf-visual-studio-extension) |
+
+
 ## How to Engage, Contribute and Provide Feedback
 
-Some of the best ways to contribute are to try things out, file bugs, and join in design conversations. 
+Some of the best ways to contribute are to try things out, file bugs, and join in design conversations.
+
+Join our Slack community by filling in this [invite form](https://nanoframework.wordpress.com/slack-invite-form/).
+
 If you are having issues or need a clarification on something, instead of opening an issue the best way is to start a conversation in one of our Slack channels.
 Please select the one that's most appropriate to the matter you are facing.
 
@@ -48,7 +60,6 @@ Looking for something to work on? Check the list of up-for-grabs issues on any o
 See some of our guides for more details:
 
 * [Contributing Guide](CONTRIBUTING.md)
-* [Developer Guide](docs/contributing/developer-guide.md)
 
 
 ## Documentation
