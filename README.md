@@ -62,7 +62,7 @@ The project documentation is a great place to find information about **nanoFrame
 - [Contributing to **nanoFramework**](docs/contributing/) includes an overview on how you can contribute to the project. 
 
 
-### [Blog](htpps://nanoframework.wordpress.com)
+### [Blog](https://nanoframework.wordpress.com)
 
 There is a blog where we try to post detailed updates about the development status, technical posts about a particular feature ou a design option.
 
