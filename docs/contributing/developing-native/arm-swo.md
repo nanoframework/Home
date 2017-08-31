@@ -12,7 +12,7 @@ You'll need:
 - Target board with SWO pin free _and_ configured in it's reset state (meaning not used by GPIO or any other peripheral and not configured in any alternate mode).
 - If using a stock board it's also convenient to check the schematics if any hardware changes are required (e.g. STM F429I_DISCOVERY board requires solder bridge SB9 to be soldered).
 - Software capable of driving and outputting data from an SWO source. (ST-Link)[http://www.st.com/content/st_com/en/products/embedded-software/development-tool-software/stsw-link004.html] is an excellent tool for this purpose.
-- Set **nanoFramework** build options to include support for SWO (either setting `"SWO_OUPUT" : "ON"` in cmake-variants.json or launching CMake with -DSWO_OUPUT=ON).
+- Set **nanoFramework** build options to include support for SWO (either setting `"SWO_OUTPUT" : "ON"` in cmake-variants.json or launching CMake with -DSWO_OUPUT=ON).
 
 
 ## Outputting SWO
