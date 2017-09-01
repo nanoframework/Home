@@ -25,7 +25,7 @@ Being a developer you'll probably will fit in one (or maybe both :wink:) of the 
 
 - [nf-debugger](https://github.com/nanoframework/nf-debugger) - this repo contains the debugger library (in several technologies) allowing reuse of the low level library by third party applications.
 
-- [nf-ANT](https://github.com/nanoframework/nf-ANT) - this repo contains a UWP application that connects to a **nanoFramework** target and can provide basic information about it along with some basic management operations. The development of this tool has been frozen because its features and capabilities are now available in Visual Studio through the Device Manager window accesible after installing the [Visual Studio extension](https://github.com/nanoframework/nf-Visual-Studio-extension).
+- [nf-ANT](https://github.com/nanoframework/nf-ANT) - this repo contains a UWP application that connects to a **nanoFramework** target and can provide basic information about it along with some basic management operations. The development of this tool has been frozen because its features and capabilities are now available in Visual Studio through the Device Manager window accesible after installing the [Visual Studio extension](https://marketplace.visualstudio.com/items?itemName=vs-publisher-1470366.nanoFrameworkVS2017Extension).
 
 - [ChibiOS](https://github.com/nanoframework/ChibiOS) - this repo contains a mirror of the official ChibiOS SVN repository. It's used as the default source for building **nanoFramework** images.
 
