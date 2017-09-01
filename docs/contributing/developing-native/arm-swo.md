@@ -9,10 +9,12 @@ This document describes how to use Cortex-M SWO to output data from **nanoFramew
 ## Prerequisites
 
 You'll need:
-- Target board with SWO pin free _and_ configured in it's reset state (meaning not used by GPIO or any other peripheral and not configured in any alternate mode).
-- If using a stock board it's also convenient to check the schematics if any hardware changes are required (e.g. STM F429I_DISCOVERY board requires solder bridge SB9 to be soldered).
-- Software capable of driving and outputting data from an SWO source. (ST-Link)[http://www.st.com/content/st_com/en/products/embedded-software/development-tool-software/stsw-link004.html] is an excellent tool for this purpose.
-- Set **nanoFramework** build options to include support for SWO (either setting `"SWO_OUTPUT" : "ON"` in cmake-variants.json or launching CMake with -DSWO_OUPUT=ON).
+* Target board with SWO pin free _and_ configured in it's reset state (meaning not used by GPIO or any other peripheral and not configured in any alternate mode).
+* If using a stock board it's also convenient to check the schematics if any hardware changes are required.
+  * [STM F429I_DISCOVERY](../../images/STM32F429I-DISCOVERY-solder-bridge-for-swo.jpg) board requires solder bridge SB9 to be soldered
+  * [STM F769I-DISCO](../../images/STM32F769I-DISCO-solder-bridge-for-swo.jpg) board requires a 0 Ohm resistor on R92 (or just soldering the pads toghether)
+* Software capable of driving and outputting data from an SWO source. (ST-Link)[http://www.st.com/content/st_com/en/products/embedded-software/development-tool-software/stsw-link004.html] is an excellent tool for this purpose.
+* Set **nanoFramework** build options to include support for SWO (either setting `"SWO_OUTPUT" : "ON"` in cmake-variants.json or launching CMake with -DSWO_OUPUT=ON).
 
 
 ## Outputting SWO
