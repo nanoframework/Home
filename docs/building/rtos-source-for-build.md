@@ -9,7 +9,7 @@ This document aims to give you an brief overview of the differences between thes
 
 ### Source from official repository
 
-When running CMake, if the parameter `-DCHIBIOS_SOURCE` is not not specified CMake will connect to **nanoFramework**s [ChibiOS mirror](https://github.com/nanoframework/ChibiOS) on GitHub and will clone the source from there. The time for this operation to complete will mostly depend on the speed of your internet connection. Note that you have the option to specify the `-CHIBIOS_VERSION` (e.g. `17.6.2`) if you would like to target a specific release else the latest code from the 'stable_17.6.x' branch will be checked out instead.
+When running CMake, if the parameter `-DCHIBIOS_SOURCE` is not not specified CMake will connect to **nanoFrameworks** [ChibiOS mirror](https://github.com/nanoframework/ChibiOS) on GitHub and will clone the source from there. The time for this operation to complete will mostly depend on the speed of your internet connection. Note that you have the option to specify the `-CHIBIOS_VERSION` (e.g. `17.6.2`) if you would like to target a specific release else the latest code from the 'stable_17.6.x' branch will be checked out instead.
 
 ChibiOS will be cached within the build directory so the full download won't happen again unless the build directory is cleared. A check for any changes in the repo is made whenever a build is run. If there are any, the changes will be downloaded and merged.
 
