@@ -29,7 +29,7 @@ Being a developer you'll probably will fit in one (or maybe both :wink:) of the 
 
 - [ChibiOS](https://github.com/nanoframework/ChibiOS) - this repo contains a mirror of the official ChibiOS SVN repository. It's used as the default source for building **nanoFramework** images.
 
-- [nf-github-bot](https://github.com/nanoframework/nf-github-bot) - this repo contains the code for the **nanoFramework** bots which help with managing various aspects of communication and the pull requests workflow.
+- [nf-tools](https://github.com/nanoframework/nf-tools) - this repo contains various tools that are required in **nanoFramework** development, usage or repository management.
 
 
 ## Build status
