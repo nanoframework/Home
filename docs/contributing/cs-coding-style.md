@@ -26,7 +26,7 @@ The general rule we follow is "use Visual Studio defaults".
 13. We use ```nameof(...)``` instead of ```"..."``` whenever possible and relevant.
 14. Fields should be specified at the top within type declarations.
 
-We have provided a Visual Studio 2013 vssettings file (`nfcore.vssettings`) at the root of the repository, enabling C# auto-formatting conforming to the above guidelines. Note that rules 7 and 8 are not covered by the vssettings, since these are not rules currently supported by VS formatting.
+We have provided a Visual Studio 2013 vssettings file `nnnnn.vssettings` at the root of each repository, enabling C# auto-formatting conforming to the above guidelines. Note that rules 7 and 8 are not covered by the vssettings, since these are not rules currently supported by VS formatting.
 
 ### Example File:
 

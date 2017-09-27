@@ -62,7 +62,7 @@ The following explains each line of the *linkage* section. Text highlighted in *
 	- Version of the local/distant distribution of ChibiOS that will be used. If no version is provided, CMake will use the master branch.
 - "CHIBIOS_BOARD" : "**<valid-chibios-board-name-from-boards-collection>**"
 	- Name of your board, chosen from the available boards collection that can be found in the \os\hal\boards folder of the ChibiOS installation (or distant repository)
-- "SWO_OUPUT" : "**<OFF-default-ON-to-enable-ARM-CortexM-Single-Wire-Output**"
+- "SWO_OUTPUT" : "**<OFF-default-ON-to-enable-ARM-CortexM-Single-Wire-Output**"
 	- Allows specifying whether to include, or not, support for Cortex-M Single Wire Output (SWO). Check the documentation [here](arm-swo.md) for more details on how to use SWO.
 - "NF_FEATURE_DEBUGGER" : "**<TRUE-to-include-nF-debugger>**"
 	- A boolean switch to specify whether the debugger feature is to be included.

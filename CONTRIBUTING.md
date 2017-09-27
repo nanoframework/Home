@@ -15,7 +15,7 @@ There are several issues to keep in mind when making a change.
 
 ### Typos
 
-Typos are embarrassing! We will accept most PRs that fix typos. In order to make it easier to review your PR, please focus on a given component with your fixes or on one type of typo across the entire repository. If it's going to take >30 mins to review your PR, then we will probably ask you to chunk it up.
+Typos are embarrassing! We will accept most PRs that fix typos. In order to make it easier to review your PR, please focus on a given component with your fixes or on one type of typo across the entire repository. If it's going to take >30 mins to review your PR, then we will probably ask you to split it into smaller chunks.
 
 ### Commit Messages
 
@@ -51,29 +51,29 @@ the PR.
   it's often better to create new issue than to side track the discussion.
 * **DO** blog and tweet (or whatever) about your contributions, frequently!
 
-* **DO NOT** send PRs for style changes. 
-* **DON'T** surprise us with big pull requests. Instead, file an issue and start
+* **DON'T** send PRs for style changes. 
+* **DON'T** surprise us with big pull requests. Instead, open an issue and start
   a discussion so we can agree on a direction before you invest a large amount
   of time.
-* **DON'T** commit code that you didn't write. If you find code that you think is a good fit to add to **nanoFramework**, file an issue and start a discussion before proceeding.
-* **DON'T** submit PRs that alter licensing related files or headers. If you believe there's a problem with them, file an issue and we'll be happy to discuss it.
-* **DON'T** add API additions without filing an issue and discussing with us first. See [API Review Process](docs/project-documentation/api-review-process.md).
+* **DON'T** commit code that you didn't write. If you find code that you think is a good fit to add to **nanoFramework**, open an issue and start a discussion before proceeding.
+* **DON'T** submit PRs that alter licensing related files or headers. If you believe there's a problem with them, open an issue and we'll be happy to discuss it.
+* **DON'T** add API additions without opening an issue and discussing with us first. See [API Review Process](docs/project-documentation/api-review-process.md).
 
 ### Contribution "Bar"
 
 Project maintainers will merge changes that align with [project priorities](docs/project-documentation/project-priorities.md) and/or improve the product significantly for a broad set of apps. Proposals must also satisfy the published [guidelines for **nanoFramework**](#contribution-guidelines).
 
-Maintainers will not merge changes that have narrowly-defined benefits, due to compatibility risk. Changes to the codebase are first reviewed and tested to ensure they are correct for those products and will not inadvertently break applications. We may revert changes if they are found to be breaking.
+Maintainers will not merge changes that have narrowly-defined benefits, due to compatibility risks. Changes to the codebase must first be reviewed and tested to ensure they are correct and fit for purpose and will not inadvertently break applications. We may revert changes if they are found to introduce undesired states at a later date.
 
 ### Contributing Ports
 
-We encourage adding support for other platforms and/or chip vendors. We have currently ports for STM32 parts in progress and have a lot of momentum behind them. 
+We encourage adding support for other platforms and/or microcontroller units including vendors and families. We currently have ports for a number of STM32 based mcu's in progress and have a lot of momentum behind them. 
 
 Ports have a weaker contribution bar, since they do not contribute to compatibility risk with existing products. For ports, we are primarily looking for functionally correct implementations.
 
 ### Copyright Notice
 
-The following copyright notice header is used for new files:
+The following copyright notice header is used for all new files of original works:
 ```
 //
 // Copyright (c) 2017 The nanoFramework project contributors
@@ -81,7 +81,7 @@ The following copyright notice header is used for new files:
 //
 ```
 
-For a file that is either modification of existing .NET Micro Framework file
+For a file that is either a modification of an existing .NET Micro Framework file
 or was created by copying portions of one or more .NET Micro Framework files,
 the original notice has to be retained in the following format:
 ```
@@ -92,7 +92,7 @@ the original notice has to be retained in the following format:
 //
 ```
 There are several copyright notices in .NET Micro Framework code base,
-so `<< original copyright >>` can be for example
+so for example `<< original copyright >>` may take the form:
 ```
 Copyright (c) Microsoft Corporation.  All rights reserved.
 ```
@@ -123,4 +123,4 @@ There are many good algorithms implemented in other languages that would benefit
 
 ### Contributor License Agreement
 
-You must sign the [nanoFramework Contribution License Agreement](docs/contributing/cla.md) (CLA) before your PR can merged. This is a one-time requirement for projects under the nanoFramework organization. You can read more about Contribution License Agreements (CLA) on [Wikipedia](https://en.wikipedia.org/wiki/Contributor_License_Agreement).
+You must sign the [nanoFramework Contribution License Agreement](docs/contributing/cla.md) (CLA) before your PR can merged. This is a one-time requirement for projects maintained under the nanoFramework organization. You can read more about Contribution License Agreements (CLA) on [Wikipedia](https://en.wikipedia.org/wiki/Contributor_License_Agreement).
