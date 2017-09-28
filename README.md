@@ -21,16 +21,11 @@ Being a developer you'll probably will fit in one (or maybe both :wink:) of the 
 
 - [nf-Community-Targets](https://github.com/nanoframework/nf-Community-Targets) - this repo contains target boards that are contributed by community members. You might find here _inspiration_ for your next board.
 
-- [nf-Visual-Studio-extension](https://github.com/nanoframework/nf-Visual-Studio-extension) - this repo contains the Visual Studio extension and all the associated tools required to compile and build a **nanoFramework** managed application ready to deploy to a target device.
-
 - [lib-CoreLibrary](https://github.com/nanoframework/lib-CoreLibrary) - this repo contains the Base Class Library (Core library - mscorlib) that is used in developing C# applications.
 
-- [lib-nanoFramework.Runtime.Events](https://github.com/nanoframework/lib-nanoFramework.Runtime.Events 
-) - this repo contains the nanoFramework.Runtime.Events library that is used in developing C# applications.
+- [lib-nanoFramework.Runtime.Events](https://github.com/nanoframework/lib-nanoFramework.Runtime.Events) - this repo contains the nanoFramework.Runtime.Events library that is used in developing C# applications.
 
-- [lib-nanoFramework.Runtime.Native 
-](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native 
-) - this repo contains the nanoFramework.Runtime.Native library that is used in developing C# applications.
+- [lib-nanoFramework.Runtime.Native](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native) - this repo contains the nanoFramework.Runtime.Native library that is used in developing C# applications.
 
 - [lib-Windows.Devices.Adc](https://github.com/nanoframework/lib-Windows.Devices.Adc) - this repo contains the Windows.Devices.Adc library that is used in developing C# applications.
 
@@ -44,13 +39,17 @@ Being a developer you'll probably will fit in one (or maybe both :wink:) of the 
 
 - [lib-Windows.Devices.Spi](https://github.com/nanoframework/lib-Windows.Devices.Spi) - this repo contains the Windows.Devices.Spi library that is used in developing C# applications.
 
+- [lib-Windows.Storage.Streams](https://github.com/nanoframework/lib-Windows.Storage.Streams) - this repo contains the Windows.Storage.Streams library that is used in developing C# applications.
+
+- [nf-Visual-Studio-extension](https://github.com/nanoframework/nf-Visual-Studio-extension) - this repo contains the Visual Studio extension and all the associated tools required to compile and build a **nanoFramework** managed application ready to deploy to a target device.
+
 - [nf-debugger](https://github.com/nanoframework/nf-debugger) - this repo contains the debugger library (in several technologies) allowing reuse of the low lower library by third party applications.
 
 - [nf-ANT](https://github.com/nanoframework/nf-ANT) - this repo contains an UWP application that connects to a **nanoFramework** target and can provide basic information about it along with some basic management operations. The development of this tool has been put on a halt because its features and capabilities are now available in Visual Studio through the Device Manager window.
 
 - [ChibiOS](https://github.com/nanoframework/ChibiOS) - this repo contains a mirror of the official ChibiOS SVN repository. It's used as the default source for building **nanoFramework** images.
 
-- [nf-github-bot](https://github.com/nanoframework/nf-github-bot) - this repo contains the code for the **nanoFramework** bots.
+- [nf-tools](https://github.com/nanoframework/nf-tools) - this repo contains various tools that are required in **nanoFramework** development, usage or repository management.
 
 
 ## How to Engage, Contribute and Provide Feedback
