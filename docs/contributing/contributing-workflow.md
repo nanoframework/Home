@@ -81,7 +81,7 @@ We use and recommend the following workflow:
   - If your change adds a new API, follow the [API Review Process](api-review-process.md). 
   - Clearly state that you are going to take on implementing it, if that's the case. You can request that the issue be assigned to you. Note: The issue filer and the implementer don't have to be the same person.
 2. Create a personal fork of the repository on GitHub (if you don't already have one).
-3. Create a branch off of **master** (`git checkout -b mybranch`). 
+3. Create a branch off of **develop** (`git checkout -b mybranch develop`). 
   - Name the branch so that it clearly communicates your intentions, such as issue-123 or githubhandle-issue. 
   - Branches are useful since they isolate your changes from incoming changes from upstream. They also enable you to create multiple PRs from the same fork.
 4. Make and commit your changes.
@@ -92,7 +92,7 @@ We use and recommend the following workflow:
   - Make sure that the builds are clean.
   - Make sure that the tests are all passing, including your new tests.
 7. Push your changes to your fork on GitHub (if you haven't already).
-8. Create a pull request (PR) against the upstream repository's **master** branch.
+8. Create a pull request (PR) against the upstream repository's **develop** branch.
 
 Note: It is OK for your PR to include a large number of commits. Once your change is accepted, you will be asked to squash your commits into one or some appropriately small number of commits before your PR is merged.
 
