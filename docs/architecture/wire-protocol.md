@@ -11,6 +11,7 @@
 - [How to add support for new channels](#how-to-add-support-for-new-channels)
 - [HAL interface](#hal-interface)
 - [Application interface](#application-interface)
+- [Debugging Wire Protocol communications](#debugging-wire-protocol-communications)
 
 
 **About this document**
@@ -111,6 +112,7 @@ An implementation for an STM32F4_DISCOVERY board with ChibiOS (including its HAL
  
 When porting **nanoFramework** to another RTOS or HAL follow the reference implementation to ease the port work.
 
+
 # Application interface
 
 The Wire Protocol requires the following functions in order to interface with it's client app.
@@ -120,3 +122,13 @@ Weak implementations of each function are part of the core code.
 - ```WP_App_ProcessPayload(...)``` in [WireProtocol_App_Interface.c]()
 
 Actual implementations of these are to be provided by nanoBooter and nanoCLR. Please check the reference implementation for ChibiOS at [WireProtocol_App_Interface.c](..\targets\CMSIS-OS\ChibiOS\nanoBooter\WireProtocol_App_Interface.c).
+
+
+# Debugging Wire Protocol communications
+
+To ease debugging of Wire Protocol sessions there are available a set of CMake options to adjust the output of the Wire Protocol state machine and TX/Rx operations. The available options are:
+ - NF_WP_TRACE_ERRORS: Enable error tracing.
+ - NF_WP_TRACE_HEADERS: Enable packet headers tracing.
+ - NF_WP_TRACE_STATE: Enable tracing of the current state of the Wire Protocol sate machine.
+ - NF_WP_TRACE_NODATA: Enable tracing of empty or incomplete packets.
+ - NF_WP_TRACE_ALL: Enable all the options above. In case this setting is chosen it takes precedence over all the other and replaces when on.
