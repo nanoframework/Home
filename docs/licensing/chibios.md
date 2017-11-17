@@ -9,9 +9,9 @@ The nanoFramework team have been in contact with the ChibiOS sales team to ensur
 For details or to discuss your particular situation, we strongly recommend getting in touch with the ChibiOS [sales team](http://chibios.org/dokuwiki/doku.php?id=chibios:licensing:quote).
 
 
-## What exactly is being used from ChibiOS in **nanoFramework firmware**?
+## What exactly is being used from ChibiOS in **nanoFramework** firmware?
 
-**nanoFramework** is built against _unmodified_ ChibiOS sources via a mirror. It's using:
+**nanoFramework** is built against _unmodified_ ChibiOS sources via a mirror (for stability). It's using:
 * The [HAL](http://chibios.org/dokuwiki/doku.php?id=chibios:product:hal:start), which is released under Apache License 2.0 meaning that it's 100% free to use or distribute without royalties for any purpose.
 * The [RT](http://chibios.org/dokuwiki/doku.php?id=chibios:product:rt:start), is released under GPL3. See below for the licensing options which maybe different depending on your particular use. 
 
@@ -23,9 +23,12 @@ Yes, using ChibiOS in a Free and Open Source Software project or for personal us
 
 ## Can I use ChibiOS freely if I'm developing a commercial product?
 
-Yes but please be aware of the following options:
-* if you modify the [firmware](nanoframework/nf-interpreter) in any way and you are okay with [GPL3](https://www.gnu.org/licenses/gpl.html) licensing terms. Basically the firmware **MUST** keep your firmware open source.
-* if you modify the [firmware](nanoframework/nf-interpreter) in any way and are okay with ChibiOS publicizing your use of it _and_ you clearly mention that your product is using ChibiOS.
+Yes but if you modify the ChibiOS source code in any way please be aware of the following options:
+* you must comply with the [GPL3](https://www.gnu.org/licenses/gpl.html) licensing terms. Basically you **MUST** keep the ChibiOS part open source. 
+
+OR
+
+* are okay with ChibiOS publicizing your use of it _and_ you clearly mention that your product is using ChibiOS you may keep your additions closed source.
 
 
 ## Can I use ChibiOS 'components licensing'?
@@ -36,6 +39,10 @@ Yes but please be aware of the following options:
 ## What is a 'runtime license'?
 
 The 'runtime license' is an option for the use of parts of ChibiOS in software products that are sold to 3rd parties. This option **MUST** be discussed with the ChibiOS sales team.
+
+
+## What about the **nanoframework** firmware
+The [nanoframwork firmware](nanoframework/nf-interpreter) is released under Apache 2 license and has no implications of using ChibiOS as the RTOS.
 
 
 ## What about managed apps (C#) running on **nanoFramework**?
