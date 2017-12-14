@@ -15,6 +15,41 @@ Being a developer you'll probably will fit in one (or maybe both :wink:) of the 
 - Contributor: if you are interested in actively contributing by coding (native, managed, C, C++, CMake), writing documentation or participating in the overall project organization.
 
 
+## Firmware for reference boards
+
+
+Each of the following ZIP files contains the image files for nanoBooter and nanoCLR in various formats (HEX, BIN and DFU). They should be flashed in the target boards using an appropriate software utility.
+
+The **stable** versions are RTM builds with the smallest possible size. They include the latest stable version. The debugging feature is disabled and only minimal (or none) error messages.
+
+The **preview** versions are continuous builds of the reference targets. They include the latest version of all features and bug corrections. They also have the debugging feature enabled along with detailed error messages.
+
+
+| Target | Stable | Preview |
+|:-|---|---|
+| ST_STM32F4_DISCOVERY | []() |  [![Download](https://api.bintray.com/packages/nfbot/nanoframework-images-dev/ST_STM32F4_DISCOVERY/images/download.svg)](https://bintray.com/nfbot/nanoframework-images-dev/ST_STM32F4_DISCOVERY/_latestVersion) |
+| ST_STM32F429I_DISCOVERY | []() | [ ![Download](https://api.bintray.com/packages/nfbot/nanoframework-images-dev/ST_STM32F429I_DISCOVERY/images/download.svg) ](https://bintray.com/nfbot/nanoframework-images-dev/ST_STM32F429I_DISCOVERY/_latestVersion) |
+| ST_NUCLEO64_F091RC | []() | [ ![Download](https://api.bintray.com/packages/nfbot/nanoframework-images-dev/ST_NUCLEO64_F091RC/images/download.svg) ](https://bintray.com/nfbot/nanoframework-images-dev/ST_NUCLEO64_F091RC/_latestVersion) |
+| ST_NUCLEO144_F746ZG | []() | [ ![Download](https://api.bintray.com/packages/nfbot/nanoframework-images-dev/ST_NUCLEO144_F746ZG/images/download.svg) ](https://bintray.com/nfbot/nanoframework-images-dev/ST_NUCLEO144_F746ZG/_latestVersion) |
+| ST_STM32F769I_DISCOVERY | []() | [ ![Download](https://api.bintray.com/packages/nfbot/nanoframework-images-dev/ST_STM32F769I_DISCOVERY/images/download.svg) ](https://bintray.com/nfbot/nanoframework-images-dev/ST_STM32F769I_DISCOVERY/_latestVersion) |
+| MBN_QUAIL | []() | [ ![Download](https://api.bintray.com/packages/nfbot/nanoframework-images-dev/MBN_QUAIL/images/download.svg) ](https://bintray.com/nfbot/nanoframework-images-dev/MBN_QUAIL/_latestVersion) |
+| NETDUINO3_WIFI | []() | [ ![Download](https://api.bintray.com/packages/nfbot/nanoframework-images-dev/NETDUINO3_WIFI/images/download.svg) ](https://bintray.com/nfbot/nanoframework-images-dev/NETDUINO3_WIFI/_latestVersion) |
+
+
+The above firmware builds include support for the class libraries and features marked bellow.
+
+
+| Target | Gpio | Spi | I2c | Events | Native | SWO |
+|:-|:-:|:-:|:-:|:-:|:-:|:-:|
+| ST_STM32F4_DISCOVERY | :heavy_check_mark: | | | :heavy_check_mark: | | :heavy_check_mark: |
+| ST_STM32F429I_DISCOVERY | :heavy_check_mark: | | | :heavy_check_mark: | | :heavy_check_mark: |
+| ST_NUCLEO64_F091RC | | | | | | :heavy_check_mark: |
+| ST_NUCLEO144_F746ZG | :heavy_check_mark: | | | :heavy_check_mark: | | |
+| ST_STM32F769I_DISCOVERY | :heavy_check_mark: | | | :heavy_check_mark: | | :heavy_check_mark: |
+| MBN_QUAIL | :heavy_check_mark: | :heavy_check_mark: | | :heavy_check_mark: | | |
+| NETDUINO3_WIFI | :heavy_check_mark: | | | :heavy_check_mark: | | |
+
+
 # Repositories
 
 - [nf-interpreter](https://github.com/nanoframework/nf-interpreter) - this repo contains the **nanoFramework** CLR, interpreter, target boards configuration and the build system. This is where everything required to build an image to be flashed into a device lives.
