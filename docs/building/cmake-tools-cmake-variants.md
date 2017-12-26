@@ -84,8 +84,18 @@ The following explains each line of the *linkage* section. Text highlighted in *
 	- Allows you to specify whether to include the TCP/IP stack.
 - "NF_FEATURE_USE_APPDOMAINS" : "**<OFF-default-ON-to-enable-support-for-Application-Domains>**"
 	- Allows you to specify whether to include, or not, support for Application Domains. More information about this is available in the documentation [here](https://msdn.microsoft.com/en-us/library/cxk374d9(v=vs.90).aspx). ***Note that the complete removal of support for this feature is being considered (see issue [here](https://github.com/nanoframework/nf-interpreter/issues/303)).***
+- "API_System.DateTime" : "**<OFF-default-ON-to-add-this-API>**"
+	- Allows you to specify whether System.DateTime support is available to your application.
 - "API_Windows.Devices.Gpio" : "**<OFF-default-ON-to-add-this-API>**"
 	- Allows you to specify whether GPIO functions are available to your application.
+- "API_Windows.Devices.I2c" : "**<OFF-default-ON-to-add-this-API>**"
+	- Allows you to specify whether I2C functions are available to your application.
+- "API_Windows.Devices.Spi" : "**<OFF-default-ON-to-add-this-API>**"
+	- Allows you to specify whether SPI functions are available to your application.
+- "API_Windows.Devices.Adc" : "**<OFF-default-ON-to-add-this-API>**"
+	- Allows you to specify whether ADC functions are available to your application.
+- "API_Windows.Devices.Pwm" : "**<OFF-default-ON-to-add-this-API>**"
+	- Allows you to specify whether PWM functions are available to your application.
 - "FREERTOS_VERSION" : "**<N.N.N>**"
 	- Version of the local/distant distribution of FREERTOS that will be used
 - "FREERTOS_SOURCE" : "**<path-to-freertos-source-mind-the-forward-slash>**"
@@ -122,4 +132,3 @@ The following linkage section is a real example used to build nanoFramework for 
         "buildType": "Debug"
       },
 ```
-	  
