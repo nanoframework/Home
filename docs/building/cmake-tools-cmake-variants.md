@@ -48,14 +48,17 @@ The following explains each line of the *linkage* section. Text highlighted in *
 	- This is a more complete description of the configuration
 - "TOOLCHAIN_PREFIX" : "**<path-to-gcc-toolchain-mind-the-forward-slash>**"
 	- This is the path to your gcc toolchain compiler. Use forward slashes and do not provide executable name here
+- "TOOL_HEX2DFU_PREFIX" : "**<path-to-hex2dfu-utility-mind-the-forward-slash>**"
+	- This is the path to the HEX2DFU utility. Use forward slashes and do not provide executable name here.
 - "TARGET_CHIP" : "**<target-chip-with-official-vendor-reference>**"
 	- For STM32 MCUs only : represents the complete official reference of the MCU
 - "TARGET_SERIES" : "**STM32F7xx**"
-	- For STM32 MCUs only : represents the target series (STM32F4XX, STM32L4XX, and so on)
+	- For STM32 MCUs represents the target series (STM32F4XX, STM32L4XX, and so on)
+	- For ESP32 matches the series name: "ESP32"
 - "USE_FPU" : "**TRUE**"
 	- TRUE or FALSE : Enables or disables the use of the FPU unit, if present.
 - "RTOS" : "**<one-of-valid-rtos-options>**"
-	- Defines the RTOS that will be used to build nanoFramework. It can be CHIBIOS, FREERTOS or MBEDOS. Currently, only CHIBIOS is supported.
+	- Defines the RTOS that will be used to build nanoFramework. It can be CHIBIOS or FREERTOS. Currently ChibiOS is supported for all targets except ESP32 and FreeRTOS is supported for ESP32 targets only.
 - "CHIBIOS_SOURCE" : "**<path-to-chibios-source-mind-the-forward-slash>**"
 	- Path to an optional local installation of ChibiOS source files. If no path is given, then CMake will download the sources from the projects ChibiOS repository when needed
 - "CHIBIOS_VERSION" : "**<N.N.N>**"
