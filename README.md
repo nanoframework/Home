@@ -113,13 +113,14 @@ See some of our guides for more details:
 ### [Docs](docs/)
 
 The project documentation is a great place to find information about **nanoFramework**, no matter if you are newcomer or a veteran. It's organized in the following categories:
+- [API reference](http://docs.nanoframework.net/api) documentation for the various class libraries.
 - [Developing C# applications](docs/developing-apps) using **nanoFramework**.
 - [Building an image](docs/building) to load on a target board.
 - [**nanoFramework** architecture](docs/architecture/) and how the different pieces fit together.
 - [Contributing to **nanoFramework**](docs/contributing/) includes an overview on how you can contribute to the project. 
 
 
-### [Blog](https://nanoframework.wordpress.com)
+### [Blog](http://www.nanoframework.net/blog)
 
 There is a blog where we try to post detailed updates about the development status, technical posts about a particular feature ou a design option.
 
