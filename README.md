@@ -88,6 +88,8 @@ The above firmware builds include support for the class libraries and features m
 
 - [nf-tools](https://github.com/nanoframework/nf-tools) - this repo contains various tools that are required in **nanoFramework** development, usage or repository management.
 
+- [nanoframework.github.io ](https://github.com/nanoframework/nanoframework.github.io) - this repo contains the sources and configuration files to generate the **nanoFramework** documentation web site. Any static content, such as articles, guides, how-to's and such is to be checked-in here.
+
 
 ## How to Engage, Contribute and Provide Feedback
 
