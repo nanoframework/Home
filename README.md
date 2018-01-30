@@ -76,6 +76,8 @@ The above firmware builds include support for the class libraries and features m
 
 - [lib-Windows.Devices.Spi](https://github.com/nanoframework/lib-Windows.Devices.Spi) - this repo contains the Windows.Devices.Spi library that is used in developing C# applications.
 
+- [lib-Windows.Networking.Sockets](https://github.com/nanoframework/lib-Windows.Networking.Sockets) - this repo contains the Windows.Networking.Sockets library that is used in developing C# applications that require networking capabilities.
+
 - [lib-Windows.Storage.Streams](https://github.com/nanoframework/lib-Windows.Storage.Streams) - this repo contains the Windows.Storage.Streams library that is used in developing C# applications.
 
 - [nf-Visual-Studio-extension](https://github.com/nanoframework/nf-Visual-Studio-extension) - this repo contains the Visual Studio extension and all the associated tools required to compile and build a **nanoFramework** managed application ready to deploy to a target device.
