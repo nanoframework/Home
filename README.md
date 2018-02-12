@@ -1,3 +1,7 @@
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![#yourfirstpr](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](https://github.com/nanoframework/Home/blob/master/CONTRIBUTING.md) 
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/nanoframework/home.svg)](http://isitmaintained.com/project/nanoframework/home "Average time to resolve an issue") [![Percentage of issues still open](http://isitmaintained.com/badge/open/nanoframework/home.svg)](http://isitmaintained.com/project/nanoframework/home "Percentage of issues still open")  
+
+
 ![nanoFramework logo](resources/logo/nanoFramework-repo-logo.png)
 
 -----
@@ -52,7 +56,7 @@ The above firmware builds include support for the class libraries and features m
 | ESP32_DEVKITC | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | | | | :heavy_check_mark: | | |
 
 
-# Repositories
+## Repositories
 
 - [nf-interpreter](https://github.com/nanoframework/nf-interpreter) - this repo contains the **nanoFramework** CLR, interpreter, target boards configuration and the build system. This is where everything required to build an image to be flashed into a device lives.
 
@@ -76,6 +80,8 @@ The above firmware builds include support for the class libraries and features m
 
 - [lib-Windows.Devices.Spi](https://github.com/nanoframework/lib-Windows.Devices.Spi) - this repo contains the Windows.Devices.Spi library that is used in developing C# applications.
 
+- [lib-Windows.Networking.Sockets](https://github.com/nanoframework/lib-Windows.Networking.Sockets) - this repo contains the Windows.Networking.Sockets library that is used in developing C# applications that require networking capabilities.
+
 - [lib-Windows.Storage.Streams](https://github.com/nanoframework/lib-Windows.Storage.Streams) - this repo contains the Windows.Storage.Streams library that is used in developing C# applications.
 
 - [nf-Visual-Studio-extension](https://github.com/nanoframework/nf-Visual-Studio-extension) - this repo contains the Visual Studio extension and all the associated tools required to compile and build a **nanoFramework** managed application ready to deploy to a target device.
@@ -87,6 +93,8 @@ The above firmware builds include support for the class libraries and features m
 - [ChibiOS](https://github.com/nanoframework/ChibiOS) - this repo contains a mirror of the official ChibiOS SVN repository. It's used as the default source for building **nanoFramework** images.
 
 - [nf-tools](https://github.com/nanoframework/nf-tools) - this repo contains various tools that are required in **nanoFramework** development, usage or repository management.
+
+- [nanoframework.github.io ](https://github.com/nanoframework/nanoframework.github.io) - this repo contains the sources and configuration files to generate the **nanoFramework** documentation web site. Any static content, such as articles, guides, how-to's and such is to be checked-in here.
 
 
 ## How to Engage, Contribute and Provide Feedback
@@ -111,13 +119,14 @@ See some of our guides for more details:
 ### [Docs](docs/)
 
 The project documentation is a great place to find information about **nanoFramework**, no matter if you are newcomer or a veteran. It's organized in the following categories:
+- [API reference](http://docs.nanoframework.net/api) documentation for the various class libraries.
 - [Developing C# applications](docs/developing-apps) using **nanoFramework**.
 - [Building an image](docs/building) to load on a target board.
 - [**nanoFramework** architecture](docs/architecture/) and how the different pieces fit together.
 - [Contributing to **nanoFramework**](docs/contributing/) includes an overview on how you can contribute to the project. 
 
 
-### [Blog](https://nanoframework.wordpress.com)
+### [Blog](http://www.nanoframework.net/blog)
 
 There is a blog where we try to post detailed updates about the development status, technical posts about a particular feature ou a design option.
 

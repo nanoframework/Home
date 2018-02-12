@@ -1,13 +1,13 @@
 # **nanoFramework** Documentation
 
-- [Building **nanoFramework**](build-instructions.md)
-- [Debug with VS Code](vscode-debug-instructions.md)
-- [Debug class libraries and startup](debugging-class-libraries.md)
+- [Building **nanoFramework**](building/build-instructions.md)
+- [Debug with VS Code](contributing/developing-native/vscode-debug-instructions.md)
+- [Debug class libraries and startup](contributing/developing-native/debugging-class-libraries.md)
 - [Use a viewer to watch output from Cortex-M SWO](contributing/developing-native/arm-swo.md)
 
 
 ## CLR core and support components
-- [Wire Protocol](wire-protocol.md)
+- [Wire Protocol](architecture/wire-protocol.md)
 
 
 ## Architecture
