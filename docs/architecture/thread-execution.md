@@ -18,5 +18,7 @@ This context switching in **nanoFramework** is expected to occur after each time
 It's up to the target board developer to provide the correct way to relinquish the control of the threads execution according to the RTOS running beneath.
 This may not be required by all RTOS's. For example when by default the RTOS works in a preemptive fashion, the thread execution occurs in a round robin fashion among the various RTOS threads. 
 
-_execution control relinquish_ is declared as `NANOCLR_RELINQUISHEXECUTIONCONTROL` in [nanoHAL_v2.h](../../src/HAL/Include/nanoHAL_v2.h). The actual implementation has to be provided at the target board level in the `targetHAL.h` header file.
-For the current version of **nanoFramework** - which is using ChibiOS (a CMSIS compliant RTOS) - a simple call to `osDelay(1)` is sufficient and allows the kernel to run all the other threads with the same (or higher) priority.
+The execution relinquish to the underlying RTOS, so that the 'next' RTOS thread and other RTOS services can run is performed inside the `Events_WaitForEvents` function that is implemented for each target platform. 
+For the current version of **nanoFramework** this is accomplished in the following ways:
+- For targets running with ChibiOS (a CMSIS compliant RTOS) a call to `osDelay(10)` is sufficient and allows the kernel to run all the other threads with the same (or higher) priority.
+- For the ESP32 target - which is running with FreeRTOS - a call to `vTaskDelay(0)` is sufficient and allows the kernel to run all the other threads with the same (or higher) priority.
