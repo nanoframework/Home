@@ -43,20 +43,9 @@ As a suggestion we recommend that you create a directory named *build* in the re
 
 # Build a **nanoFramework** image
 
-The build script accepts the following parameters (some of them are mandatory).
-- TOOLCHAIN: the toolchain to use in the build. The default (and only option at this time) is GCC.
-- TOOLCHAIN_PREFIX: path to the install directory of the toolchain. E.g.: "E:/GNU_Tools_ARM_Embedded/5_4_2016q3". Mind the forward slash on the path for all platforms.
-- CMAKE_BUILD_TYPE: build type (Debug, Release, etc). The default is Release.
-- USE_FPU: specifies if the hardware floating point unit (if available at the platform) is to be used. If this doesn't apply, this parameter is simply ignored. The default is false.
-- TARGET_SERIES: specifies the series name for the target board. This parameter is mandatory and has to be in the list of the supported series for the target OS.
-- CHIBIOS_SOURCE: specifies the path for the location of the ChibiOS source code. If this parameter is specified the code on that path will be used and no download is performed. For this parameter to be valid RTOS parameter must be specified with CHIBIOS option. 
-- CHIBIOS_VERSION: specifies the ChibiOS version to grab the source files. It has to match one of the official versions from the ChibiOS repository. If none is specified it will download the latest source from the 'stable_17.6.x' branch. This parameter is ignored if CHIBIOS_SOURCE is specified. 
-- CHIBIOS_BOARD: specifies the ChibiOS board. This parameter is mandatory when specifying CHIBIOS as the RTOS choice parameter above. It has to be a valid board listed in ChibiOS boards folder.
-- NF_FEATURE_DEBUGGER: specifies if the debugger feature is to be included. If not supplied the default value will be used. The default is true (debugger will be included).
-- NF_FEATURE_RTC: Allows you to specify whether the board contains a real time clock that can be used for date & time functions. The default is off.
-- API_Windows.Devices.Gpio: Allows you to specify whether GPIO functions are available to your application. The default is off.
+The build script accepts the a number of parameters (some of them are mandatory). Please check the details [here](cmake-tools-cmake-variants.md).
 
-_Note 1: The RTOS currently supported is ChibiOS. If no source path is specified the source files will be downloaded from it's official GitHub mirror._
+_Note 1: The RTOS currently supported (except for ESP32 target) is ChibiOS. If no source path is specified the source files will be downloaded from nanoFramework  GitHub fork._
 _Note 2: the very first build will take more or less time depending on the download speed of the Internet connection of the machine were the build is running. This is because the source code of the RTOS of your choice will be downloaded from its repository. On the subsequent builds this won't happen._
 
 You can specify any generator that is supported in the platform where you are building.
