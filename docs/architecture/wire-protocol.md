@@ -12,6 +12,7 @@
 - [HAL interface](#hal-interface)
 - [Application interface](#application-interface)
 - [Debugging Wire Protocol communications](#debugging-wire-protocol-communications)
+- [CRC32 validations](#crc32-validatons)
 
 
 **About this document**
@@ -132,3 +133,16 @@ To ease debugging of Wire Protocol sessions there are available a set of CMake o
  - NF_WP_TRACE_STATE: Enable tracing of the current state of the Wire Protocol sate machine.
  - NF_WP_TRACE_NODATA: Enable tracing of empty or incomplete packets.
  - NF_WP_TRACE_ALL: Enable all the options above. In case this setting is chosen it takes precedence over all the other and replaces when on.
+
+
+# CRC32 validations
+
+In order to ensure Wire Protocol communications integrity the message header and payload have each a CRC32 field that can be filled in with the CRC32 hash of the respective section. This allows the receiver to validate the integrity of both the header and the payload.
+
+Considering that the most frequent transport layers are USB and Ethernet (under development) which already have their own validation and integrity mechanisms, it might seems a bit paranoid to have this extra validation on top of those. Moreover, in the unlikely event of a garbled packet reaching the end of the parser engine, the wrong data would (most likely) prevent the correct execution of such command.
+
+In face of the above the CRC32 calculation and validation of the Wire Protocol header and payload has been made optional, meaning that a target can choose *not* to implement that. The Wire Protocol layer in the debugger is able to automatically handle both situations.
+
+To have a target image built **without** implementing CRC32 validation the option `NF_WP_IMPLEMENTS_CRC32=OFF` has to be passed to CMake.
+
+In case a less reliable transport layer is used (COM port for example) or if the developer deems this necessary it can be enabled with the option above set to `ON`.

@@ -79,6 +79,8 @@ The following explains each line of the *linkage* section. Text highlighted in *
 	- Enable tracing of empty or incomplete packets in Wire Protocol.
 - "NF_WP_TRACE_ALL" :  "**OFF**"
 	- Enable all tracing options for Wire Protocol.
+- "NF_WP_IMPLEMENTS_CRC32" :  "**OFF**"
+	- Enable CRC32 calculations for Wire Protocol. See details [here](../architecture/wire-protocol.md#crc32-validatons).
 - "NF_FEATURE_DEBUGGER" : "**<TRUE-to-include-nF-debugger>**"
 	- A boolean switch to specify whether the debugger feature is to be included.
 - "NF_FEATURE_RTC" : "**<OFF-default-ON-to-enable-hardware-RTC>**"
