@@ -69,15 +69,15 @@ The following explains each line of the *linkage* section. Text highlighted in *
 	- Allows specifying whether to include, or not, support for Cortex-M Single Wire Output (SWO). Check the documentation [here](arm-swo.md) for more details on how to use SWO.
 - "NF_BUILD_RTM" : "**OFF-default-ON-to-enable-RTM-build**"
 	- Sets if the build is of **R**eady **T**o **M**arket type. Meaning that all debug helpers and code blocks will be removed from compilation and the build will be compiled and linked with all possible code reducing options enabled.
-- ""NF_WP_TRACE_ERRORS" : "**OFF**"
+- "NF_WP_TRACE_ERRORS" : "**OFF**"
 	- Enable error tracing in Wire Protocol.
-- ""NF_WP_TRACE_HEADERS" :  "**OFF**"
+- "NF_WP_TRACE_HEADERS" :  "**OFF**"
 	- Enable packet headers tracing in Wire Protocol.
-- ""NF_WP_TRACE_STATE" :  "**OFF**"
+- "NF_WP_TRACE_STATE" :  "**OFF**"
 	- Enable state tracing in Wire Protocol.
-- ""NF_WP_TRACE_NODATA" :  "**OFF**"
+- "NF_WP_TRACE_NODATA" :  "**OFF**"
 	- Enable tracing of empty or incomplete packets in Wire Protocol.
-- ""NF_WP_TRACE_ALL" :  "**OFF**"
+- "NF_WP_TRACE_ALL" :  "**OFF**"
 	- Enable all tracing options for Wire Protocol.
 - "NF_FEATURE_DEBUGGER" : "**<TRUE-to-include-nF-debugger>**"
 	- A boolean switch to specify whether the debugger feature is to be included.
