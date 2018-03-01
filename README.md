@@ -53,7 +53,7 @@ The above firmware builds include support for the class libraries and features m
 | ST_STM32F769I_DISCOVERY | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | MBN_QUAIL | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | | :heavy_check_mark: | :heavy_check_mark: | | |
 | NETDUINO3_WIFI | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | | :heavy_check_mark: | :heavy_check_mark: | | |
-| ESP32_DEVKITC | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | | | | :heavy_check_mark: | | |
+| ESP32_DEVKITC | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | | :heavy_check_mark: | | |
 
 
 ## Repositories
