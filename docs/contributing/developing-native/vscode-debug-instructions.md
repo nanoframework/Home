@@ -34,9 +34,9 @@ We've provided a template file [launch.TEMPLATE.json](..\.vscode\launch.TEMPLATE
 Here's what you need to change in order to adapt the template file to your setup and make it more suitable to your working style and preferences.
 - name: here you can name each of the launch configurations to help choosing the appropriate one when launching the debug session. These could be for example: "nanoBooter in Discovery 4", "nanoCLR in Nucleo F091RC", "test featureXYZ in Discovery 4".
 - miDebuggerPath: full path to the gdb executable (this one is inside the GCC tool-chain folder)
-- program: full path to the .hex output file that results from a successful build
-- setupCommands (third 'text' entry): full path to the final image (same as above)
-- setupCommands (fourth 'text' entry): the same as the program entry above
+- program: full path to the .elf output file that results from a successful build
+- setupCommands (fourth 'text' entry): full path to the final image (the .hex file)
+- setupCommands (fifth 'text' entry): the same as the program entry above (the .elf file)
 - debugServerPath: full path to the OpenOCD executable
 - debugServerArgs: full path to the scripts directory on the OpenOCD installation AND the appropriate .cfg files for the interface and the board.
 
