@@ -19,7 +19,7 @@ You'll need:
 - [CMake](https://cmake.org/) (Minimum required version is 3.7)
 - A build system for CMake to generate the build files to. 
   + If you have Visual Studio (full version) you can use the included NMake.
-  + A nice alternative is [Ninja](https://github.com/ninja-build/ninja). This is lightweight build system, designed for speed and it works on Windows and Linux machines. See [here](CMake/ninja-build.md) how to setup Ninja to build **nanoFramework**.
+  + A nice alternative is [Ninja](https://github.com/ninja-build/ninja). This is lightweight build system, designed for speed and it works on Windows and Linux machines. See [here](cmake/ninja-build.md) how to setup Ninja to build **nanoFramework**.
 
 If you are using VS Code as your development platform we suggest that you use the CMake Tools extension. This will allow you to run the builds without leaving VS Code.
 - [Visual Studio Code](http://code.visualstudio.com/)
