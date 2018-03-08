@@ -18,7 +18,7 @@ The first part is to get Visual Studio 2017 and the **nanoFramework** extension 
 
 1.	Download Visual Studio 2017. If you already have it installed, you can skip this step. If you don’t, please download the free [Visual Studio Community 2017](https://www.visualstudio.com/downloads) edition. Either way, make sure you've selected the .NET desktop workload.
 
-2.	Launch Visual Studio 2017 (we’ll just refer to it as VS from now on) and install the **nanoFramework** extension. You can do this by going into Tools > Extensions and Updates and entering “nanoFramework” in the search box. Make sure you’ve switched the left-hand tree view to the Online branch.
+2.	Launch Visual Studio 2017 (we’ll just refer to it as VS from now on) and install the **nanoFramework** extension. You can do this by going into Tools > Extensions and Updates. Make sure you’ve switched the left-hand tree view to the Online branch and enter “nanoFramework” in the search box.
 
 3.	Now open the Device Explorer window. You can do this by going into View > Other Windows > Device Explorer.
 
