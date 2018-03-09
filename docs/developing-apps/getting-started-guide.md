@@ -50,7 +50,7 @@ Now you have everything that you need to start coding your first application. Le
 
 2. We'll code a very simple application that enters an infinite loop and turns on and off an LED. We'll skip the details because that's not the aim of this guide. Let's just grab the code from the **nanoFramework** samples repo [here](https://github.com/nanoframework/Samples/tree/master/Blinky). Make sure that the correct GPIO pin is being used. That's the line below the comment mentioning the STM32F746 NUCLEO board.
 
-3. Because GPIO is being used we need to pull that class library and a reference to it in our project. The class libraries are distributed through NuGet. To add this class, right click on 'References' in the Solution Explorer and click 'Manage NuGet Packages'. On the search box type 'nanoFramework'. Make sure you have the preview checkbox ticked. Find the Windows.Devices.Gpio package and click "Install". After the license confirmation box, the package will be downloaded and a reference to it wil be added. You'll notice that you no longer have the unknown references hints in VS.
+3. Because GPIO is being used we need to pull that class library and a reference to it in our project. The class libraries are distributed through NuGet. To add this class, right click on 'References' in the Solution Explorer and click 'Manage NuGet Packages'. On the search box type 'nanoFramework'. Make sure you have the preview checkbox ticked. Find the Windows.Devices.Gpio package and click "Install". After the license confirmation box, the package will be downloaded and a reference to it will be added. You'll notice that you no longer have the unknown references hints in VS.
 
 4. Click "Build Solution" from the Build menu. A success message shows in the Build window.
 
