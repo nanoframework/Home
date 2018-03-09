@@ -31,7 +31,7 @@ The second part is to load the **nanoFramework** image in the board flash. Actua
 
 2. Download a ZIP file with the firmware for the board from our web site [here](https://github.com/nanoframework/nf-interpreter#firmware-for-reference-boards) by clicking on the appropriate badge. This will take you to our JFrog Bintray repository that holds the packages with pre-build images for several target boards. After downloading it, unzip the package contents. 
 
-3. Connect the STM32F746 NUCLEO board to your PC using an USB cable. In reality you'll be needing two USB cables with a micro USB connector. One to connect to the ST-Link debugger, that doubles as power supply to the board. And a second one to connect the USB client of the board. 
+3. Connect the STM32F746 NUCLEO board to your PC using an USB cable. In fact, you'll be needing two USB cables with a micro USB connector. One to connect to the ST-Link debugger, that doubles as power supply to the board. And a second one to connect the USB client of the board. 
 
 4. Launch the ST-LINK Utility that you've just installed and connect to the STM32F746 NUCLEO board.
 
