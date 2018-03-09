@@ -56,7 +56,7 @@ Now you have everything that you need to start coding your first application. Le
 
 5. We are almost there. Go into the Device Explorer window and click on the **nanoFramework** device showing there. Make sure the connection is OK by hitting the "Ping" button. On success, a message shows on the output window.
 
-6. Let's deploy the application to the board. In order to do that, right click on the Project name and choose "Deploy". You'll see the feedback of the several operations that are running on the background in the Output Window. After a successful deployment, your 'Hello World' blinky application will start runnig and, _voilá_, the LED starts blinking!
+6. Let's deploy the application to the board. In order to do that, right click on the Project name and choose "Deploy". You'll see the feedback of the several operations that are running on the background in the Output Window. After a successful deployment, your 'Hello World' blinky application will start running and, _voilá_, the LED starts blinking!
 
 
 ## Wrapping up
