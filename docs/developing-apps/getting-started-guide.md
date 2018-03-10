@@ -3,13 +3,13 @@
 
 **nanoFramework** enables the writing of managed code applications for embedded devices. Doesn’t matter if you are a seasoned .NET developer or if you’ve just arrived here and want to give it a try.
 
-This getting started guide will walk you through the setup of your development machine to get you coding a nice “Hello World” in no time!
+This getting started guide will walk you through the setup of your development machine to get you coding a nice "Hello World" in no time!
 We presume you already have the hardware. 
 
 
 ## The hardware
 
-In this guide we’ll be using a ST Microelectronics [STM32F746 NUCLEO](http://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-eval-tools/stm32-mcu-eval-tools/stm32-mcu-nucleo/nucleo-f746zg.html) board. This is a rather common and inexpensive board that packs a Cortex M7 with 1MB flash, 320 kB of RAM and includes an ethernet connector.
+In this guide we'll be using a ST Microelectronics [STM32F746 NUCLEO](http://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-eval-tools/stm32-mcu-eval-tools/stm32-mcu-nucleo/nucleo-f746zg.html) board. This is a rather common and inexpensive board that packs a Cortex M7 with 1MB flash, 320 kB of RAM and includes an ethernet connector.
 
 
 ## Installing Visual Studio 2017
@@ -27,7 +27,7 @@ The first part is to get Visual Studio 2017 and the **nanoFramework** extension 
 
 The second part is to load the **nanoFramework** image in the board flash. Actually there are two images, one for nanoBooter and another one for nanoCLR.
 
-1. Download the STM32 ST-LINK Utility from ST web site [here](http://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-programmers/stsw-link004.html) and install it in your development machine.
+1. Download the [STM32 ST-LINK Utility](http://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-programmers/stsw-link004.html) from ST web site and install it in your development machine.
 
 2. Download a ZIP file with the firmware for the board from our web site [here](https://github.com/nanoframework/nf-interpreter#firmware-for-reference-boards) by clicking on the appropriate badge. This will take you to our JFrog Bintray repository that holds the packages with pre-build images for several target boards. After downloading it, unzip the package contents. 
 
@@ -37,12 +37,12 @@ The second part is to load the **nanoFramework** image in the board flash. Actua
 
 5. Perform a "full chip erase" to clear the flash.
 
-6. Load the nanoBooter.hex file from the package and hit the "Program and verify" button. Make sure you tick the "Reset after programming" check box and hit "Start". After the upload completes, the MCU is reset and the nanoBooter image runs. You can check the success of the operation watching for a slow blink pattern on the LED. Congratulations, you now have a board running nanoFramework's booter!
+6. Load the `nanoBooter.hex` file from the package and hit the "Program and verify" button. Make sure you tick the "Reset after programming" check box and hit "Start". After the upload completes, the MCU is reset and the nanoBooter image runs. You can check the success of the operation watching for a slow blink pattern on the LED. Congratulations, you now have a board running nanoFramework's booter!
 
-7. Next, load the nanoCLR.hex file from the extracted package folder and hit again the "Program and verify" button. Make sure you tick the "Reset after programming" check box and hit "Start". After the upload completes, the MCU is reset and the nanoCLR image will run. This time and if all goes as expected, there will be no LED blinking. You can check if the board is properly running **nanoFramework** by looking into the Device Explorer window in VS.
+7. Next, load the `nanoCLR.hex` file from the extracted package folder and hit again the "Program and verify" button. Make sure you tick the "Reset after programming" check box and hit "Start". After the upload completes, the MCU is reset and the nanoCLR image will run. This time and if all goes as expected, there will be no LED blinking. You can check if the board is properly running **nanoFramework** by looking into the Device Explorer window in VS.
 
 
-## Coding an 'Hello World' application
+## Coding a 'Hello World' application
 
 Now you have everything that you need to start coding your first application. Let's go for a good old 'Hello World' in micro-controller mode, which is blinking a LED, shall we?
 
@@ -64,8 +64,10 @@ Now you have everything that you need to start coding your first application. Le
 Congratulations! That's your first **nanoFramework** C# application executing right there on the target board. How awesome is that?!
 
 And this is it for the getting started guide. 
+
 You've went through the steps required to install Visual Studio, the **nanoFramework** extension and the ST-LINK Utility.
+
 You've also learned how to upload **nanoFramework** firmware images into a target board.
 And last, but not the least: how to code a simple 'Hello World' C# application and deploy it to a target board.
 
-Check out other guides and tutorials. You may also want to join our Slack workspace, where you'll find a supportive community to discuss your ideas and help you in case you get stuck on something.
+Check out other guides and tutorials. You may also want to join our [Slack workspace](https://nanoframework.net/slack-invite-form/), where you'll find a supportive community to discuss your ideas and help you in case you get stuck on something.
