@@ -1,3 +1,3 @@
 # Developing C# (managed) applications
 
-(content coming soon)
+- [Getting started guid](getting-started-guide.md)
