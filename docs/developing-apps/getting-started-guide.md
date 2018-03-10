@@ -1,10 +1,12 @@
 # Getting Started Guide
 
 
-**nanoFramework** enables the writing of managed code applications for embedded devices. Doesn’t matter if you are a seasoned .NET developer or if you’ve just arrived here and want to give it a try.
+**nanoFramework** enables the writing of managed code applications for embedded devices. Doesn't matter if you are a seasoned .NET developer or if you've just arrived here and want to give it a try.
 
 This getting started guide will walk you through the setup of your development machine to get you coding a nice "Hello World" in no time!
-We presume you already have the hardware. 
+
+
+You can find the video for this guide on our YouTube channel [here](https://youtu.be/iZdN2GmefXI).
 
 
 ## The hardware
@@ -16,9 +18,9 @@ In this guide we'll be using a ST Microelectronics [STM32F746 NUCLEO](http://www
 
 The first part is to get Visual Studio 2017 and the **nanoFramework** extension installed.
 
-1.	Download Visual Studio 2017. If you already have it installed, you can skip this step. If you don’t, please download the free [Visual Studio Community 2017](https://www.visualstudio.com/downloads) edition. Either way, make sure you've selected the .NET desktop workload.
+1.	Download Visual Studio 2017. If you already have it installed, you can skip this step. If you don't, please download the free [Visual Studio Community 2017](https://www.visualstudio.com/downloads) edition. Either way, make sure you've selected the .NET desktop workload.
 
-2.	Launch Visual Studio 2017 (we’ll just refer to it as VS from now on) and install the **nanoFramework** extension. You can do this by going into Tools > Extensions and Updates. Make sure you’ve switched the left-hand tree view to the Online branch and enter “nanoFramework” in the search box.
+2.	Launch Visual Studio 2017 (we'll just refer to it as VS from now on) and install the **nanoFramework** extension. You can do this by going into Tools > Extensions and Updates. Make sure you've switched the left-hand tree view to the Online branch and enter _nanoFramework_ in the search box.
 
 3.	Now open the Device Explorer window. You can do this by going into View > Other Windows > Device Explorer.
 
