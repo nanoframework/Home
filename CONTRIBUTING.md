@@ -42,8 +42,8 @@ the PR.
 
 ### DOs and DON'Ts
 
-* **DO** follow our C/C++ [coding style](docs/coding-guidelines/cxx-coding-style.md)
-* **DO** follow our C# [coding style](docs/coding-guidelines/cs-coding-style.md)
+* **DO** follow our C/C++ [coding style](docs/contributing/cxx-coding-style.md)
+* **DO** follow our C# [coding style](docs/contributing/cs-coding-style.md)
 * **DO** give priority to the current style of the project or file you're changing even if it diverges from the general guidelines.
 * **DO** include tests when adding new features. When fixing bugs, start with
   adding a test that highlights how the current behavior is broken.
@@ -57,11 +57,11 @@ the PR.
   of time.
 * **DON'T** commit code that you didn't write. If you find code that you think is a good fit to add to **nanoFramework**, open an issue and start a discussion before proceeding.
 * **DON'T** submit PRs that alter licensing related files or headers. If you believe there's a problem with them, open an issue and we'll be happy to discuss it.
-* **DON'T** add API additions without opening an issue and discussing with us first. See [API Review Process](docs/project-documentation/api-review-process.md).
+* **DON'T** add API additions without opening an issue and discussing with us first. See [API Review Process](docs/contributing/api-review-process.md).
 
 ### Contribution "Bar"
 
-Project maintainers will merge changes that align with [project priorities](docs/project-documentation/project-priorities.md) and/or improve the product significantly for a broad set of apps. Proposals must also satisfy the published [guidelines for **nanoFramework**](#contribution-guidelines).
+Project maintainers will merge changes that align with [project priorities](docs/contributing/project-priorities.md) and/or improve the product significantly for a broad set of apps. Proposals must also satisfy the published [guidelines for **nanoFramework**](#contribution-guidelines).
 
 Maintainers will not merge changes that have narrowly-defined benefits, due to compatibility risks. Changes to the codebase must first be reviewed and tested to ensure they are correct and fit for purpose and will not inadvertently break applications. We may revert changes if they are found to introduce undesired states at a later date.
 
