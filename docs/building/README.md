@@ -5,8 +5,6 @@
 * [CMake variants for CMake tools](cmake-tools-cmake-variants.md)
 
 * ### [ChibiOS HAL](chibios-hal)
-  * [CLR Managed heap definition](chibios-hal/clr-managed-heap.md)
-  * [USB configuration of Virtual COM port (CDC)](chibios-hal/config-usb-virtual-com-port.md)
   * [GCC linker script for ChibiOS boards](chibios-hal/gcc-linker-script.md)
 
 * ### [CMake](cmake)
