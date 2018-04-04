@@ -36,29 +36,31 @@ To fully take advantage of the ADC hardware we are going to enable the internal 
 The configurations are all concentrated in the `target_windows_devices_adc_config.cpp` file in the reference target folder.
 This source file is added to the CMake target only if the `API_Windows.Devices.Adc` option is set to ON. See the target CMakeList.txt.
 
-There is a `NF_PAL_ADC_PORT_PIN_CHANNEL` array for each ADC. On each entry there are the configurations for the GPIO port and pin along with the ADC internal channel reference. 
-Note that for the internal sources channels the GPIO port and pin are to be set to `NULL`.
+There is a global `NF_PAL_ADC_PORT_PIN_CHANNEL` array for the ADC controller. On each entry there are the configurations for the ADC block, the GPIO port and pin along with the ADC internal channel reference. 
+Note that for the internal sources channels the GPIO port and pin are to be set to `NULL` and those are only available on ADC1.
 All the naming come from existing ChibiOS defines.
 
-Proceeding with ADC1 we'll have:
+The configuration array will look like:
 ```
-const NF_PAL_ADC_PORT_PIN_CHANNEL Adc1PortPinConfig[] = {
-    {GPIOA, 6, ADC_CHANNEL_IN6},
-    {GPIOA, 4, ADC_CHANNEL_IN4},
-    {GPIOC, 2, ADC_CHANNEL_IN12},
-    {GPIOF, 10, ADC_CHANNEL_IN8},
-    {NULL, NULL, ADC_CHANNEL_SENSOR},
-    {NULL, NULL, ADC_CHANNEL_VREFINT},
-    {NULL, NULL, ADC_CHANNEL_VBAT},
+const NF_PAL_ADC_PORT_PIN_CHANNEL AdcPortPinConfig[] = {
+    
+    // ADC1
+    {1, GPIOA, 6, ADC_CHANNEL_IN6},
+    {1, GPIOA, 4, ADC_CHANNEL_IN4},
+    {1, GPIOC, 2, ADC_CHANNEL_IN12},
+    {1, GPIOF, 10, ADC_CHANNEL_IN8},
+
+    // ADC3
+    {3, GPIOF, 8, ADC_CHANNEL_IN6},
+    {3, GPIOB, 8, ADC_CHANNEL_IN7},
+
+    // these are the internal sources, available only at ADC1
+    {1, NULL, NULL, ADC_CHANNEL_SENSOR},
+    {1, NULL, NULL, ADC_CHANNEL_VREFINT},
+    {1, NULL, NULL, ADC_CHANNEL_VBAT},
 };
 ```
+There is also a variable with the channel count, like this:
+`const int AdcChannelCount = ARRAYSIZE(AdcPortPinConfig);`
 
-And for ADC3 (note that we don't have any mapping for ADC2):
-```
-const NF_PAL_ADC_PORT_PIN_CHANNEL Adc3PortPinConfig[] = {
-    {GPIOF, 8, ADC_CHANNEL_IN6},
-    {GPIOB, 8, ADC_CHANNEL_IN7},
-};
-```
-
-To complete the configuration one has to enable ADC1 and ADC3 for ChibiOS HAL. This is done by editing the `mcuconf.h` file inside the target nanoCLR folder. Search for `STM32_ADC_USE_ADC1` and `STM32_ADC_USE_ADC3` and set those to `TRUE`.
+To complete the configuration one has to enable ADC1 and ADC3 for ChibiOS HAL. Remember those were the ADC blocks used in the configuration above. This is done by editing the `mcuconf.h` file inside the target nanoCLR folder. Search for `STM32_ADC_USE_ADC1` and `STM32_ADC_USE_ADC3` and set those to `TRUE`.
