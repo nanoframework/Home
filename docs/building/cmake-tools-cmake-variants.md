@@ -7,6 +7,7 @@
 - [Brief description](#brief-description)
 - [Content explained](#content-explained)
 - [Working example](#working-example)
+- [Templates](#templates)
 
 **About this document**
 
@@ -42,10 +43,11 @@ The following explains each line of the *linkage* section. Text highlighted in *
 
 - "**OPTION1_NAME_HERE**"
 	- Replace this text with a distinctive option name. e.g. *"STM32F429_Disco"*
-- "oneWordSummary$": "**<summary-here>**"
+- "short": "**<summary-here>**"
 	- Replace the *<summary-here>* text with one word describing shortly your board. e.g. "F429Disco"
-- "description$": "**<description-here>**"
+- "long": "**<description-here>**"
 	- This is a more complete description of the configuration
+- "BUILD_VERSION" : "**<version-number-for-the-build-format-is-N.N.N.N>**"
 - "TOOLCHAIN_PREFIX" : "**<path-to-gcc-toolchain-mind-the-forward-slash>**"
 	- This is the path to your gcc toolchain compiler. Use forward slashes and do not provide executable name here
 - "TOOL_HEX2DFU_PREFIX" : "**<path-to-hex2dfu-utility-mind-the-forward-slash>**"
@@ -58,11 +60,9 @@ The following explains each line of the *linkage* section. Text highlighted in *
 - "USE_FPU" : "**TRUE**"
 	- TRUE or FALSE : Enables or disables the use of the FPU unit, if present.
 - "RTOS" : "**<one-of-valid-rtos-options>**"
-	- Defines the RTOS that will be used to build nanoFramework. It can be CHIBIOS or FREERTOS. Currently ChibiOS is supported for all targets except ESP32 and FreeRTOS is supported for ESP32 targets only.
+	- Defines the RTOS that will be used to build nanoFramework. It can be CHIBIOS or FREERTOS. Currently ChibiOS is supported for all STM32 targets and FreeRTOS is supported for ESP32 targets.
 - "CHIBIOS_SOURCE" : "**<path-to-chibios-source-mind-the-forward-slash>**"
 	- Path to an optional local installation of ChibiOS source files. If no path is given, then CMake will download the sources from the projects ChibiOS repository when needed
-- "CHIBIOS_VERSION" : "**<N.N.N>**"
-	- Version of the local/distant distribution of ChibiOS that will be used. If no version is provided, CMake will use the master branch.
 - "CHIBIOS_BOARD" : "**<valid-chibios-board-name-from-boards-collection>**"
 	- Name of your board, chosen from the available boards collection that can be found in the \os\hal\boards folder of the ChibiOS installation (or distant repository)
 - "SWO_OUTPUT" : "**<OFF-default-ON-to-enable-ARM-CortexM-Single-Wire-Output**"
@@ -103,10 +103,7 @@ The following explains each line of the *linkage* section. Text highlighted in *
 	- Allows you to specify whether SPI functions are available to your application.
 - "API_Windows.Networking.Sockets" : "**<OFF-default-ON-to-add-this-API>**"
 	- Allows you to specify whether Networking Sockets functions are available to your application.
-- "FREERTOS_VERSION" : "**<N.N.N>**"
-	- Version of the local/distant distribution of FREERTOS that will be used
-- "FREERTOS_SOURCE" : "**<path-to-freertos-source-mind-the-forward-slash>**"
-	- Path to an optional local installation of FREERTOS source files. If no path is given, then CMake will download the sources from the official repository when needed
+
 
 ## Working example
 The following linkage section is a real example used to build nanoFramework for the MBN Quail board. It is using the minimal mandatory information :
@@ -123,7 +120,6 @@ The following linkage section is a real example used to build nanoFramework for 
 			"TARGET_SERIES" : "STM32F4xx",
             "USE_FPU" : "TRUE",
             "RTOS" : "CHIBIOS", 
-            "CHIBIOS_VERSION" : "16.1.7",
             "CHIBIOS_SOURCE" : "C:/dev/ChibiOS_16.1.7",
             "CHIBIOS_BOARD" : "MBN_QUAIL"
 			"NF_FEATURE_DEBUGGER" : "TRUE",
@@ -135,3 +131,15 @@ The following linkage section is a real example used to build nanoFramework for 
         "buildType": "Debug"
       },
 ```
+
+## Templates 
+
+To make your life easier, we provide templates with pre-configured cmake-variants.json for the various reference targets. Just grab them from our Gist.
+
+-[ST_STM32F4_DISCOVERY](https://gist.github.com/nfbot/d4dbea239069146fe30d0869463507a8)
+-[ST_STM32F429I_DISCOVERY](https://gist.github.com/nfbot/06eadeca52fbed933b4b37a5942661a6)
+-[ST_NUCLEO_F091RC](https://gist.github.com/nfbot/cf7f6cfeb6f776ba068985bc44c005f0)
+-[ST_NUCLEO144_F746ZG](https://gist.github.com/nfbot/6de229c9e6e64d5c48b729e077af7153)
+-[ST_STM32F769I_DISCOVERY](https://gist.github.com/nfbot/efd47b5cfffdc7e54e388c37f1cb7a9c)
+-[MBN_QUAIL](https://gist.github.com/nfbot/06723075c41d4e8f66ba511a4ce46e3f)
+-[ESP32](https://gist.github.com/nfbot/627051a2f9f459d3c8f17752ca4985be)

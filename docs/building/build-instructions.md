@@ -60,7 +60,6 @@ The following is a working example:
 ```
 cmake \
 -DTOOLCHAIN_PREFIX="E:/GNU_Tools_ARM_Embedded/5_4_2016q3" \
--DCHIBIOS_VERSION=17.6.0 \
 -DCHIBIOS_BOARD=ST_NUCLEO_F091RC \
 -DTARGET_SERIES=STM32F0xx \
 -DNF_FEATURE_DEBUGGER=TRUE \
@@ -69,7 +68,7 @@ cmake \
 -G "NMake Makefiles" ../ 
 ```
 
-This will call CMake (on your *build* directory that is assumed to be under the repository root) specifying the location of the toolchain install, specifying ChibiOS v17.6.0 as the RTOS version, that the target board is named ST_NUCLEO_F091RC, that STM32F0xx is the series name that it belongs to, debugger feature is to be included, Windows.Devices.Gpio API is to be included and that the build files suitable for NMake are to be generated.
+This will call CMake (on your *build* directory that is assumed to be under the repository root) specifying the location of the toolchain install, that the target board is named ST_NUCLEO_F091RC, that STM32F0xx is the series name that it belongs to, debugger feature is to be included, Windows.Devices.Gpio API is to be included and that the build files suitable for NMake are to be generated.
 
 Another example:
 
@@ -96,9 +95,10 @@ After successful completion you'll have the build files ready to be used in the 
 We've added the required files and configurations to help you launch your build from VS Code.
 Follows a brief explanation on the files you might want to tweak.
 
-- settings.json (inside .vscode folder) here you can change the generator that CMake uses to generate the build. The default is ```"cmake.generator": "NMake Makefiles"```.
-- launch.json (inside .vscode folder) here you can set up your launch configurations, such as gdb path or openocd configuration.
-- cmake-variants.json (at the repository root) here you can add several build flavors. You can even add variants to each one. Check the documentation extension [here](https://github.com/vector-of-bool/vscode-cmake-tools/blob/develop/docs/build_variants.md).
+- settings.json (inside .vscode folder) here you can change the generator that CMake uses to generate the build. The default is ```"cmake.generator": "NMake Makefiles"```. The recommendation is to use Ninja as the build tool because it's way faster than NMake.
+  You'll also need to set the use of CMake Server to true, like this: ```"cmake.useCMakeServer" : true```.
+- launch.json (inside .vscode folder) here you can set up your launch configurations, such as gdb path or OpenOCD configuration. We've made available Gists with launch.json for several of the reference targets. Grab yours from [here](https://gist.github.com/nfbot). :warning: Remember to update paths and other preferences according to your setup and machine configuration. :wink:
+- cmake-variants.json (at the repository root) here you can add several build flavors. You can even add variants to each one. Check the documentation extension [here](https://vector-of-bool.github.io/docs/vscode-cmake-tools/variants.html#). We've made available Gists with cmake-variants.json for each of the reference targets. Grab yours from [here](https://gist.github.com/nfbot). :warning: Remember to update paths and other preferences according to your setup and machine configuration. :wink:
 
 To launch the build in VS Code check the status bar at the bottom. Select the build flavor and then click the build button (or hit F7).
 
@@ -107,7 +107,7 @@ To launch the build in VS Code check the status bar at the bottom. Select the bu
 
 After a successful build you can find the **nanoFramework** image files in the *build* directory. Those are:
 
-- nanoBooter image:
+- nanoBooter image (not available for ESP32 builds):
   - nanoBooter.bin (raw binary format)
   - nanoBooter.hex (Intel hex format)
   - nanoBooter.s19 (Motorola S-record format, equivalent to srec)
