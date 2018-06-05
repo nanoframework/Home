@@ -64,8 +64,6 @@ The above firmware builds include support for the class libraries and features m
 
 - [lib-CoreLibrary](https://github.com/nanoframework/lib-CoreLibrary) - this repo contains the Base Class Library (Core library - mscorlib) that is used in developing C# applications.
 
-- [lib-System.Net ](https://github.com/nanoframework/lib-System.Net) - this repo contains the System.Net library that is the foundation for networking in **nanoFramework**.
-
 - [lib-nanoFramework.Runtime.Events](https://github.com/nanoframework/lib-nanoFramework.Runtime.Events) - this repo contains the nanoFramework.Runtime.Events library that is used in developing C# applications.
 
 - [lib-nanoFramework.Runtime.Native](https://github.com/nanoframework/lib-nanoFramework.Runtime.Native) - this repo contains the nanoFramework.Runtime.Native library that is used in developing C# applications.
@@ -85,6 +83,10 @@ The above firmware builds include support for the class libraries and features m
 - [lib-Windows.Networking.Sockets](https://github.com/nanoframework/lib-Windows.Networking.Sockets) - this repo contains the Windows.Networking.Sockets library that is used in developing C# applications that require networking capabilities.
 
 - [lib-Windows.Storage.Streams](https://github.com/nanoframework/lib-Windows.Storage.Streams) - this repo contains the Windows.Storage.Streams library that is used in developing C# applications.
+
+- [lib-System.Net](https://github.com/nanoframework/lib-System.Net) - this repo contains the System.Net library that is the foundation for networking in **nanoFramework**.
+
+- [lib-nanoFramework.Hardware.ESP32](https://github.com/nanoframework/nanoFramework.Hardware.ESP32) - this repo contains the nanoFramework.Hardware.ESP32 class library that exposes hardware features specific of ESP32 targets.
 
 - [nf-Visual-Studio-extension](https://github.com/nanoframework/nf-Visual-Studio-extension) - this repo contains the Visual Studio extension and all the associated tools required to compile and build a **nanoFramework** managed application ready to deploy to a target device.
 
