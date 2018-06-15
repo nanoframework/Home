@@ -87,6 +87,8 @@ The following explains each line of the *linkage* section. Text highlighted in *
 	- Allows you to specify whether the board contains a real time clock that can be used for date & time functions.
 - "NF_FEATURE_USE_APPDOMAINS" : "**<OFF-default-ON-to-enable-support-for-Application-Domains>**"
 	- Allows you to specify whether to include, or not, support for Application Domains. More information about this is available in the documentation [here](https://msdn.microsoft.com/en-us/library/cxk374d9(v=vs.90).aspx). ***Note that the complete removal of support for this feature is being considered (see issue [here](https://github.com/nanoframework/nf-interpreter/issues/303)).***
+- "NF_INTEROP_ASSEMBLIES" : [ "Assembly1-Namespace", "Assembly2-Namespace" ],
+	- Lists the name of the Interop assembly(ies) to be added to the build. Leave empty or don't add it if no Interop assembly is to be added.
 - "API_System.Net" : "**<OFF-default-ON-to-add-this-API>**"
 	- Allows you to specify whether System.Net support is available to your application.
 - "API_Windows.Devices.Adc" : "**<OFF-default-ON-to-add-this-API>**"
