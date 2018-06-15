@@ -59,6 +59,8 @@ The following explains each line of the *linkage* section. Text highlighted in *
 	- For ESP32 matches the series name: "ESP32"
 - "USE_FPU" : "**TRUE**"
 	- TRUE or FALSE : Enables or disables the use of the FPU unit, if present.
+- "DP_FLOATINGPOINT" : "**<OFF-default-ON-for-adding-support-for-double-precision-floating-point>**"
+	- Enables support for double-precision floating point. The default is single-precision.
 - "RTOS" : "**<one-of-valid-rtos-options>**"
 	- Defines the RTOS that will be used to build nanoFramework. It can be CHIBIOS or FREERTOS. Currently ChibiOS is supported for all STM32 targets and FreeRTOS is supported for ESP32 targets.
 - "CHIBIOS_SOURCE" : "**<path-to-chibios-source-mind-the-forward-slash>**"
