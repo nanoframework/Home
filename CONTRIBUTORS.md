@@ -52,4 +52,8 @@ The following is a list of contributors to the **nanoFramework** project (all re
     <td><img src="https://github.com/Sirokujira.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/Sirokujira">Tooru Oonuma</a></td>
   </tr>
+    <tr>
+    <td><img src="https://github.com/sharmavishnu.png?size=50" height="50" width="50"></td>
+    <td><a href="https://github.com/sharmavishnu">Vishnu Sharma</a></td>
+  </tr>
 </table>
