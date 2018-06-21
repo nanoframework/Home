@@ -61,6 +61,8 @@ The following explains each line of the *linkage* section. Text highlighted in *
 	- TRUE or FALSE : Enables or disables the use of the FPU unit, if present.
 - "DP_FLOATINGPOINT" : "**<OFF-default-ON-for-adding-support-for-double-precision-floating-point>**"
 	- Enables support for double-precision floating point. The default is single-precision.
+- "SUPPORT_ANY_BASE_CONVERSION" : "**<OFF-default-ON-for-adding-support-for-conversion-strings-to-values-on-any-base>**"
+	- Defines which bases are supported when performing string to value conversions. When ON support for any base is enabled. When OFF (the default) the image will be compiled with support for base 10 and base 16 only.
 - "RTOS" : "**<one-of-valid-rtos-options>**"
 	- Defines the RTOS that will be used to build nanoFramework. It can be CHIBIOS or FREERTOS. Currently ChibiOS is supported for all STM32 targets and FreeRTOS is supported for ESP32 targets.
 - "CHIBIOS_SOURCE" : "**<path-to-chibios-source-mind-the-forward-slash>**"
