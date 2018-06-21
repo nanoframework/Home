@@ -104,7 +104,7 @@ The above firmware builds include support for the class libraries and features m
 ## How to Engage, Contribute and Provide Feedback
 
 Some of the best ways to contribute are to try things out, file bugs, and join in design conversations. 
-If you are having issues or need a clarification about something, instead of opening an issue the best way is to start a conversation in one of our [Slack](https://nanoframework.slack.com) channels.
+If you are having issues or need a clarification about something, instead of opening an issue the best way is to start a conversation in one of our [Slack](https://join.slack.com/t/nanoframework/shared_invite/enQtMzI3OTg4MTk0NTgwLWQ0ODQ3ZWIwZjgxZWFmNjU3MDIwN2E2YzM2OTdhMWRiY2Q3M2NlOTk2N2IwNTM3MmRlMmQ2NTRlNjZlYzJlMmY) channels.
 Please select the one that's most appropriate to the matter you are facing.
 
 If you've find a bug or can't use Slack, please open an issue at [Issues](https://github.com/nanoframework/Home/issues).
