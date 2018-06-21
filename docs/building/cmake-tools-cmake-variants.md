@@ -59,6 +59,8 @@ The following explains each line of the *linkage* section. Text highlighted in *
 	- For ESP32 matches the series name: "ESP32"
 - "USE_FPU" : "**TRUE**"
 	- TRUE or FALSE : Enables or disables the use of the FPU unit, if present.
+- "USE_RNG" : "**TRUE**"
+	- TRUE or FALSE : Enables or disables the use of the hardware true random generator unit, if present.
 - "DP_FLOATINGPOINT" : "**<OFF-default-ON-for-adding-support-for-double-precision-floating-point>**"
 	- Enables support for double-precision floating point. The default is single-precision.
 - "SUPPORT_ANY_BASE_CONVERSION" : "**<OFF-default-ON-for-adding-support-for-conversion-strings-to-values-on-any-base>**"
