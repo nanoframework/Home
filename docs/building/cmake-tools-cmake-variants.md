@@ -93,7 +93,15 @@ The following explains each line of the *linkage* section. Text highlighted in *
 	- Allows you to specify whether to use the real time clock unit of the hardware for date & time functions. Depends on target availability. Default is OFF.
 - "NF_FEATURE_USE_APPDOMAINS" : "**OFF**"
 	- Allows you to specify whether to include, or not, support for Application Domains. Default is OFF. More information about this is available in the documentation [here](https://msdn.microsoft.com/en-us/library/cxk374d9(v=vs.90).aspx). ***Note that the complete removal of support for this feature is being considered (see issue [here](https://github.com/nanoframework/nf-interpreter/issues/303)).***
-- "NF_INTEROP_ASSEMBLIES" : [ "Assembly1-Namespace", "Assembly2-Namespace" ],
+- "NF_PLATFORM_NO_CLR_TRACE" : "**OFF**"
+	- Allows you to define if trace messages and checks are added to CLR or not.
+	These checks are usually valuable when debugging issues within the CLR.
+	Can and should be removed for RTM build flavours.
+	Default is OFF meaning that all the standard trace and checks are added to the CLR.
+- "NF_CLR_NO_IL_INLINE" : "**OFF**"
+	- Allows you to define if CLR will use IL inlining.
+	Default is OFF meaning that CLR will inline IL.
+- "NF_INTEROP_ASSEMBLIES" : [ "Assembly1-Namespace", "Assembly2-Namespace" ]
 	- Lists the name of the Interop assembly(ies) to be added to the build. Leave empty or don't add it if no Interop assembly is to be added.
 - "API_System.Net" : "**OFF**"
 	- Allows you to specify whether System.Net support is available to your application. Default is OFF.
