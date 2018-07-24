@@ -5,7 +5,7 @@
 
 To setup the CMake tools to build using Ninja you have to follow the following steps:
 
-1. Download and place the Ninja executable on a folder.
+1. Download and place the Ninja executable in a folder.
 
 2. Edit the `settings.json` file that VS Code places inside the .vscode folder
 
