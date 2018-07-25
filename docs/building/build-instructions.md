@@ -78,14 +78,13 @@ cmake \
 -DCHIBIOS_SOURCE=E:/GitHub/ChibiOS \
 -DCHIBIOS_BOARD=ST_NUCLEO144_F746ZG \
 -DTARGET_SERIES=STM32F7xx \
--DUSE_FPU=TRUE \
 -DNF_FEATURE_DEBUGGER=TRUE \
 -DAPI_Windows.Devices.Gpio=ON \
 -DNF_FEATURE_RTC=ON \
 -G "NMake Makefiles" ../ 
 ```
 
-This will call CMake (on your *build* directory that is assumed to be under the repository root) specifying the location of the toolchain install, specifying that ChibiOS sources to be used are located in the designated path (mind the forward slash and no ending slash),  that the target board is named ST_NUCLEO144_F746ZG, that STM32F7xx is the series name that it belongs to, hardware floating point unit is to be used, debugger feature is to be included, Windows.Devices.Gpio API is to be included, RTC is used and that the build files suitable for NMake are to be generated.
+This will call CMake (on your *build* directory that is assumed to be under the repository root) specifying the location of the toolchain install, specifying that ChibiOS sources to be used are located in the designated path (mind the forward slash and no ending slash),  that the target board is named ST_NUCLEO144_F746ZG, that STM32F7xx is the series name that it belongs to, debugger feature is to be included, Windows.Devices.Gpio API is to be included, RTC is used and that the build files suitable for NMake are to be generated.
 
 After successful completion you'll have the build files ready to be used in the target build tool.
 

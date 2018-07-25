@@ -57,8 +57,6 @@ The following explains each line of the *linkage* section. Text highlighted in *
 - "TARGET_SERIES" : "**STM32F7xx**"
 	- For STM32 MCUs represents the target series (STM32F4XX, STM32L4XX, and so on)
 	- For ESP32 matches the series name: "ESP32"
-- "USE_FPU" : "**ON**"
-	- Option to use the FPU unit, if present. Default is ON.
 - "USE_RNG" : "**OFF**"
 	- Option to enables the use of the hardware true random generator unit, if present. Default is OFF.
 - "DP_FLOATINGPOINT" : "**OFF**"
@@ -136,7 +134,6 @@ The following linkage section is a real example used to build nanoFramework for 
             "TOOLCHAIN_PREFIX" : "C:/Program Files (x86)/GNU Tools ARM Embedded/5.4 2016q3",
             "TARGET_CHIP" : "STM32F427VIT",
 			"TARGET_SERIES" : "STM32F4xx",
-            "USE_FPU" : "TRUE",
             "RTOS" : "CHIBIOS", 
             "CHIBIOS_SOURCE" : "C:/dev/ChibiOS_16.1.7",
             "CHIBIOS_BOARD" : "MBN_QUAIL"
