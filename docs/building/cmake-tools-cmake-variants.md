@@ -1,6 +1,6 @@
 # Tweaking cmake-variants.TEMPLATE.json
 
-## Table of contents ##
+### Table of contents ##
 
 - [What is it](#what-is-it)
 - [How to use it](#how-to-use-it)
