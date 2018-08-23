@@ -57,8 +57,8 @@ The following explains each line of the *linkage* section. Text highlighted in *
 - "TARGET_SERIES" : "**STM32F7xx**"
 	- For STM32 MCUs represents the target series (STM32F4XX, STM32L4XX, and so on)
 	- For ESP32 matches the series name: "ESP32"
-- "USE_RNG" : "**OFF**"
-	- Option to enables the use of the hardware true random generator unit, if present. Default is OFF.
+- "USE_RNG" : "**ON**"
+	- Option to enable the use of the hardware true random generator unit, if present. Default is ON as the majority of the targets have this feature.
 - "DP_FLOATINGPOINT" : "**OFF**"
 	- Enables support for double-precision floating point. The default is single-precision. Set to ON to enable double precision floating point.
 - "SUPPORT_ANY_BASE_CONVERSION" : "**OFF**"
