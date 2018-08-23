@@ -91,6 +91,10 @@ The following explains each line of the *linkage* section. Text highlighted in *
 	- Allows you to specify whether to use the real time clock unit of the hardware for date & time functions. Depends on target availability. Default is OFF.
 - "NF_FEATURE_USE_APPDOMAINS" : "**OFF**"
 	- Allows you to specify whether to include, or not, support for Application Domains. Default is OFF. More information about this is available in the documentation [here](https://msdn.microsoft.com/en-us/library/cxk374d9(v=vs.90).aspx). ***Note that the complete removal of support for this feature is being considered (see issue [here](https://github.com/nanoframework/nf-interpreter/issues/303)).***
+- "NF_FEATURE_WATCHDOG" : "**ON**"
+    - Allows you to define it the hardware watchdog should be disabled.
+	This setting can only be set to OFF for STM32 targets. ESP32 build enables this by default so there is no way to disable it.
+	Default is ON, so the hardware watchdog will be enabled by default.
 - "NF_PLATFORM_NO_CLR_TRACE" : "**OFF**"
 	- Allows you to define if trace messages and checks are added to CLR or not.
 	These checks are usually valuable when debugging issues within the CLR.
