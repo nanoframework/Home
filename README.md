@@ -1,5 +1,6 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![#yourfirstpr](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](https://github.com/nanoframework/Home/blob/master/CONTRIBUTING.md) 
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/nanoframework/home.svg)](http://isitmaintained.com/project/nanoframework/home "Average time to resolve an issue") [![Percentage of issues still open](http://isitmaintained.com/badge/open/nanoframework/home.svg)](http://isitmaintained.com/project/nanoframework/home "Percentage of issues still open")  
+[![Discord](https://img.shields.io/discord/478725473862549535.svg)](https://discord.gg/XYpqcYW)
 
 
 ![nanoFramework logo](resources/logo/nanoFramework-repo-logo.png)
@@ -104,11 +105,11 @@ The above firmware builds include support for the class libraries and features m
 ## How to Engage, Contribute and Provide Feedback
 
 Some of the best ways to contribute are to try things out, file bugs, and join in design conversations. 
-If you are having issues or need a clarification about something, instead of opening an issue the best way is to start a conversation in one of our [Slack](https://join.slack.com/t/nanoframework/shared_invite/enQtMzI3OTg4MTk0NTgwLWQ0ODQ3ZWIwZjgxZWFmNjU3MDIwN2E2YzM2OTdhMWRiY2Q3M2NlOTk2N2IwNTM3MmRlMmQ2NTRlNjZlYzJlMmY) channels.
+If you are having issues or need a clarification about something, instead of opening an issue the best way is to start a conversation in one of our [Discord](https://discord.gg/XYpqcYW) channels.
 Please select the one that's most appropriate to the matter you are facing.
 
 If you've find a bug or can't use Slack, please open an issue at [Issues](https://github.com/nanoframework/Home/issues).
-We ask you to open an issue only when you have a real and confirmed one. Don't open an issue for support requests or to start a discussion. For that you'll get a better (and quicker!) support/feedback in one of the [Slack](https://nanoframework.slack.com) channels. You can request an invitation for the Slack workspace in [this form](https://nanoframework.net/slack-invite-form/).
+We ask you to open an issue only when you have a real and confirmed one. Don't open an issue for support requests or to start a discussion. For that you'll get a better (and quicker!) support/feedback in one of the [Discord](https://discord.gg/XYpqcYW) channels.
 
 Looking for something to work on? Check the list of [up-for-grabs issues](https://github.com/nanoframework/Home/issues?q=is%3Aissue+is%3Aopen+label%3Aup-for-grabs) on the Home repo, that's a great place to start.
 
