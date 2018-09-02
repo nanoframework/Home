@@ -157,7 +157,7 @@ To make your life easier, we provide templates with pre-configured cmake-variant
 
 -[ST_STM32F4_DISCOVERY](https://gist.github.com/nfbot/d4dbea239069146fe30d0869463507a8)
 
--[ST_STM32F429I_DISCOVERY](https://gist.github.com/nfbot/06eadeca52fbed933b4b37a5942661a6)
+-[ST_STM32F429I_DISCOVERY](https://gist.github.com/nfbot/a5e04d750ff67d7b377f6aea74514208)
 
 -[ST_NUCLEO_F091RC](https://gist.github.com/nfbot/cf7f6cfeb6f776ba068985bc44c005f0)
 
