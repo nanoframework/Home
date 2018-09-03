@@ -14,6 +14,7 @@ You can contribute to **nanoFramework** with issues and PRs. Simply filing issue
 - [PR Feedback](#pr-feedback)
 - [Working on an open issue](#working-on-an-open-issue)
 - [Suggested Workflow](#suggested-workflow)
+- [General git resources](#general-git-resources)
 
 
 ## Getting Started
@@ -121,25 +122,96 @@ When you want to work on an open issue (including _up-for-grabs_) we recommend t
 We use and recommend the following workflow:
 
 1. Create an issue for your work. 
-  - You can skip this step for trivial changes.
-  - Reuse an existing issue on the topic, if there is one.
-  - Get agreement from the team and the community that your proposed change is a good one.
-  - If your change adds a new API, follow the [API Review Process](api-review-process.md). 
-  - Clearly state that you are going to take on implementing it, if that's the case. You can request that the issue be assigned to you. Note: The issue filer and the implementer don't have to be the same person.
-2. Create a personal fork of the repository on GitHub (if you don't already have one).
-3. Create a branch off of **develop** (`git checkout -b mybranch develop`). 
-  - Name the branch so that it clearly communicates your intentions, such as issue-123 or githubhandle-issue. 
-  - Branches are useful since they isolate your changes from incoming changes from upstream. They also enable you to create multiple PRs from the same fork.
-4. Make and commit your changes.
-  - Please follow our [Commit Messages](contributing-workflow.md#commit-messages) guidance.
-  - Include `Signed-off-by` line, e.g. `git commit -s`
-5. Add new tests corresponding to your change, if applicable.
-6. Build the repository with your changes.
-  - Make sure that the builds are clean.
-  - Make sure that the tests are all passing, including your new tests.
-7. Push your changes to your fork on GitHub (if you haven't already).
-8. Create a pull request (PR) against the upstream repository's **develop** branch.
+    - You can skip this step for trivial changes.
+    - Reuse an existing issue on the topic, if there is one.
+    - Get agreement from the team and the community that your proposed change is a good one.
+    - If your change adds a new API, follow the [API Review Process](api-review-process.md). 
+    - Clearly state that you are going to take on implementing it, if that's the case. You can request that the issue be assigned to you. Note: The issue filer and the implementer don't have to be the same person.
 
-Note: It is OK for your PR to include a large number of commits. Once your change is accepted, you will be asked to squash your commits into one or some appropriately small number of commits before your PR is merged.
+2. Create a personal fork of the repository on GitHub (if you already have one you can jump straight to step 5 bellow).
+    
+      Forking the repository is a simple click on the "Fork" button (at the top right corner) on the repositories page in GitHub.
 
-Note: It is OK to create your PR as "[WIP]" on the upstream repo before the implementation is done. This can be useful if you'd like to start the feedback process concurrent with your implementation. State that this is the case in the initial PR comment.
+3. Clone that new fork to your local system.
+      
+    This operation depends heavily on what local client you are going to use in order to manage your local clone. There are a number of clients, from Git command line to more sophisticated and GUI clients.
+    
+    - GitHub has it's own [desktop client](https://desktop.github.com/).
+    - There is an extension for [Visual Studio](https://marketplace.visualstudio.com/items?itemName=GitHub.GitHubExtensionforVisualStudio).
+    - Visual Studio Code has it's owned Git client baked in. 
+    -  There is also the popular [Tower](https://www.git-tower.com/) and many others.
+    
+    If you are using a GUI client don't bother with the the git command lines shown bellow.
+
+    Cloning locally is a simple click on the green "Clone or Download" button (at the top right corner) that shows on your personal fork in GitHub.
+
+    You can also perform this operation localy. Directly from your Git client or from the git command line:
+
+    `git clone https://github.com/<your-github-id-here>/<nf-repo-name-here>.git`
+
+4. Configure a remote upstream to the master repository.
+
+    `git remote add upstream https://github.com/nanoframework/<nf-repo-name-here>.git`
+
+5. Make sure that your develop branch is in sync with the master  **develop** branch.
+
+    `git checkout develop`
+    
+    `git pull upstream develop`
+
+6. Create a branch off of **develop** branch.
+    
+    `git checkout -b <branch-name-here> develop`
+  
+    We suggest that you name the branch so that it clearly communicates your intentions, such as *issue-123* or *githubhandle-issue*.
+    Don't use a branch name starting with _develop_ because that may be mistaken with the _develop_ branches on the master repository.
+    
+    Branches are useful since they isolate your changes from incoming changes from upstream. They also enable you to create multiple PRs from the same fork.
+
+7. Work your way through the changes and commit them using your Git client or the command line as you prefer.
+      - Please follow our [Commit Messages](contributing-workflow.md#commit-messages) guidance.
+      - Include `Signed-off-by` line, e.g. `git commit -s`
+
+8. Add new tests corresponding to your change, if applicable.
+
+9. Build the repository with your changes.
+      - Make sure that the builds are clean.
+      - Make sure that the tests are all passing, including any new tests that you've added.
+
+10. Push your changes to your fork on GitHub (if you haven't already).
+
+    `git push origin <branch-name-here>`
+
+11. Create a pull request (PR) against the upstream repository's **develop** branch.
+      
+    Creating a PR is a simple click on the "Pull Request" button that shows on your personal fork in GitHub.
+
+    There is a template for the PR message. We ask you to follow it. It has the required topics and placeholders for what is required to make it clear. Also acts as a check list for you as the submitter.
+
+    When starting a PR GitHub will show you if you repo is up to date with the master one and if a merge is OK. If there are differences showing you have to go back to you local clone and merge those into your local clone. After doing that it's advisable to re-run the build and tests because there could have been changed brought in that affected your code.
+    After the above succeeds you have to push the changes up to origin repeating step 10 above.
+
+Note 1: It is OK for your PR to include a large number of commits. If that's the case, once your change is accepted, you can be asked to squash your commits into one or some appropriately small number of commits before your PR is merged.
+
+Note 2: It is OK to create your PR as "[WIP]" on the upstream repo before the implementation is done. This can be useful if you'd like to start the feedback process concurrent with your implementation. State that this is the case in the initial PR comment.
+
+Note 3: If you are working on a feature that has high impact or it's something experimental, your original PR can have it's target branch moved into a new develop branch in the master repo, something like *develop-shiny-awesome-feature*.
+
+
+## General git resources
+
+If you are coming from another version control system *git* can feel daunting, awkward, confusing and may cause you frustration. :warning: Be warned about that! :warning: :stuck_out_tongue_winking_eye:
+
+We suggest that you go through some basic tutorial and give it a try on a test repo that you setup for yourself.
+
+Here are a few resources that we've compiled to get you up to speed. No claims that these are, by any stretch, the only or the better ones! You can find a bunch of these out there!
+
+- [GitHub trial site](http://try.github.io/). Gives you a nice tour of git. Get your feet wet without even installing software!
+
+- [GitHub help page](http://help.github.com/) Deals with basic usage, concepts and terms of git and github. Good to get a first idea.
+
+- [Git Reference](http://git.github.io/git-reference/). Nice and concise reference of the essential functions of git. Takes about 30min to read through, you'll come out smarter at the end.
+
+- The git [community book](https://git-scm.com/book/en/v2). This book is meant to help you learn how to use Git as quickly and easily as possible.
+
+- [Escape a git mess step-by-step](http://justinhileman.info/article/git-pretty/git-pretty.png). Humorous and handy workflow to help you when you get stuck with git and your blood pressure starts to rise.
