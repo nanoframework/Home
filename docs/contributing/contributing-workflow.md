@@ -60,6 +60,22 @@ Signed-off-by: Joe Smith <joe.smith@email.com>
 
 The project requires that the name used is your real name. Neither anonymous contributions nor those utilizing pseudonyms will be accepted.
 
+
+## Contributor License Agreement
+
+### Why a CLA?
+
+The Contributor License Agreement helps ensure everyone that **nanoFramework** is here to stay.
+Specifically, our Contributor License Agreements (CLAs) grant the contributor and **nanoFramework** joint copyright interest in contributed code. Further, it provides assurance from the contributor that contributions are original work that does not violate any third-party license agreement. The agreement between contributors and project is explicit, so developers and users can be confident in the legal status of the source code and their right to use it.
+
+### Our CLA's
+
+All contributions to **nanoFramework** (no matter if that's code, bug fixes, configuration changes, documentation, or anything elase) requires that the contributor(s) complete and sign a Contributor License Agreement. You can read it [here](cla.md).
+
+
+**nanoFramework** team and community members will provide feedback on your change. Community feedback is highly valued. You will often see the absence of team feedback if the community has already provided good review feedback. 
+
+
 ## PR Feedback
 
 **nanoFramework** team and community members will provide feedback on your change. Community feedback is highly valued. You will often see the absence of team feedback if the community has already provided good review feedback. 
