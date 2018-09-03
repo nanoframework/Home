@@ -18,7 +18,7 @@ You can contribute to **nanoFramework** with issues and PRs. Simply filing issue
 
 ## Getting Started
 
-If you are looking at getting your feet wet with some simple (but still beneficial) changes, check out _up-for-grabs_ issues on the [**nanoFramework** Interpreter](https://github.com/nanoframework/nf-interpreter/labels/up-for-grabs) repo. 
+If you are looking at getting your feet wet with some simple (but still beneficial) changes, check out [_up-for-grabs_](https://github.com/nanoframework/Home/issues?q=is%3Aissue+is%3Aopen+label%3Aup-for-grabs) issues on the [**nanoFramework** Home](https://github.com/nanoframework/Home) repo.
 
 For new ideas, please always start with an issue before starting development of an implementation. See [project priorities](project-priorities.md) to understand the team's approach to engagement on general improvements to the product.
 
