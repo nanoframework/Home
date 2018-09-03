@@ -102,6 +102,7 @@ All contributions to **nanoFramework** (no matter if that's code, bug fixes, con
 One or more **nanoFramework** team members will review every PR prior to merge. They will often reply with "LGTM, modulo comments". That means that the PR will be merged once the feedback is resolved. "LGTM" == "looks good to me".
 
 There are lots of thoughts and [approaches](https://github.com/antlr/antlr4-cpp/blob/master/CONTRIBUTING.md#emoji) for how to efficiently discuss changes. It is best to be clear and explicit with your feedback. Please be patient with people who might not understand the finer details about your approach to feedback.
+Also don't think that comments and requests for changes means that your contribution is not appreciated and people can be stalling or discouraging you. You may have done a wonderfull job on the task at hand but, as it's still part of a very large sofware project, there could be implications on aspects that you might not be aware of, or that it's impacting or causing side effects on other parts. Keep an open mind and positive attitude! :wink:
 
 **nanoFramework** project uses many labels for categorizing issues and pull requests. Check [here](labels.md) the full list.
 
