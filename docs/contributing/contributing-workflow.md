@@ -2,6 +2,20 @@
 
 You can contribute to **nanoFramework** with issues and PRs. Simply filing issues for problems you encounter is a great way to contribute. Contributing implementations is greatly appreciated.
 
+
+### Table of contents
+
+- [Getting Started](#getting-started)
+- [Making a change](#making-a-change)
+- [Typos](#typos)
+- [Coding Style Changes](#coding-style-changes)
+- [Commit Messages](#commit-messages)
+- [Contributor License Agreement](#contributor-license-agreement)
+- [PR Feedback](#pr-feedback)
+- [Working on an open issue](#working-on-an-open-issue)
+- [Suggested Workflow](#suggested-workflow)
+
+
 ## Getting Started
 
 If you are looking at getting your feet wet with some simple (but still beneficial) changes, check out _up-for-grabs_ issues on the [**nanoFramework** Interpreter](https://github.com/nanoframework/nf-interpreter/labels/up-for-grabs) repo. 
@@ -10,15 +24,18 @@ For new ideas, please always start with an issue before starting development of 
 
 You do not need to file an issue for trivial changes (e.g. typo fixes). Just create a PR for those changes.
 
+
 ## Making a change
 
 Make a quality change. Consider and document (preferably with tests) as many usage scenarios as you can to ensure that your change will work correctly in the miriad of ways it might get used.
 
 There are several issues to keep in mind when making a change.
 
+
 ## Typos
 
 Typos are embarrassing! We will accept most PRs that fix typos. In order to make it easier to review your PR, please focus on a given component with your fixes or on one type of typo across the entire repository. If it's going to take >30 mins to review your PR, then we will probably ask you to chunk it up.
+
 
 ## Coding Style Changes
 
@@ -26,6 +43,7 @@ We would like to have **nanoFramework** in full conformance with the style guide
 
 * **DO NOT** send PRs for style changes.
 * **DO** give priority to the current style of the project or file you're changing even if it diverges from the general guidelines.
+
 
 ## Commit Messages
 
@@ -49,6 +67,7 @@ things in the same commit, and not too small with the same small change applied 
 times in N different commits. If there was some accidental reformatting or whitespace
 changes during the course of your commits, please rebase them away before submitting
 the PR.
+
 
 ### Signing off your commit messages
 
@@ -86,6 +105,16 @@ There are lots of thoughts and [approaches](https://github.com/antlr/antlr4-cpp/
 
 **nanoFramework** project uses many labels for categorizing issues and pull requests. Check [here](labels.md) the full list.
 
+
+## Working on an open issue
+
+When you want to work on an open issue (including _up-for-grabs_) we recommend the following.
+
+- Issues labeled with [_investigating_](labels.md#investigating): if the current status doesn't seem updated or clear, add a comment asking for clarification before start any work on it.
+- Issues labeled with [_under-review_](labels.md#under-review): if the current status doesn't seem updated or clear, add a comment asking for a clarification before start any work on it.
+- Issues labeled with [_up-for-grabs_](labels.md#up-for-grabs): add a comment stating your interest and the issue will be assigned to you and the label switched to _in progress_.
+
+
 ## Suggested Workflow
 
 We use and recommend the following workflow:
@@ -113,11 +142,3 @@ We use and recommend the following workflow:
 Note: It is OK for your PR to include a large number of commits. Once your change is accepted, you will be asked to squash your commits into one or some appropriately small number of commits before your PR is merged.
 
 Note: It is OK to create your PR as "[WIP]" on the upstream repo before the implementation is done. This can be useful if you'd like to start the feedback process concurrent with your implementation. State that this is the case in the initial PR comment.
-
-## Working on an open issue (including _up-for-grabs_)
-
-When you want to work on an open issue we recommend the following.
-
-- Issues labeled with [_investigating_](labels.md#investigating): if the current status doesn't seem updated or clear, add a comment asking for clarification before start any work on it.
-- Issues labeled with [_under-review_](labels.md#under-review): if the current status doesn't seem updated or clear, add a comment asking for a clarification before start any work on it.
-- Issues labeled with [_up-for-grabs_](labels.md#up-for-grabs): add a comment stating your interest and the issue will be assigned to you and the label switched to _in progress_.
