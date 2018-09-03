@@ -4,7 +4,7 @@ Please read the following information before posting the issue.
 
 If you need clarification on something, need help on a particular situation or want to start a discussion, instead of opening an issue it is best to start a conversation on one of our Slack channels. 
 Go there and select the channel that's most appropriate to the context so subject matter experts are most likely to answer promptly.
-You can join our lively Slack community by filling in this invite form [here](https://nanoframework.wordpress.com/slack-invite-form)
+You can join our lively [Discord server](https://discordapp.com/invite/gCyBu8T)
 
 Remove the content above here and fill out details below.
 
