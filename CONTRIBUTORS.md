@@ -17,6 +17,10 @@ The following is a list of contributors to the **nanoFramework** project (all re
     <td><a href="https://github.com/techcap">Bongho Lee</a></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/NemesisXB.png?size=50&" height="50" width="50"></td>
+    <td><a href="https://github.com/NemesisXB">Christiaan Alberts</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/MikroBusNet.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/MikroBusNet">Christophe Gerbier</a></td>
   </tr>
