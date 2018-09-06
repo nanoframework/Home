@@ -64,6 +64,8 @@ The above firmware builds include support for the class libraries and features m
 
 - [nf-Community-Targets](https://github.com/nanoframework/nf-Community-Targets) - this repo contains target boards that are contributed by community members. You might find here _inspiration_ for your next board.
 
+- [nf-Community-Contributions](https://github.com/nanoframework/nf-Community-Contributions) - this repo contains contributions from community members. Drivers, extensions, utilities, feature demos...
+
 - [lib-CoreLibrary](https://github.com/nanoframework/lib-CoreLibrary) - this repo contains the Base Class Library (Core library - mscorlib) that is used in developing C# applications.
 
 - [lib-nanoFramework.Hardware.Esp32](https://github.com/nanoframework/lib-nanoFramework.Hardware.Esp32) - this repo contains the nanoFramework.Hardware.Esp32 library that is used in developing C# applications for ESP32.
