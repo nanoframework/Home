@@ -72,4 +72,4 @@ You've went through the steps required to install Visual Studio, the **nanoFrame
 You've also learned how to upload **nanoFramework** firmware images into a target board.
 And last, but not the least: how to code a simple 'Hello World' C# application and deploy it to a target board.
 
-Check out other guides and tutorials. You may also want to join our [Slack workspace](https://nanoframework.net/slack-invite-form/), where you'll find a supportive community to discuss your ideas and help you in case you get stuck on something.
+Check out other guides and tutorials. You may also want to join our [Discord community](https://discord.gg/gCyBu8T) where you'll find a supportive community to discuss your ideas and help you in case you get stuck on something.
