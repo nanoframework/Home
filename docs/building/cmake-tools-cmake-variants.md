@@ -95,6 +95,10 @@ The following explains each line of the *linkage* section. Text highlighted in *
     - Allows you to define it the hardware watchdog should be disabled.
 	This setting can only be set to OFF for STM32 targets. ESP32 build enables this by default so there is no way to disable it.
 	Default is ON, so the hardware watchdog will be enabled by default.
+- "NF_FEATURE_HAS_CONFIG_BLOCK" : "**OFF**"
+    - Allows the developer to set if the targets platform has configuration block.
+    	This requires the the block storage definition and the linker files add support for that.
+    	Default is OFF meaning that that the target DOES NOT have configuration block.
 - "NF_PLATFORM_NO_CLR_TRACE" : "**OFF**"
 	- Allows you to define if trace messages and checks are added to CLR or not.
 	These checks are usually valuable when debugging issues within the CLR.
