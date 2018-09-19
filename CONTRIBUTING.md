@@ -124,9 +124,9 @@ The following rules must be followed for PRs that include files from another pro
 
 - The license of the file is [permissive](https://en.wikipedia.org/wiki/Permissive_free_software_licence).
 - The license of the file is left intact.
-- The contribution is correctly attributed in the [3rd party notices](../../THIRD-PARTY-NOTICES) file in the repository, as needed.
+- The contribution is correctly attributed in the [3rd party notices](THIRD-PARTY-NOTICES.md) file in the repository, as needed.
 
-<!--See [IdnMapping.cs](../../.cs) for an example of a file copied from another project and attributed in the [**nanoFramework** 3rd party notices](../../THIRD-PARTY-NOTICES) file. -->
+<!--See [IdnMapping.cs](../../.cs) for an example of a file copied from another project and attributed in the [**nanoFramework** 3rd party notices](../../THIRD-PARTY-NOTICES.md) file. -->
 
 
 ### Porting Files from Other Projects
