@@ -11,10 +11,15 @@ You can join our lively [Discord community](https://discordapp.com/invite/gCyBu8
 ### Details about Problem
 
 **nanoFramework area:** (C# code | Visual Studio extension | Hardware/target board | Nuget packages | Community targets | Community contributions | Documentation )
+
 **VS version<!--(if appropriate)-->:** 
+
 **VS extension version<!--(if appropriate)-->:** 
+
 **Target<!--(if appropriate)-->:** 
+
 **Firmware image version<!--(if appropriate)-->:** 
+
 **Device capabilities output<!--(if appropriate)-->:** 
 
 Worked before? If so, with which nanoFramework image version: 
