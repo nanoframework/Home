@@ -4,19 +4,23 @@ Please read the following information before posting the issue.
 
 If you need clarification on something, need help on a particular situation or want to start a discussion, instead of opening an issue it is best to start a conversation on one of our Slack channels. 
 Go there and select the channel that's most appropriate to the context so subject matter experts are most likely to answer promptly.
-You can join our lively [Discord server](https://discordapp.com/invite/gCyBu8T)
+You can join our lively [Discord community](https://discordapp.com/invite/gCyBu8T)
 
 Remove the content above here and fill out details below.
 
 ## Details about Problem
 
-nanoFramework area (C# code | Visual Studio extension | Hardware/target board | Nuget packages | Community targets )
+nanoFramework area (C# code | Visual Studio extension | Hardware/target board | Nuget packages | Community targets | Community contributions | Documetation )
 
 VS version (if appropriate):
 
-OS version (i.e. win10 v1607 (14393.321)):
+Target (if appropriate): (STM32nnnnn | ESP32nnnn)
 
-Worked before? If so, with which nanoFrameowrk version:
+Firmware image version (if appropriate):
+
+Device capabilities output (if appropriate):
+
+Worked before? If so, with which nanoFramework image version:
 
 ## Detailed repro steps so we can see the same problem
 
