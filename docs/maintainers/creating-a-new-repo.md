@@ -133,3 +133,8 @@ If in doubt please ask one of the senior team members.
         - "Status checks: continuous-integration/appveyor/pr" (for develop branch)
         - "Status checks: continuous-integration/appveyor/branch" (for master branch)
         - "Status checks: license/cla" (for develop branch)
+
+## Update the dependency upwards
+
+As a minimum the new class library depends on mscorlib. If that's the only dependency, edit the [`update-dependencies.ps1`](https://github.com/nanoframework/lib-CoreLibrary/blob/develop/update-dependencies.ps1) file there and add this new repo to the collection of the repositories there.
+Now, if it depends on others, you have to figure out which one of those is _at the end_ of the dependency chain and add this new repo to _that_ `update-dependencies.ps1` file. For example, `Windows.Devices.Gpio` depends on `CoreLibrary` and `Runtime.Events` (which, in turn, depends on `CoreLibrary`). Updating it's dependencies has to the triggered at `Runtime.Events` not on `CoreLibrary`.
