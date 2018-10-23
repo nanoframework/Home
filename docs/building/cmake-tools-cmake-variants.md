@@ -126,7 +126,11 @@ The following explains each line of the *linkage* section. Text highlighted in *
 - "API_Windows.Networking.Sockets" : "**OFF**"
 	- Allows you to specify whether Networking Sockets functions are available to your application. Default is OFF.
 - "API_Hardware.Esp32" : "**OFF**"
-	- Allows you to specify whether Hardware.ESP32 functions are available to your application. Default is OFF.
+	- Allows you to specify whether Hardware.Esp32 functions are available to your application. Default is OFF. 
+	Note that this API is exclusive of ESP32 targets and can't be used with any other.
+- "API_Hardware.Stm32" : "**OFF**"
+	- Allows you to specify whether Hardware.Stm32 functions are available to your application. Default is OFF.
+	Note that this API is exclusive of STM32 targets and can't be used with any other.
 
 
 ## Working example
