@@ -43,6 +43,9 @@ If in doubt please ask one of the senior team members.
 
 7. Click the "Link" button and agree with the next step.
 
+8. On the list of the CLAs, find the new one and click on the ellipsis to the right and then 'Edit'. Add 
+    `nfbot,*[bot]` into the field "Provide user names, who doesn't need to sign the CLA".
+
 ## Setup AppVeyor
 
 1. Still on that Private browser window, navigate to [AppVeyor](https://ci.appveyor.com/projects).
