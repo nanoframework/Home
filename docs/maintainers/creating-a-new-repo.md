@@ -13,7 +13,7 @@ If in doubt please ask one of the senior team members.
 
 1. This is basically clicking the create new repository button in GitHub. 
 
-    Note: The class libraries repositories are following the patter "**lib-**namespace" most of the remaining repositories "**nf-**some-relevant-name-here". This makes it easier to spot what is what.
+    Note: The class libraries repositories are following the pattern "lib-namespace" most of the remaining repositories "nf-some-relevant-name-here". This makes it easier to spot what is what.
 
 2. As we are following the [GitFlow branching model](http://nvie.com/posts/a-successful-git-branching-model/) two branches must be created: `master` and `develop`.
 
