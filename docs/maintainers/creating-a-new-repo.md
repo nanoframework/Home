@@ -138,3 +138,8 @@ If in doubt please ask one of the senior team members.
 
 As a minimum the new class library depends on mscorlib. If that's the only dependency, edit the [`update-dependencies.ps1`](https://github.com/nanoframework/lib-CoreLibrary/blob/develop/update-dependencies.ps1) file there and add this new repo to the collection of the repositories there.
 Now, if it depends on others, you have to figure out which one of those is _at the end_ of the dependency chain and add this new repo to _that_ `update-dependencies.ps1` file. For example, `Windows.Devices.Gpio` depends on `CoreLibrary` and `Runtime.Events` (which, in turn, depends on `CoreLibrary`). Updating it's dependencies has to the triggered at `Runtime.Events` not on `CoreLibrary`.
+
+## Add the class library to the documentation project
+
+If this class library has documentation that has to be published as part of nanoFramework documentation (which is most likely) it needs to be referenced in the documenation project.
+Edit the documentation repo [AppVeyor yaml](https://github.com/nanoframework/nanoframework.github.io/blob/pages-source/appveyor.yml) and include the git clone operation for this new repo.
