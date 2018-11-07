@@ -85,7 +85,7 @@ If in doubt please ask one of the senior team members.
     - commit-assemblyinfo-changes.ps1
     - CONTRIBUTING.md _(no changes required)_
     - generate-change-log.ps1
-    - GitVersion.yml _(no changes required)_
+    - version.json
     - install-vsix-appveyor.ps1 _(no changes required)_
     - LICENSE _(no changes required)_
     - README.md
@@ -95,11 +95,10 @@ If in doubt please ask one of the senior team members.
 3. Open "appveyor.yml"
     1. Rename the class library name occurrences with the new name.
     2. Rename the deploy "release description" with the new name.
-    3. If this class library is a dependency of others, the section `on_success:` that installs NuKeeper and launches the update-dependecies PowerShell is required, otherwise it shouldn't exist.
 
 4. Open ".github_changelog_generator" and set the _project_ to the repo name.
 
-5. Open "GitVersion.yml" and set the _next_ version to the appropriate one. Make sure to follow our version number guidelines. In doubt please ask one of the senior team members.
+5. Open "source\version.json" and set the _version_ to the appropriate one. Make sure to follow our version number guidelines. In doubt please ask one of the senior team members.
 
 6. Open "README.md"
     1. Rename the class library name occurrences with  the new name.
@@ -108,22 +107,20 @@ If in doubt please ask one of the senior team members.
 
 7. Create a "source" folder that will hold the code files and VS Solutions and projects.
 
-8. Create a "**Nuget.**class-lib-name" folder inside source.
+8. Create a "class-lib-name" folder inside source.
 
-9. Create a "**Nuget.**class-lib-name.DELIVERABLES" folder inside source.
-
-10. Create a "class-lib-name" folder inside source.
-
-11. Add the VS solutions for the class library and for the Nuget packages. Again it's better to follow an existing one and ask in doubt.
+9. Add to the VS Solution the class library project. Again it's better to follow an existing one and ask in doubt.
     1. Make sure you are following the naming pattern.
     2. Do not add a `.nuget` solution folder
     3. Make sure you copy the `key.snk` from the initial repo (or from the CorLib repo). DO NOT create a new one.
 
-12. Open "commit-assemblyinfo-changes.ps"
+10. Rename, edit and adjust as required the "nuspec" files to create the NuGet packages.
+
+11. Open "commit-assemblyinfo-changes.ps"
     1. Rename the class library name occurrences with the new name.
     2. Adjust the RegEx in `$assemblyFiles` to the file name of this new project that can be found in the stubs folder after running the build. You have to return here after the
 
-13. Open "update-dependencies.ps"
+12. Open "update-dependencies.ps"
     1. Rename the class library name occurrences with the new name.
     2. Adjust the `$librariesToUpdate` array with the repo names of the class libraries that depend on this new one.
 
