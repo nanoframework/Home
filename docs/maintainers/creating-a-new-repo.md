@@ -27,6 +27,8 @@ If in doubt please ask one of the senior team members.
 
 3. On the _Merge Button_ section disable Allow merge commits. We prefer to have tidy merges on PRs without having to bother contributors to squash commits.
 
+4. Move into _Branches_ and set `develop` as the default branch.
+
 ## Setup the CLA
 
 1. Open a browser window in Private Mode (so you can sign-in as `nfbot` and not loose you personal GitHub session).
