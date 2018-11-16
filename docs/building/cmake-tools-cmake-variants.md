@@ -109,6 +109,8 @@ The following explains each line of the *linkage* section. Text highlighted in *
 	Default is OFF meaning that CLR will inline IL.
 - "NF_INTEROP_ASSEMBLIES" : [ "Assembly1-Namespace", "Assembly2-Namespace" ]
 	- Lists the name of the Interop assembly(ies) to be added to the build. Leave empty or don't add it if no Interop assembly is to be added.
+- "API_nanoFramework.Devices.OneWire" : "**OFF**"
+	- Allows you to specify whether support for Devices.OneWire is available to your application. Default is OFF.
 - "API_System.Net" : "**OFF**"
 	- Allows you to specify whether System.Net support is available to your application. Default is OFF.
 - "API_Windows.Devices.Adc" : "**OFF**"
@@ -125,6 +127,8 @@ The following explains each line of the *linkage* section. Text highlighted in *
 	- Allows you to specify whether SPI functions are available to your application. Default is OFF.
 - "API_Windows.Networking.Sockets" : "**OFF**"
 	- Allows you to specify whether Networking Sockets functions are available to your application. Default is OFF.
+- "API_Windows.Storage" : "**OFF**"
+	- Allows you to specify whether Windows.Storage functions are available to your application. Default is OFF.
 - "API_Hardware.Esp32" : "**OFF**"
 	- Allows you to specify whether Hardware.Esp32 functions are available to your application. Default is OFF. 
 	Note that this API is exclusive of ESP32 targets and can't be used with any other.
