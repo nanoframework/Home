@@ -1,6 +1,5 @@
 ## **nanoFramework** Contributors
 
-
 The following is a list of contributors to the **nanoFramework** project (all repositories), in alphabetical order.
 
 <table>
@@ -67,5 +66,10 @@ The following is a list of contributors to the **nanoFramework** project (all re
     <tr>
     <td><img src="https://github.com/sharmavishnu.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/sharmavishnu">Vishnu Sharma</a></td>
+  </tr>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/gligorov.png?size=50" height="50" width="50"></td>
+    <td><a href="https://github.com/gligorov">Zan Gligorov</a></td>
   </tr>
 </table>
