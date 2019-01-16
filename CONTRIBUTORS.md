@@ -16,6 +16,10 @@ The following is a list of contributors to the **nanoFramework** project (all re
     <td><a href="https://github.com/techcap">Bongho Lee</a></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/c-born.png?size=50&" height="50" width="50"></td>
+    <td><a href="https://github.com/c-born">c-born</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/NemesisXB.png?size=50&" height="50" width="50"></td>
     <td><a href="https://github.com/NemesisXB">Christiaan Alberts</a></td>
   </tr>
@@ -64,10 +68,14 @@ The following is a list of contributors to the **nanoFramework** project (all re
     <td><a href="https://github.com/geminids14">Suriya Kuernkuob</a></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/TerryFogg.png?size=50" height="50" width="50"></td>
+    <td><a href="https://github.com/TerryFogg">Terry Fogg</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/Sirokujira.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/Sirokujira">Tooru Oonuma</a></td>
   </tr>
-    <tr>
+  <tr>
     <td><img src="https://github.com/sharmavishnu.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/sharmavishnu">Vishnu Sharma</a></td>
   </tr>
