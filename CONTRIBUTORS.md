@@ -16,10 +16,6 @@ The following is a list of contributors to the **nanoFramework** project (all re
     <td><a href="https://github.com/techcap">Bongho Lee</a></td>
   </tr>
   <tr>
-    <td><img src="https://github.com/c-born.png?size=50&" height="50" width="50"></td>
-    <td><a href="https://github.com/c-born">c-born</a></td>
-  </tr>
-  <tr>
     <td><img src="https://github.com/NemesisXB.png?size=50&" height="50" width="50"></td>
     <td><a href="https://github.com/NemesisXB">Christiaan Alberts</a></td>
   </tr>
@@ -34,7 +30,11 @@ The following is a list of contributors to the **nanoFramework** project (all re
   <tr>
     <td><img src="https://github.com/Dweaver309.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/Dweaver309">David E Weaver</a></td>
-  </tr>  
+  </tr>
+  <tr>
+    <td><img src="https://github.com/c-born.png?size=50&" height="50" width="50"></td>
+    <td><a href="https://github.com/c-born">David Varley</a></td>
+  </tr>
   <tr>
     <td><img src="https://github.com/ishvedov.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/ishvedov">Ivan Shvedov</a></td>
