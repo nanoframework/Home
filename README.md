@@ -1,7 +1,6 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![#yourfirstpr](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](https://github.com/nanoframework/Home/blob/master/CONTRIBUTING.md) 
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/nanoframework/home.svg)](http://isitmaintained.com/project/nanoframework/home "Average time to resolve an issue") [![Percentage of issues still open](http://isitmaintained.com/badge/open/nanoframework/home.svg)](http://isitmaintained.com/project/nanoframework/home "Percentage of issues still open") [![Discord](https://img.shields.io/discord/478725473862549535.svg)](https://discord.gg/gCyBu8T)
 
-
 ![nanoFramework logo](resources/logo/nanoFramework-repo-logo.png)
 
 -----
@@ -15,19 +14,17 @@ It contains links to the various GitHub repositories used by **nanoFramework**.
 Developers can harness the familiar IDE Visual Studio and their .NET (C#) knowledge to quickly write applications without having to worry about the low level hardware intricacies of a micro-controller.
 
 Being a developer you'll probably will fit in one (or maybe both :wink:) of the following _profiles_:
+
 - Developer: if your goal is to develop C# applications for micro-controllers.
 - Contributor: if you are interested in actively contributing by coding (native, managed, C, C++, CMake), writing documentation or participating in the overall project organization.
 
-
 ## Firmware for reference boards
-
 
 Each of the following ZIP files contains the image files for nanoBooter and nanoCLR in various formats (HEX, BIN and DFU). They should be flashed in the target boards using an appropriate software utility.
 
 The **stable** versions are RTM builds with the smallest possible size. They include the latest stable version. The debugging feature is disabled and only minimal (or none) error messages.
 
 The **preview** versions are continuous builds of the reference targets. They include the latest version of all features and bug corrections. They also have the debugging feature enabled along with detailed error messages.
-
 
 | Target | Stable | Preview |
 |:-|---|---|
@@ -38,9 +35,7 @@ The **preview** versions are continuous builds of the reference targets. They in
 | NETDUINO3_WIFI | [ ![Download](https://api.bintray.com/packages/nfbot/nanoframework-images/NETDUINO3_WIFI/images/download.svg) ](https://bintray.com/nfbot/nanoframework-images/NETDUINO3_WIFI/_latestVersion) | [ ![Download](https://api.bintray.com/packages/nfbot/nanoframework-images-dev/NETDUINO3_WIFI/images/download.svg) ](https://bintray.com/nfbot/nanoframework-images-dev/NETDUINO3_WIFI/_latestVersion) |
 | ESP32_WROOM_32 | [ ![Download](https://api.bintray.com/packages/nfbot/nanoframework-images/ESP32_WROOM_32/images/download.svg) ](https://bintray.com/nfbot/nanoframework-images/ESP32_WROOM_32/_latestVersion) | [ ![Download](https://api.bintray.com/packages/nfbot/nanoframework-images-dev/ESP32_WROOM_32/images/download.svg) ](https://bintray.com/nfbot/nanoframework-images-dev/ESP32_WROOM_32/_latestVersion) |
 
-
 The above firmware builds include support for the class libraries and features marked bellow.
-
 
 | Target                  | Gpio               | Spi                | I2c                | Pwm                | Adc                | Serial             | OneWire            | Events             | SWO                | Networking         | Large Heap         |
 |:-:                      |:-:                 |:-:                 |:-:                 |:-:                 |:-:                 |:-:                 |:-:                 |:-:                 |:-:                 |:-:                 |:-:                 |
@@ -115,7 +110,6 @@ Besides the above firmware images, you can find several others for community pro
 
 - [mbedtls](https://github.com/nanoframework/mbedtls) - this repo contains a mirror of the official mbedtls repository. It's used as the default source for building **nanoFramework** images implementing TLS for networking.
 
-
 ## How to Engage, Contribute and Provide Feedback
 
 Some of the best ways to contribute are to try things out, file bugs, and join in design conversations. 
@@ -129,26 +123,24 @@ Looking for something to work on? Check the list of [up-for-grabs issues](https:
 
 See some of our guides for more details:
 
-* [Contributing Guide](CONTRIBUTING.md)
-* [Developer Guide](docs/contributing/developer-guide.md)
-
+. [Contributing Guide](CONTRIBUTING.md)
+. [Developer Guide](docs/contributing/developer-guide.md)
 
 ## Documentation
 
 ### [Docs](docs/)
 
 The project documentation is a great place to find information about **nanoFramework**, no matter if you are newcomer or a veteran. It's organized in the following categories:
+
 - [API reference](http://docs.nanoframework.net/api) documentation for the various class libraries.
 - [Developing C# applications](docs/developing-apps) using **nanoFramework**.
 - [Building an image](docs/building) to load on a target board.
 - [**nanoFramework** architecture](docs/architecture/) and how the different pieces fit together.
 - [Contributing to **nanoFramework**](docs/contributing/) includes an overview on how you can contribute to the project. 
 
-
 ### [Blog](http://www.nanoframework.net/blog)
 
 There is a blog where we try to post detailed updates about the development status, technical posts about a particular feature ou a design option.
-
 
 ## Who is behind this project?
 
@@ -156,7 +148,7 @@ There are a number of people behind this project. We are mostly embedded systems
 All of us have our daily jobs and we work on this project in our free time.
 That is to say that you can always expect an answer from us. Maybe not instantly but in a - hopefully - timely fashion :wink: !
 
-
 ## Code of Conduct
+
 This project has adopted the code of conduct defined by the [Contributor Covenant](http://contributor-covenant.org/)
 to clarify expected behavior in our community.
