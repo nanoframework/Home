@@ -47,14 +47,14 @@ The following explains each line of the *linkage* section. Text highlighted in *
 	- Replace the *<summary-here>* text with one word describing shortly your board. e.g. "F429Disco"
 - "long": "**<description-here>**"
 	- This is a more complete description of the configuration
-- "BUILD_VERSION" : "**<version-number-for-the-build-format-is-N.N.N.N>**"
-- "TOOLCHAIN_PREFIX" : "**<path-to-gcc-toolchain-mind-the-forward-slash>**"
+- "BUILD_VERSION" : "**version-number-for-the-build-format-is-N.N.N.N**"
+- "TOOLCHAIN_PREFIX" : "**absolute-to-gcc-toolchain-mind-the-forward-slash**"
 	- This is the path to your gcc toolchain compiler. Use forward slashes and do not provide executable name here
-- "TOOL_HEX2DFU_PREFIX" : "**<path-to-hex2dfu-utility-mind-the-forward-slash>**"
+- "TOOL_HEX2DFU_PREFIX" : "**absolute-path-to-hex2dfu-utility-mind-the-forward-slash**"
 	- This is the path to the HEX2DFU utility. Use forward slashes and do not provide executable name here.
-- "ESP32_IDF_PATH" : "**<path-to-esp-idf-mind-the-forward-slash>**"
+- "ESP32_IDF_PATH" : "**absolute-path-to-esp-idf-mind-the-forward-slash**"
 	- This the path to the ESP32 IDF utility. Use forward slashes and do not provide executable name here.
-- "ESP32_LIBS_PATH" : "**<absolute-path-to-the-ESP32-libs-folder-mind-the-forward-slashes>**"
+- "ESP32_LIBS_PATH" : "**absolute-path-to-the-ESP32-libs-folder-mind-the-forward-slashes**"
 	- This is the path to the folder where the ESP32 libraries can be found. Use forward slashes.
 - "EXECUTABLE_OUTPUT_PATH" : "**${workspaceRoot}/build**"
 	- This is the default and recommended path which will expand to the build folder when building from VS Code. When building from the command line or from Visual Studio this is not required.
@@ -67,11 +67,11 @@ The following explains each line of the *linkage* section. Text highlighted in *
 	- Enables support for double-precision floating point. The default is single-precision. Set to ON to enable double precision floating point.
 - "SUPPORT_ANY_BASE_CONVERSION" : "**OFF**"
 	- Defines which bases are supported when performing string to value conversions. When ON support for any base is enabled. When OFF (the default) the image will be compiled with support for base 10 and base 16 only.
-- "RTOS" : "**<one-of-valid-rtos-options>**"
-	- Defines the RTOS that will be used to build nanoFramework. It can be CHIBIOS or FREERTOS. Currently ChibiOS is supported for all STM32 targets and FreeRTOS is supported for ESP32 targets.
-- "CHIBIOS_SOURCE" : "**<path-to-chibios-source-mind-the-forward-slash>**"
+- "RTOS" : "**one-of-valid-rtos-options**"
+	- Defines the RTOS that will be used to build nanoFramework. It can be CHIBIOS or FREERTOS_ESP32. Currently ChibiOS is supported for all STM32 targets and FreeRTOS is supported for ESP32 targets.
+- "CHIBIOS_SOURCE" : "**absolute-path-to-chibios-source-mind-the-forward-slash**"
 	- Path to an optional local installation of ChibiOS source files. If no path is given, then CMake will download the sources from the projects ChibiOS repository when needed
-- "CHIBIOS_BOARD" : "**<valid-chibios-board-name-from-boards-collection>**"
+- "CHIBIOS_BOARD" : "**valid-chibios-board-name-from-boards-collection**"
 	- Name of your board, chosen from the available boards collection that can be found in the \os\hal\boards folder of the ChibiOS installation (or distant repository)
 - "SWO_OUTPUT" : "**OFF**"
 	- Allows specifying whether to include, or not, support for Cortex-M Single Wire Output (SWO). Default is OFF. Check the documentation [here](arm-swo.md) for more details on how to use SWO.
@@ -171,18 +171,18 @@ The following linkage section is a real example used to build nanoFramework for 
 
 To make your life easier, we provide templates with pre-configured cmake-variants.json for the various reference targets. Just grab them from our Gist.
 
--[ST_STM32F4_DISCOVERY](https://gist.github.com/nfbot/d4dbea239069146fe30d0869463507a8)
+- [ST_STM32F4_DISCOVERY](https://gist.github.com/nfbot/d4dbea239069146fe30d0869463507a8)
 
--[ST_STM32F429I_DISCOVERY](https://gist.github.com/nfbot/a5e04d750ff67d7b377f6aea74514208)
+- [ST_STM32F429I_DISCOVERY](https://gist.github.com/nfbot/a5e04d750ff67d7b377f6aea74514208)
 
--[ST_NUCLEO_F091RC](https://gist.github.com/nfbot/cf7f6cfeb6f776ba068985bc44c005f0)
+- [ST_NUCLEO_F091RC](https://gist.github.com/nfbot/cf7f6cfeb6f776ba068985bc44c005f0)
 
--[ST_NUCLEO144_F746ZG](https://gist.github.com/nfbot/6de229c9e6e64d5c48b729e077af7153)
+- [ST_NUCLEO144_F746ZG](https://gist.github.com/nfbot/6de229c9e6e64d5c48b729e077af7153)
 
--[ST_STM32F769I_DISCOVERY](https://gist.github.com/nfbot/efd47b5cfffdc7e54e388c37f1cb7a9c)
+- [ST_STM32F769I_DISCOVERY](https://gist.github.com/nfbot/efd47b5cfffdc7e54e388c37f1cb7a9c)
 
--[MBN_QUAIL](https://gist.github.com/nfbot/06723075c41d4e8f66ba511a4ce46e3f)
+- [MBN_QUAIL](https://gist.github.com/nfbot/06723075c41d4e8f66ba511a4ce46e3f)
 
--[NETDUINO3_WIFI](https://gist.github.com/nfbot/dae2411ba9d2251c45d302ea1cac135a)
+- [NETDUINO3_WIFI](https://gist.github.com/nfbot/dae2411ba9d2251c45d302ea1cac135a)
 
--[ESP32](https://gist.github.com/nfbot/627051a2f9f459d3c8f17752ca4985be)
+- [ESP32_WROOM_32](https://gist.github.com/nfbot/627051a2f9f459d3c8f17752ca4985be)
