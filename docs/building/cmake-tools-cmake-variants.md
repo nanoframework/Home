@@ -54,9 +54,13 @@ The following explains each line of the *linkage* section. Text highlighted in *
 	- This is the path to the HEX2DFU utility. Use forward slashes and do not provide executable name here.
 - "ESP32_IDF_PATH" : "**<path-to-esp-idf-mind-the-forward-slash>**"
 	- This the path to the ESP32 IDF utility. Use forward slashes and do not provide executable name here.
+- "ESP32_LIBS_PATH" : "**<absolute-path-to-the-ESP32-libs-folder-mind-the-forward-slashes>**"
+	- This is the path to the folder where the ESP32 libraries can be found. Use forward slashes.
+- "EXECUTABLE_OUTPUT_PATH" : "**${workspaceRoot}/build**"
+	- This is the default and recommended path which will expand to the build folder when building from VS Code. When building from the command line or from Visual Studio this is not required.
 - "TARGET_SERIES" : "**STM32F7xx**"
 	- For STM32 MCUs represents the target series (STM32F4XX, STM32L4XX, and so on)
-	- For ESP32 matches the series name: "ESP32"
+	- For ESP32 matches the target name: "ESP32_WROOM_32"
 - "USE_RNG" : "**ON**"
 	- Option to enable the use of the hardware true random generator unit, if present. Default is ON as the majority of the targets have this feature.
 - "DP_FLOATINGPOINT" : "**OFF**"
