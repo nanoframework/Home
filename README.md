@@ -83,9 +83,13 @@ The project documentation is a great place to find information about **nanoFrame
 - [**nanoFramework** architecture](docs/architecture/) and how the different pieces fit together.
 - [Contributing to **nanoFramework**](docs/contributing/) includes an overview on how you can contribute to the project.
 
-### [Blog](http://www.nanoframework.net/blog)
+### [Blog](https://www.nanoframework.net/blog)
 
 There is a blog where we try to post detailed updates about the development status, technical posts about a particular feature ou a design option.
+
+### [YouTube channel](https://www.youtube.com/c/nanoFramework)
+
+We also have a YouTube channel where with video tutorials along with feature demos and teasers about new ideas that we are experimenting with.
 
 ## Who is behind this project?
 
