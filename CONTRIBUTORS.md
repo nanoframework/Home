@@ -24,6 +24,10 @@ The following is a list of contributors to the **nanoFramework** project (all re
     <td><a href="https://github.com/MikroBusNet">Christophe Gerbier</a></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/Elastino.png?size=50&" height="50" width="50"></td>
+    <td><a href="https://github.com/Elastino">CJ Lee</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/cw2.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/cw2">CW2</a></td>
   </tr>
