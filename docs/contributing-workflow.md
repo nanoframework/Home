@@ -166,11 +166,15 @@ We use and recommend the following workflow:
       - Make sure that the builds are clean.
       - Make sure that the tests are all passing, including any new tests that you've added.
 
-10. Push your changes to your fork on GitHub (if you haven't already).
+10. If you've been working in this branch and changes have been made in upstream develop, you should rebase the working branch on the upstream develop branch so that your work shows on top of any other changes. If you have just created your working branch you can skip this step.
+
+    `git rebase upstream/develop`
+
+11. Push your changes to your fork on GitHub (if you haven't already).
 
     `git push origin <branch-name-here>`
 
-11. Create a pull request (PR) against the upstream repository's **develop** branch.
+12. Create a pull request (PR) against the upstream repository's **develop** branch.
 
     Creating a PR is a simple click on the "Pull Request" button that shows on your personal fork in GitHub.
 
