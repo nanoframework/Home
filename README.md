@@ -71,19 +71,18 @@ Looking for something to work on? Check the list of [up-for-grabs issues](https:
 See some of our guides for more details:
 
 - [Contributing Guide](CONTRIBUTING.md)
-- [Developer Guide](docs/contributing/developer-guide.md)
 
 ## Documentation
 
-### [Docs](docs/)
+### [Docs](https://docs.nanoframework.net/articles/intro.html)
 
 The project documentation is a great place to find information about **nanoFramework**, no matter if you are newcomer or a veteran. It's organized in the following categories:
 
 - [API reference](http://docs.nanoframework.net/api) documentation for the various class libraries.
-- [Developing C# applications](docs/developing-apps) using **nanoFramework**.
-- [Building an image](docs/building) to load on a target board.
-- [**nanoFramework** architecture](docs/architecture/) and how the different pieces fit together.
-- [Contributing to **nanoFramework**](docs/contributing/) includes an overview on how you can contribute to the project.
+- [Developing C# applications](https://docs.nanoframework.net/articles/getting-started-guides/getting-started-managed.html#coding-a-hello-world-application) using **nanoFramework**.
+- [Building an image](https://docs.nanoframework.net/articles/building/building.html) to load on a target board.
+- [**nanoFramework** architecture](https://docs.nanoframework.net/articles/architecture/architecture.html) and how the different pieces fit together.
+- [Contributing to **nanoFramework**](https://docs.nanoframework.net/articles/contributing/contributing.html) includes an overview on how you can contribute to the project.
 
 ### [Blog](https://www.nanoframework.net/blog)
 
