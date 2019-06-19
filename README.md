@@ -93,11 +93,42 @@ There is a blog where we try to post detailed updates about the development stat
 
 We also have a YouTube channel where with video tutorials along with feature demos and teasers about new ideas that we are experimenting with.
 
-## Who is behind this project?
+# Sponsoring **nanoFramework**
 
-There are a number of people behind this project. We are mostly embedded systems enthusiasts, passionate about coding and people that like challenges. 
-All of us have our daily jobs and we work on this project in our free time.
-That is to say that you can always expect an answer from us. Maybe not instantly but in a - hopefully - timely fashion :wink: !
+Most of the core team members and contributors are embedded systems enthusiasts, passionate about coding and people that like challenges. The work on **nanoFramework** is done mostly on their free time. Some of the core members happen to work on companies that sponsor heavily **nanoFramework** and offer their work hours to the project. If you use **nanoFramework** for serious work or want to support it, please donate. This allow for paying the infrastructure cost and more time to be invested on the project. Besides monetary contributions, there are several other ways to contribute. Please read the documentation about this [here](http://docs.nanoframework.net/articles/contributing/contributing-intro.html).
+
+This is how we use the donations:
+
+- Pay for infrastructure costs.
+- Develop public relation actions to get the project known.
+- Support maintainers and contributors that invest a large amount of time in the project.
+- Support projects that **nanoFramework** depends on.
+- Produce documentation, tutorials and other content to support developers using **nanoFramework**.
+- Organize events to demo **nanoFramework**.
+
+## Sponsors
+
+Sponsors will get their logo and link to a website on our GitHub readme and also on our home page.
+
+<a href="https://opencollective.com/nanoframework#support"><img src="https://opencollective.com/nanoframework/tiers/sponsor.svg?avatarHeight=80"></a>
+
+## Backers
+
+Backers are individuals who contribute with money to help support nanoFramework. Every little bit helps and we appreciate all contributions, even the smallest ones.
+
+<a href="https://opencollective.com/nanoframework#support"><img src="https://opencollective.com/nanoframework/tiers/backer.svg?avatarHeight=80"></a>
+
+## Other backers and sponsors
+
+There are other people and organizations that have contributed to **nanoFramework** along the time in several ways: sponsoring the coding of a feature that was missing or needed improvement, paying for an expense, coding a feature or... We would like to acknowledge these sponsors.
+
+<table>
+ <tr>
+  <td><a href="http://www.eclo.solutions"><img src="http://www.eclo.solutions/images/eclo-solutions-logo-tall.svg" height="100" width="151"/></a></td>
+  <td><a href="https://www.orgpal.com"><img src="https://www.orgpal.com/orgpallogo.png" height="100" width="228"/></a></td>
+  <td><a href="http://www.chibios.org"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/ChibiOS_Embeddedware_Official_Logo.jpg" height="100" width="100" alt="ChibiOS RTOS"/></a></td>
+ </tr>
+</table>
 
 ## Code of Conduct
 
