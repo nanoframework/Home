@@ -8,6 +8,7 @@ daysUntilClose: 7
 exemptLabels:
   - :pushpin: pinned
   - Status: Blocked
+  - up-for-grabs
   - security
 
 # Label to use when marking an issue as stale
