@@ -70,7 +70,7 @@ Looking for something to work on? Check the list of [up-for-grabs issues](https:
 
 See some of our guides for more details:
 
-- [Contributing Guide](CONTRIBUTING.md)
+- [Contributing Guide](https://github.com/nanoframework/.github/blob/master/CONTRIBUTING.md)
 - [Contributing workflow](https://docs.nanoframework.net/articles/contributing/contributing-workflow.html)
 
 ## Documentation
