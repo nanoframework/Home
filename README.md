@@ -10,13 +10,50 @@
 This _Home_ repository is the starting point for developers that want to learn about **nanoFramework**, contribute to it or opening issues.
 It contains links to the various GitHub repositories used by **nanoFramework**.
 
-**nanoFramework** goal is to be a platform that enables the writing of managed code applications for constrained embedded devices. 
+**nanoFramework** goal is to be a platform that enables the writing of managed code applications for constrained embedded devices.
 Developers can harness the familiar IDE Visual Studio and their .NET (C#) knowledge to quickly write applications without having to worry about the low level hardware intricacies of a micro-controller.
 
 Being a developer you'll probably will fit in one (or maybe both :wink:) of the following _profiles_:
 
 - Developer: if your goal is to develop C# applications for micro-controllers.
 - Contributor: if you are interested in actively contributing by coding (native, managed, C, C++, CMake), writing documentation or participating in the overall project organization.
+
+# Sponsoring **nanoFramework**
+
+Most of the core team members and contributors are embedded systems enthusiasts, passionate about coding and people that like challenges. The work on **nanoFramework** is done mostly on their free time. Some of the core members happen to work on companies that sponsor heavily **nanoFramework** and offer their work hours to the project. If you use **nanoFramework** for serious work or want to support it, please donate. This allow for paying the infrastructure cost and more time to be invested on the project. Besides monetary contributions, there are several other ways to contribute. Please read the documentation about this [here](http://docs.nanoframework.net/content/contributing/index.html).
+
+This is how we use the donations:
+
+- Pay for infrastructure costs.
+- Develop public relation actions to get the project known.
+- Support maintainers and contributors that invest a large amount of time in the project.
+- Support projects that **nanoFramework** depends on.
+- Produce documentation, tutorials and other content to support developers using **nanoFramework**.
+- Organize events to demo **nanoFramework**.
+
+## Sponsors
+
+Sponsors will get their logo and link to a website on our GitHub readme and also on our home page.
+
+<a href="https://opencollective.com/nanoframework#support"><img src="https://opencollective.com/nanoframework/tiers/sponsor.svg?avatarHeight=80"></a>
+
+## Backers
+
+Backers are individuals who contribute with money to help support nanoFramework. Every little bit helps and we appreciate all contributions, even the smallest ones.
+
+<a href="https://opencollective.com/nanoframework#support"><img src="https://opencollective.com/nanoframework/tiers/backer.svg?avatarHeight=80"></a>
+
+## Other backers and sponsors
+
+There are other people and organizations that have contributed to **nanoFramework** along the time in several ways: sponsoring the coding of a feature that was missing or needed improvement, paying for an expense, coding a feature or... We would like to acknowledge these sponsors.
+
+<table>
+ <tr>
+  <td><a href="http://www.eclo.solutions"><img src="http://www.eclo.solutions/images/eclo-solutions-logo-tall.svg" height="100" width="151"/></a></td>
+  <td><a href="https://www.orgpal.com"><img src="https://www.orgpal.com/orgpallogo.png" height="100" width="228"/></a></td>
+  <td><a href="http://www.chibios.org"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/ChibiOS_Embeddedware_Official_Logo.jpg" height="100" width="100" alt="ChibiOS RTOS"/></a></td>
+ </tr>
+</table>
 
 ## Firmware for reference boards
 
@@ -71,19 +108,19 @@ Looking for something to work on? Check the list of [up-for-grabs issues](https:
 See some of our guides for more details:
 
 - [Contributing Guide](https://github.com/nanoframework/.github/blob/master/CONTRIBUTING.md)
-- [Contributing workflow](https://docs.nanoframework.net/articles/contributing/contributing-workflow.html)
+- [Contributing workflow](https://docs.nanoframework.net/content/contributing/contributing-workflow.html)
 
 ## Documentation
 
-### [Docs](https://docs.nanoframework.net/articles/intro.html)
+### [Docs](https://docs.nanoframework.net/content/index.html)
 
 The project documentation is a great place to find information about **nanoFramework**, no matter if you are newcomer or a veteran. It's organized in the following categories:
 
 - [API reference](http://docs.nanoframework.net/api) documentation for the various class libraries.
-- [Developing C# applications](https://docs.nanoframework.net/articles/getting-started-guides/getting-started-managed.html#coding-a-hello-world-application) using **nanoFramework**.
-- [Building an image](https://docs.nanoframework.net/articles/building/building.html) to load on a target board.
-- [**nanoFramework** architecture](https://docs.nanoframework.net/articles/architecture/architecture.html) and how the different pieces fit together.
-- [Contributing to **nanoFramework**](https://docs.nanoframework.net/articles/contributing/contributing.html) includes an overview on how you can contribute to the project.
+- [Developing C# applications](https://docs.nanoframework.net/content/getting-started-guides/getting-started-managed.html#coding-a-hello-world-application) using **nanoFramework**.
+- [Building an image](https://docs.nanoframework.net/content/building/index.html) to load on a target board.
+- [**nanoFramework** architecture](https://docs.nanoframework.net/content/architecture/index.html) and how the different pieces fit together.
+- [Contributing to **nanoFramework**](https://docs.nanoframework.net/content/contributing/index.html) includes an overview on how you can contribute to the project.
 
 ### [Blog](https://www.nanoframework.net/blog)
 
@@ -92,43 +129,6 @@ There is a blog where we try to post detailed updates about the development stat
 ### [YouTube channel](https://www.youtube.com/c/nanoFramework)
 
 We also have a YouTube channel where with video tutorials along with feature demos and teasers about new ideas that we are experimenting with.
-
-# Sponsoring **nanoFramework**
-
-Most of the core team members and contributors are embedded systems enthusiasts, passionate about coding and people that like challenges. The work on **nanoFramework** is done mostly on their free time. Some of the core members happen to work on companies that sponsor heavily **nanoFramework** and offer their work hours to the project. If you use **nanoFramework** for serious work or want to support it, please donate. This allow for paying the infrastructure cost and more time to be invested on the project. Besides monetary contributions, there are several other ways to contribute. Please read the documentation about this [here](http://docs.nanoframework.net/articles/contributing/contributing-intro.html).
-
-This is how we use the donations:
-
-- Pay for infrastructure costs.
-- Develop public relation actions to get the project known.
-- Support maintainers and contributors that invest a large amount of time in the project.
-- Support projects that **nanoFramework** depends on.
-- Produce documentation, tutorials and other content to support developers using **nanoFramework**.
-- Organize events to demo **nanoFramework**.
-
-## Sponsors
-
-Sponsors will get their logo and link to a website on our GitHub readme and also on our home page.
-
-<a href="https://opencollective.com/nanoframework#support"><img src="https://opencollective.com/nanoframework/tiers/sponsor.svg?avatarHeight=80"></a>
-
-## Backers
-
-Backers are individuals who contribute with money to help support nanoFramework. Every little bit helps and we appreciate all contributions, even the smallest ones.
-
-<a href="https://opencollective.com/nanoframework#support"><img src="https://opencollective.com/nanoframework/tiers/backer.svg?avatarHeight=80"></a>
-
-## Other backers and sponsors
-
-There are other people and organizations that have contributed to **nanoFramework** along the time in several ways: sponsoring the coding of a feature that was missing or needed improvement, paying for an expense, coding a feature or... We would like to acknowledge these sponsors.
-
-<table>
- <tr>
-  <td><a href="http://www.eclo.solutions"><img src="http://www.eclo.solutions/images/eclo-solutions-logo-tall.svg" height="100" width="151"/></a></td>
-  <td><a href="https://www.orgpal.com"><img src="https://www.orgpal.com/orgpallogo.png" height="100" width="228"/></a></td>
-  <td><a href="http://www.chibios.org"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/ChibiOS_Embeddedware_Official_Logo.jpg" height="100" width="100" alt="ChibiOS RTOS"/></a></td>
- </tr>
-</table>
 
 ## Code of Conduct
 
