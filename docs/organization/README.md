@@ -59,6 +59,14 @@ Follows a list and description of the repositories under **nanoFramework** organ
 
 - [nf-tools](https://github.com/nanoframework/nf-tools) - this repo contains various tools that are required in **nanoFramework** development, usage or repository management.
 
+- [metadata-processor](https://github.com/nanoframework/metadata-processor) - this repo contains the Meta Data Processor that is used when building C# nanoFramework applications. It's main function is to parse the outputs from Roslyn and build proprietary PE files that will be loaded into the nanoFramework target devices.
+
+- [nanoFirmwareFlasher](https://github.com/nanoframework/nanoFirmwareFlasher) - this repo contains the nanoFramework Firmware Flasher that is used to update the firmware on nanoFramework target devices. Along with other flash utilities that are useful in production and on the daily use.
+
+- [hex2dfu](https://github.com/nanoframework/hex2dfu) - this repo contains the hex2dfu utility that is used to pack binary files in DFU files required to update some STM32 chips.
+
+- [esp32-firmware-flasher](https://github.com/nanoframework/esp32-firmware-flasher) - this repo contains the ESP32 firmware flasher tool that is used to update the firmware on ESP32 nanoFramework target devices. It's been superseded by nanoFramework Firmware Flasher.
+
 - [nanoframework.github.io](https://github.com/nanoframework/nanoframework.github.io) - this repo contains the sources and configuration files to generate the **nanoFramework** documentation web site. Any static content, such as articles, guides, how-to's and such is to be checked-in here.
 
 - [ChibiOS](https://github.com/nanoframework/ChibiOS) - this repo contains a mirror of the official ChibiOS SVN repository. It's used as the default source for building **nanoFramework** images.
