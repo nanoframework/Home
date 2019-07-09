@@ -23,6 +23,8 @@ Follows a list and description of the repositories under **nanoFramework** organ
 
 - [lib-nanoFramework.Runtime.Sntp](https://github.com/nanoframework/lib-nanoFramework.Runtime.Sntp) - this repo contains the nanoFramework.Runtime.Sntp library that is used in developing C# applications.
 
+- [lib-System.Devices.Dac](https://github.com/nanoframework/lib-System.Devices.Dac) - this repo contains the nanoFramework.System.Devices.Dac library that is used in developing C# applications that require DAC (Digital Analog Converter) capabilities.
+
 - [lib-nanoFramework.System.Net](https://github.com/nanoframework/lib-nanoFramework.System.Net) - this repo contains the nanoFramework.System.Net library that is used in developing C# applications with networking capabilities.
 
 - [lib-Windows.Devices.Adc](https://github.com/nanoframework/lib-Windows.Devices.Adc) - this repo contains the Windows.Devices.Adc library that is used in developing C# applications.
