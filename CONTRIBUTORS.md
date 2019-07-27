@@ -44,6 +44,10 @@ The following is a list of contributors to the **nanoFramework** project (all re
     <td><a href="https://github.com/ishvedov">Ivan Shvedov</a></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/info-lvsys.png?size=50" height="50" width="50"></td>
+    <td><a href="https://github.com/info-lvsys">Lvsys</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/BusKetZz.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/BusKetZz">Jakub Standarski</a></td>
   </tr>
