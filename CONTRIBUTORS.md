@@ -43,7 +43,6 @@ The following is a list of contributors to the **nanoFramework** project (all re
     <td><img src="https://github.com/ishvedov.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/ishvedov">Ivan Shvedov</a></td>
   </tr>
-
   <tr>
     <td><img src="https://github.com/BusKetZz.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/BusKetZz">Jakub Standarski</a></td>
@@ -59,6 +58,10 @@ The following is a list of contributors to the **nanoFramework** project (all re
   <tr>
     <td><img src="https://github.com/kurtnelle.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/kurtnelle">Kurtnelle</a></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/martin-kuhn.png?size=50" height="50" width="50"></td>
+    <td><a href="https://github.com/martin-kuhn">Martin Kuhn</a></td>
   </tr>
   <tr>
     <td><img src="https://github.com/MateuszKlatecki.png?size=50" height="50" width="50"></td>
