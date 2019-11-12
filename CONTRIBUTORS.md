@@ -76,6 +76,10 @@ The following is a list of contributors to the **nanoFramework** project (all re
     <td><a href="https://github.com/piwi1263">Peter Wessel</a></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/up-streamer.png?size=50" height="50" width="50"></td>
+    <td><a href="https://github.com/up-streamer">Ricardo Santos</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/doingnz.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/doingnz">Richard</a></td>
   </tr>
@@ -110,10 +114,6 @@ The following is a list of contributors to the **nanoFramework** project (all re
   <tr>
     <td><img src="https://github.com/Sirokujira.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/Sirokujira">Tooru Oonuma</a></td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/up-streamer.png?size=50" height="50" width="50"></td>
-    <td><a href="https://github.com/up-streamer">UpStreamer</a></td>
   </tr>
   <tr>
     <td><img src="https://github.com/valoni.png?size=50" height="50" width="50"></td>
