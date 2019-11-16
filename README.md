@@ -115,7 +115,7 @@ See some of our guides for more details:
 
 ## Documentation
 
-### [Docs](https://docs.nanoframework.net/content/index.html)
+### [Docs](https://docs.nanoframework.net)
 
 The project documentation is a great place to find information about **nanoFramework**, no matter if you are newcomer or a veteran. It's organized in the following categories:
 
