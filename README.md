@@ -38,6 +38,10 @@ Sponsors will get their logo and link to a website on our GitHub readme and also
 
 <a href="https://opencollective.com/nanoframework#support"><img src="https://opencollective.com/nanoframework/tiers/sponsor.svg?avatarHeight=80"></a>
 
+### Bronze Sponsors
+
+<a href="https://opencollective.com/nanoframework/tiers/bronze-sponsor/0/website" target="_blank" rel="noopener noreferrer"><img src="https://opencollective.com/nanoframework/tiers/bronze-sponsor/0/avatar.svg"></a>
+
 ## Backers
 
 Backers are individuals who contribute with money to help support nanoFramework. Every little bit helps and we appreciate all contributions, even the smallest ones.
