@@ -40,6 +40,10 @@ The following is a list of contributors to the **nanoFramework** project (all re
     <td><a href="https://github.com/c-born">David Varley</a></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/JohnKiller.png?size=50" height="50" width="50"></td>
+    <td><a href="https://github.com/JohnKiller">Gianni Angelozzi</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/gojimmypi.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/gojimmypi">GoJimmyPi</a></td>
   </tr>
@@ -130,6 +134,10 @@ The following is a list of contributors to the **nanoFramework** project (all re
   <tr>
     <td><img src="https://github.com/tbolon.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/tbolon">Thomas Bolon</a></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/thopiekar.png?size=50" height="50" width="50"></td>
+    <td><a href="https://github.com/thopiekar">Thomas Karl Pietrowski</a></td>
   </tr>
   <tr>
     <td><img src="https://github.com/Sirokujira.png?size=50" height="50" width="50"></td>
