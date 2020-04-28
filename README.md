@@ -102,8 +102,8 @@ You can find [here](docs/organization/README.md) a list and a description of eac
 ## How to Engage, Contribute and Provide Feedback
 
 Some of the best ways to contribute are to try things out, file bugs, and join in design conversations.
-If you are having issues or need a clarification about something, instead of opening an issue the best way is to start a conversation in one of our [Discord](https://discord.gg/gCyBu8T) channels.
-Please select the one that's most appropriate to the matter you are facing.
+
+If you have a question, need clarification on something, need help on a particular situation or want to start a discussion, do not open an issue here. It is best to ask the question on [Stack Overflow](https://stackoverflow.com/questions/tagged/nanoframework) using the `nanoframework` tag or to start a conversation on one of our [Discord channels](https://discordapp.com/invite/gCyBu8T). Make sure to select the channel that's most appropriate to the context so subject matter experts are most likely to answer promptly.
 
 If you've find a bug or can't use Discord, please open an issue at [Issues](https://github.com/nanoframework/Home/issues).
 We ask you to open an issue only when you have a real and confirmed one. Don't open an issue for support requests or to start a discussion. For that you'll get a better (and quicker!) support/feedback in one of the [Discord](https://discord.gg/gCyBu8T) channels.
