@@ -2,40 +2,37 @@
 name: Class libraries or API bug report
 about: Create a bug report related with one of the class libraries, BCL, API or NuGet packages
 title: ''
-labels: ''
+labels: "Type: Bug","Status: Waiting triage"
 assignees: ''
 
 ---
 
-Please read the following information before posting the issue.
+Please read the following information before posting the issue. Whenever it's clear that the below content was not read, the issue is likely to be closed with "please read the template". Don't take offense at this. It is simply a time management decision. Whenever an issue is raised without reading the template and provide the required information, then often too much time is spent going back and forth to obtain information that is outlined below.
 
 # **Before posting the issue**
 
-If you need clarification on something, need help on a particular situation or want to start a discussion, instead of opening an issue it is best to start a conversation on one of our Discord channels.
-Go there and select the channel that's most appropriate to the context so subject matter experts are most likely to answer promptly.
-You can join our lively [Discord community](https://discordapp.com/invite/gCyBu8T)
+If you have a question, need clarification on something, need help on a particular situation or want to start a discussion, do not open an issue here. It is best to ask the question on [Stack Overflow](https://stackoverflow.com/questions/tagged/nanoframework) using the `nanoframework` tag or to start a conversation on one of our [Discord channels](https://discordapp.com/invite/gCyBu8T). Make sure to select the channel that's most appropriate to the context so subject matter experts are most likely to answer promptly.
+Issues with questions will most likely be automatically closed.
 
 :exclamation: Remove the content above here and fill out details below. :exclamation:
 
-## Details about Problem
+### Details about Problem
 
 **nanoFramework area:** (C# code | Nuget packages | Community contributions | Documentation )
 
-**VS version<!--(if relevant)-->:**
+**VS version<!--(if relevant)-->:** (2017 | 2019 )
 
 **VS extension version<!--(if relevant)-->:**
 
 **Target<!--(if relevant)-->:**
 
-**Firmware image version<!--(if relevant)-->:**
-
 **Device capabilities output<!--(if relevant)-->:**
 
-## Description
+### Description
 
 A clear and concise description of what the bug is.
 
-## Detailed repro steps so we can see the same problem
+### Detailed repro steps so we can see the same problem
 
 1.
 
@@ -43,21 +40,25 @@ A clear and concise description of what the bug is.
 
 ...
 
-## Other suggested things
+### Other suggested things
 <!-- if applicable/relevant -->
 
-## Expected behaviour
+### Expected behaviour
 
 A clear and concise description of what you expected to happen.
 
-### Sample Project
+#### Sample Project
 <!-- if applicable -->
-<!--Very helpful if you can zip a project and paste into this issue!-->
+<!--Very helpful if you provide a minimal solution/project that replicates the issue. Preaferably a link to a public GitHub repository or a zip with that solution. This will allow the maintainers to smoke test the issue and the possible fix.-->
 
-## Screenshot
+### Screenshot
 <!-- if applicable/relevant -->
 <!--Very helpful if you send along a few screenshots to help visualize the issue!-->
 
-## Additional context
+### Additional context
 
 Add any other context about the problem here.
+
+### Make an effort to fix the bug
+
+Attempt to submit a [Pull Request (PR)](https://help.github.com/articles/about-pull-requests/) that fixes the bug. Include in this PR a test that verifies the fix. If you were not able to fix the bug, a PR that illustrates your partial progress will suffice.

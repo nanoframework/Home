@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+    - name: nanoFramework Discord Community
+      url: https://discordapp.com/invite/gCyBu8T
+      about: Please join for conversations, discussions and doubts.
+    - name: Stack Overflow
+      url: https://stackoverflow.com/questions/tagged/nanoframework
+      about: Please ask and answer questions here.
