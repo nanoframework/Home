@@ -2,7 +2,7 @@
 name: Class libraries or API bug report
 about: Create a bug report related with one of the class libraries, BCL, API or NuGet packages
 title: ''
-labels: "Type: Bug","Status: Waiting triage"
+labels: ["Type: Bug","Status: Waiting triage"]
 assignees: ''
 
 ---

@@ -2,7 +2,7 @@
 name: Firmware bug report
 about: Create a bug report related with firmware
 title: ''
-labels: "Type: Bug","Status: Waiting triage"
+labels: ["Type: Bug","Status: Waiting triage"]
 assignees: ''
 
 ---
