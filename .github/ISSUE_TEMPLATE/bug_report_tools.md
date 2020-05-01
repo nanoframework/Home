@@ -2,7 +2,7 @@
 name: Tools bug report
 about: Create a bug report related with one of our tools, like the Visual Studio extension
 title: ''
-labels: "Type: Bug","Status: Waiting triage"
+labels: ["Type: Bug","Status: Waiting triage"]
 assignees: ''
 
 ---
