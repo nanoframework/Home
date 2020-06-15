@@ -63,4 +63,4 @@ Add any other context about the problem here.
 
 Attempt to submit a [Pull Request (PR)](https://help.github.com/articles/about-pull-requests/) that fixes the bug. Include in this PR a test that verifies the fix. If you were not able to fix the bug, a PR that illustrates your partial progress will suffice.
 
-<!--- bug-report-tag DO NOT REMOVE -->
+<!--- bug-report-clas-lib-tag DO NOT REMOVE -->
