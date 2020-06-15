@@ -35,3 +35,5 @@ If you know how to add whatever you're suggesting, let us know and have a [Pull 
 If you are uncertain if the feature will be accepted, outline the proposal to confirm it is viable before commiting time and effort to it.
 
 Even if the feature is a good idea and viable, it may not be accepted since the ongoing effort in maintaining the feature may outweigh the benefit it delivers.
+
+<!--- feature-request-tag DO NOT REMOVE -->
