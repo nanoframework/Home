@@ -23,6 +23,8 @@ If you have a question, need clarification on something, need help on a particul
 
 Worked before? If so, with which nanoFramework image version:
 
+**Device capabilities output<!--(if relevant)-->:**
+
 ### Description
 
 A clear and concise description of what the bug is.
