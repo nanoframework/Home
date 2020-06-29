@@ -36,4 +36,4 @@ If you are uncertain if the feature will be accepted, outline the proposal to co
 
 Even if the feature is a good idea and viable, it may not be accepted since the ongoing effort in maintaining the feature may outweigh the benefit it delivers.
 
-<!--- feature-request-tag DO NOT REMOVE -->
+<!-- feature-request-tag DO NOT REMOVE -->
