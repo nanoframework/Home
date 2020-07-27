@@ -6,12 +6,12 @@
 -----
 Document Language: [English](README.md) | [简体中文](README.zh-cn.md)
 
-# **nanoFramework** Home
+# .NET **nanoFramework** Home
 
-This _Home_ repository is the starting point for developers that want to learn about **nanoFramework**, contribute to it or opening issues.
-It contains links to the various GitHub repositories used by **nanoFramework**.
+This _Home_ repository is the starting point for developers that want to learn about .NET **nanoFramework**, contribute to it or opening issues.
+It contains links to the various GitHub repositories used by .NET **nanoFramework**.
 
-**nanoFramework** goal is to be a platform that enables the writing of managed code applications for constrained embedded devices.
+.NET **nanoFramework** goal is to be a platform that enables the writing of managed code applications for constrained embedded devices.
 Developers can harness the familiar IDE Visual Studio and their .NET (C#) knowledge to quickly write applications without having to worry about the low level hardware intricacies of a micro-controller.
 
 Being a developer you'll probably will fit in one (or maybe both :wink:) of the following _profiles_:
@@ -19,18 +19,18 @@ Being a developer you'll probably will fit in one (or maybe both :wink:) of the 
 - Developer: if your goal is to develop C# applications for micro-controllers.
 - Contributor: if you are interested in actively contributing by coding (native, managed, C, C++, CMake), writing documentation or participating in the overall project organization.
 
-# Sponsoring **nanoFramework**
+# Sponsoring .NET **nanoFramework**
 
-Most of the core team members and contributors are embedded systems enthusiasts, passionate about coding and people that like challenges. The work on **nanoFramework** is done mostly on their free time. Some of the core members happen to work on companies that sponsor heavily **nanoFramework** and offer their work hours to the project. If you use **nanoFramework** for serious work or want to support it, please donate. This allow for paying the infrastructure cost and more time to be invested on the project. Besides monetary contributions, there are several other ways to contribute. Please read the documentation about this [here](http://docs.nanoframework.net/content/contributing/index.html).
+Most of the core team members and contributors are embedded systems enthusiasts, passionate about coding and people that like challenges. The work on .NET **nanoFramework** is done mostly on their free time. Some of the core members happen to work on companies that sponsor heavily **nanoFramework** and offer their work hours to the project. If you use .NET **nanoFramework** for serious work or want to support it, please donate. This allow for paying the infrastructure cost and more time to be invested on the project. Besides monetary contributions, there are several other ways to contribute. Please read the documentation about this [here](http://docs.nanoframework.net/content/contributing/index.html).
 
 This is how we use the donations:
 
 - Pay for infrastructure costs.
 - Develop public relation actions to get the project known.
 - Support maintainers and contributors that invest a large amount of time in the project.
-- Support projects that **nanoFramework** depends on.
-- Produce documentation, tutorials and other content to support developers using **nanoFramework**.
-- Organize events to demo **nanoFramework**.
+- Support projects that .NET **nanoFramework** depends on.
+- Produce documentation, tutorials and other content to support developers using .NET **nanoFramework**.
+- Organize events to demo .NET **nanoFramework**.
 
 ## Sponsors
 
@@ -51,7 +51,7 @@ Backers are individuals who contribute with money to help support nanoFramework.
 
 ## Other backers and sponsors
 
-There are other people and organizations that have contributed to **nanoFramework** along the time in several ways: sponsoring the coding of a feature that was missing or needed improvement, paying for an expense, coding a feature or... We would like to acknowledge these sponsors.
+There are other people and organizations that have contributed to .NET **nanoFramework** along the time in several ways: sponsoring the coding of a feature that was missing or needed improvement, paying for an expense, coding a feature or... We would like to acknowledge these sponsors.
 
 <table>
  <tr>
@@ -127,13 +127,13 @@ See some of our guides for more details:
 
 ### [Docs](https://docs.nanoframework.net)
 
-The project documentation is a great place to find information about **nanoFramework**, no matter if you are newcomer or a veteran. It's organized in the following categories:
+The project documentation is a great place to find information about .NET **nanoFramework**, no matter if you are newcomer or a veteran. It's organized in the following categories:
 
 - [API reference](http://docs.nanoframework.net/api) documentation for the various class libraries.
-- [Developing C# applications](https://docs.nanoframework.net/content/getting-started-guides/getting-started-managed.html#coding-a-hello-world-application) using **nanoFramework**.
+- [Developing C# applications](https://docs.nanoframework.net/content/getting-started-guides/getting-started-managed.html#coding-a-hello-world-application) using .NET **nanoFramework**.
 - [Building an image](https://docs.nanoframework.net/content/building/index.html) to load on a target board.
-- [**nanoFramework** architecture](https://docs.nanoframework.net/content/architecture/index.html) and how the different pieces fit together.
-- [Contributing to **nanoFramework**](https://docs.nanoframework.net/content/contributing/index.html) includes an overview on how you can contribute to the project.
+- [.NET **nanoFramework** architecture](https://docs.nanoframework.net/content/architecture/index.html) and how the different pieces fit together.
+- [Contributing to .NET **nanoFramework**](https://docs.nanoframework.net/content/contributing/index.html) includes an overview on how you can contribute to the project.
 
 ### [Blog](https://www.nanoframework.net/blog)
 

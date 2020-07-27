@@ -6,29 +6,29 @@
 -----
 文档语言: [English](README.md) | [简体中文](README.zh-cn.md)
 
-# **nanoFramework** 首页
+# .NET **nanoFramework** 首页
 
-本库是开发者了解 **nanoFramework** 的起点，也可以贡献或提问。它包含了 **nanoFramework** 所使用到的各个GitHub库链接。
+本库是开发者了解 .NET **nanoFramework** 的起点，也可以贡献或提问。它包含了 .NET **nanoFramework** 所使用到的各个GitHub库链接。
 
-**nanoFramework** 的目标是在受限嵌入式设备上使用托管代码编写应用。开发者可以利用熟悉的IDE(Visual Studio)和 .NET(C#)知识快速编写应用程序，而无需担心微控制器的低级硬件复杂性。
+.NET **nanoFramework** 的目标是在受限嵌入式设备上使用托管代码编写应用。开发者可以利用熟悉的IDE(Visual Studio)和 .NET(C#)知识快速编写应用程序，而无需担心微控制器的低级硬件复杂性。
 
 作为一名开发者，你可以选择以下一种（或两种）角色：
 
 - 开发者：如果你的目标是为微控制器开发C#应用。
 - 贡献者：如果你有兴趣通过编码（原生，托管，C/C++，CMake）积极贡献，包括编写文档或者参与整个项目组织。
 
-# 赞助 **nanoFramework**
+# 赞助 .NET **nanoFramework**
 
-大多数核心团队成员和贡献者都是嵌入式系统爱好者，热衷于编码和喜欢挑战的人。**nanoFramework** 工作都是他们在工作之余完成。一些核心成员恰好工作于那些大力赞助 **nanoFramework** 并为其提供工作时间的公司。如果你想把 **nanoFramework** 用于正式工作并支持它，请捐赠。这样可以支付基础设施成本，并为项目投入更多的时间。除了货币捐助，还有其它几种捐助方式，请参考 [这里](http://docs.nanoframework.net/content/contributing/index.html).
+大多数核心团队成员和贡献者都是嵌入式系统爱好者，热衷于编码和喜欢挑战的人。.NET **nanoFramework** 工作都是他们在工作之余完成。一些核心成员恰好工作于那些大力赞助 .NET **nanoFramework** 并为其提供工作时间的公司。如果你想把 .NET **nanoFramework** 用于正式工作并支持它，请捐赠。这样可以支付基础设施成本，并为项目投入更多的时间。除了货币捐助，还有其它几种捐助方式，请参考 [这里](http://docs.nanoframework.net/content/contributing/index.html).
 
 我们如何使用捐赠：
 
 - 支付基础设施成本。
 - 宣传推广项目。
 - 支持在项目中投入大量时间的维护人员和贡献者。
-- 支持 **nanoFramework** 所依赖的项目。
-- 制作产品文档、教程以及其它内容，以支持使用 **nanoFramework** 的其他开发人员。
-- 组织活动演示 **nanoFramework**
+- 支持 .NET **nanoFramework** 所依赖的项目。
+- 制作产品文档、教程以及其它内容，以支持使用 .NET **nanoFramework** 的其他开发人员。
+- 组织活动演示 .NET **nanoFramework**
 
 ## 赞助商
 
@@ -38,13 +38,13 @@
 
 ## 支持者
 
-支持者是那些用金钱帮助支持 **nanoFramework** 的人。每一点点的帮助，我们都很感激所有的贡献，即使是最小的贡献。
+支持者是那些用金钱帮助支持 .NET **nanoFramework** 的人。每一点点的帮助，我们都很感激所有的贡献，即使是最小的贡献。
 
 <a href="https://opencollective.com/nanoframework#support"><img src="https://opencollective.com/nanoframework/tiers/backer.svg?avatarHeight=80"></a>
 
 ## 其他支持者和赞助商
 
-还有其他人和组织一直以多种方式为**NanoFramework**做出贡献：赞助对缺失或需要改进的功能进行编码、支付费用、对功能进行编码或……我们要感谢这些赞助商。
+还有其他人和组织一直以多种方式为.NET **NanoFramework**做出贡献：赞助对缺失或需要改进的功能进行编码、支付费用、对功能进行编码或……我们要感谢这些赞助商。
 
 <table>
  <tr>
@@ -119,13 +119,13 @@
 
 ### [文档](https://docs.nanoframework.net/content/index.html)
 
-无论您是新手还是老手，项目文档都是查找有关**NanoFramework**信息的好地方。它按以下类别组织：
+无论您是新手还是老手，项目文档都是查找有关.NET **nanoFramework**信息的好地方。它按以下类别组织：
 
 - [API手册](http://docs.nanoframework.net/api) 各种类库的文档。
-- [开发C#应用](https://docs.nanoframework.net/content/getting-started-guides/getting-started-managed.html#coding-a-hello-world-application) 使用 **nanoFramework**.
+- [开发C#应用](https://docs.nanoframework.net/content/getting-started-guides/getting-started-managed.html#coding-a-hello-world-application) 使用 .NET **nanoFramework**.
 - [编译镜像](https://docs.nanoframework.net/content/building/index.html) 加载到目标板上。
-- [**nanoFramework**架构](https://docs.nanoframework.net/content/architecture/index.html) 不同的部分是如何组合在一起的。
-- [贡献**nanoFramework**](https://docs.nanoframework.net/content/contributing/index.html) 包括如何为项目做出贡献的概述。
+- [.NET **nanoFramework**架构](https://docs.nanoframework.net/content/architecture/index.html) 不同的部分是如何组合在一起的。
+- [贡献.NET **nanoFramework**](https://docs.nanoframework.net/content/contributing/index.html) 包括如何为项目做出贡献的概述。
 
 ### [博客](https://www.nanoframework.net/blog)
 

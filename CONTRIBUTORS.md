@@ -1,6 +1,6 @@
-## **nanoFramework** Contributors
+## .NET **nanoFramework** Contributors
 
-The following is a list of contributors to the **nanoFramework** project (all repositories), in alphabetical order.
+The following is a list of contributors to the .NET **nanoFramework** project (all repositories), in alphabetical order.
 
 <table>
   <tr>

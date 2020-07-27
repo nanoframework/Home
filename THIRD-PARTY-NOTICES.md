@@ -1,10 +1,10 @@
 ## Third party licensing and copyright notices
 
-**nanoFramework** components use third-party libraries and other resources that may be distributed under licenses different than the one with our repositories.
+.NET **nanoFramework** components use third-party libraries and other resources that may be distributed under licenses different than the one with our repositories.
 
 Attributions and license notices for test cases originally authored by third parties can be found in the respective test directories.
 
-In the event that we accidentally failed to list a required notice, please bring it to our attention by raising an issue, or reaching out in the Discor community.
+In the event that we accidentally failed to list a required notice, please bring it to our attention by raising an issue, or reaching out in the Discord community.
 
 _The attached notices are provided for information only._
 
