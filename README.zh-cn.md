@@ -8,9 +8,13 @@
 
 # .NET **nanoFramework** 首页
 
+[<img align="right" width="100px" src="https://dotnetfoundation.org/img/logo_big.svg" />](https://dotnetfoundation.org/)
+
 本库是开发者了解 .NET **nanoFramework** 的起点，也可以贡献或提问。它包含了 .NET **nanoFramework** 所使用到的各个GitHub库链接。
 
 .NET **nanoFramework** 的目标是在受限嵌入式设备上使用托管代码编写应用。开发者可以利用熟悉的IDE(Visual Studio)和 .NET(C#)知识快速编写应用程序，而无需担心微控制器的低级硬件复杂性。
+
+它是 [.NET Foundation](https://www.dotnetfoundation.org/) 的一部分。
 
 作为一名开发者，你可以选择以下一种（或两种）角色：
 
@@ -115,9 +119,13 @@
 - [贡献指南](https://github.com/nanoframework/.github/blob/master/CONTRIBUTING.md)
 - [贡献流程](https://docs.nanoframework.net/content/contributing/contributing-workflow.html)
 
+## 许可证
+
+.NET **nanoFramework** 库、固件映像、工具和示例根据 [MIT license](LICENSE.md) 获得许可。
+
 ## 文档
 
-### [文档](https://docs.nanoframework.net/content/index.html)
+### [文档](https://docs.nanoframework.net)
 
 无论您是新手还是老手，项目文档都是查找有关.NET **nanoFramework**信息的好地方。它按以下类别组织：
 
@@ -137,4 +145,5 @@
 
 ## 行为准则
 
-本项目采用了 [Contributor Covenant](http://contributor-covenant.org/) 规范来阐明社区预期行为。
+该项目通过了《贡献者公约》界定的行为守则，以澄清我们社区的预期行为。
+有关详细信息，请参阅 [.NET Foundation 行为准则](https://dotnetfoundation.org/行为准则)。

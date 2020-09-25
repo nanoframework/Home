@@ -8,11 +8,15 @@ Document Language: [English](README.md) | [简体中文](README.zh-cn.md)
 
 # .NET **nanoFramework** Home
 
+[<img align="right" width="100px" src="https://dotnetfoundation.org/img/logo_big.svg" />](https://dotnetfoundation.org/)
+
 This _Home_ repository is the starting point for developers that want to learn about .NET **nanoFramework**, contribute to it or opening issues.
 It contains links to the various GitHub repositories used by .NET **nanoFramework**.
 
 .NET **nanoFramework** goal is to be a platform that enables the writing of managed code applications for constrained embedded devices.
 Developers can harness the familiar IDE Visual Studio and their .NET (C#) knowledge to quickly write applications without having to worry about the low level hardware intricacies of a micro-controller.
+
+It is part of the [.NET Foundation](https://www.dotnetfoundation.org/).
 
 Being a developer you'll probably will fit in one (or maybe both :wink:) of the following _profiles_:
 
@@ -123,6 +127,10 @@ See some of our guides for more details:
 - [Contributing Guide](https://github.com/nanoframework/.github/blob/master/CONTRIBUTING.md)
 - [Contributing workflow](https://docs.nanoframework.net/content/contributing/contributing-workflow.html)
 
+## License
+
+.NET **nanoFramework** libraries, firmware images, tools and samples are licensed under the [MIT license](LICENSE.md).
+
 ## Documentation
 
 ### [Docs](https://docs.nanoframework.net)
@@ -145,5 +153,5 @@ We also have a YouTube channel where with video tutorials along with feature dem
 
 ## Code of Conduct
 
-This project has adopted the code of conduct defined by the [Contributor Covenant](http://contributor-covenant.org/)
-to clarify expected behavior in our community.
+This project has adopted the code of conduct defined by the Contributor Covenant to clarify expected behavior in our community.
+For more information see the [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct). 
