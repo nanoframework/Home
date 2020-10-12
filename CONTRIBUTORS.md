@@ -12,6 +12,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><a href="https://github.com/aline-almeida">Aline Almeida</a></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/PlasmaEye.png?size=50&" height="50" width="50"></td>
+    <td><a href="https://github.com/PlasmaEye">Andrew Fahrenholtz</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/antoniofagundes.png?size=50&" height="50" width="50"></td>
     <td><a href="https://github.com/antoniofagundes">António Fagundes</a></td>
   </tr>
@@ -38,6 +42,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
   <tr>
     <td><img src="https://github.com/cw2.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/cw2">CW2</a></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/damianog.png?size=50&" height="50" width="50"></td>
+    <td><a href="https://github.com/damianog">Damiano</a></td>
   </tr>
   <tr>
     <td><img src="https://github.com/Dweaver309.png?size=50" height="50" width="50"></td>
