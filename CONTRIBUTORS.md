@@ -121,7 +121,7 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
   </tr>
   <tr>
     <td><img src="https://github.com/flyingoverclouds.png?size=50" height="50" width="50"></td>
-    <td><a href="https://github.com/flyingoverclouds">Nicolas Clrec</a></td>
+    <td><a href="https://github.com/flyingoverclouds">Nicolas Clerc</a></td>
   </tr>
   <tr>
     <td><img src="https://github.com/patrick-haldi.png?size=50" height="50" width="50"></td>
