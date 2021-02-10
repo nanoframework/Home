@@ -1,8 +1,11 @@
 blank_issues_enabled: false
 contact_links:
-    - name: nanoFramework Discord Community
+    - name: .NET nanoFramework Discord Community
       url: https://discordapp.com/invite/gCyBu8T
-      about: Please join for conversations, discussions and doubts.
+      about: Please join for conversations, discussions and questions.
     - name: Stack Overflow
       url: https://stackoverflow.com/questions/tagged/nanoframework
       about: Please ask and answer questions here.
+    - name: GitHub Discussions
+      url: https://github.com/nanoframework/Home/discussions
+      about: Alternative channel for asking questions.
