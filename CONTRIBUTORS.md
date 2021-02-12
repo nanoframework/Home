@@ -4,6 +4,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
 
 <table>
   <tr>
+    <td><img src="https://github.com/amgarnier.png?size=50&" height="50" width="50"></td>
+    <td><a href="https://github.com/amgarnier">Aaron Garnier</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/AdrianSoundy.png?size=50&" height="50" width="50"></td>
     <td><a href="https://github.com/AdrianSoundy">Adrian Soundy</a></td>
   </tr>
