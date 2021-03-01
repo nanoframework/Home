@@ -11,7 +11,10 @@ Please read the following information before posting the issue. Whenever it's cl
 
 # **Before posting the issue**
 
-If you have a question, need clarification on something, need help on a particular situation or want to start a discussion, do not open an issue here. It is best to ask the question on [Stack Overflow](https://stackoverflow.com/questions/tagged/nanoframework) using the `nanoframework` tag or to start a conversation on one of our [Discord channels](https://discordapp.com/invite/gCyBu8T). Make sure to select the channel that's most appropriate to the context so subject matter experts are most likely to answer promptly.
+If you have a **question**, need clarification on something, need help on a particular situation or want to start a discussion, **DO NOT** open an issue here. _It will be automatically closed!_ 
+
+Ask the question on one of our [Discord channels](https://discordapp.com/invite/gCyBu8T), making sure to select the channel that's most appropriate to the context so subject matter experts are most likely to answer promptly. 
+Or, alternatively, on [Stack Overflow](https://stackoverflow.com/questions/tagged/nanoframework) using the `nanoframework` tag. 
 
 :exclamation: Remove the content above here and fill out details below. :exclamation:
 
