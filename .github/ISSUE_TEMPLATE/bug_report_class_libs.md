@@ -31,8 +31,7 @@ Or, alternatively, on [Stack Overflow](https://stackoverflow.com/questions/tagge
 **Device capabilities output<!--(if relevant)-->:**
 
 ### Description
-
-A clear and concise description of what the bug is.
+<!--A clear and concise description of what the bug is.-->
 
 ### Detailed repro steps so we can see the same problem
 
@@ -46,23 +45,20 @@ A clear and concise description of what the bug is.
 <!-- if applicable/relevant -->
 
 ### Expected behaviour
-
-A clear and concise description of what you expected to happen.
+<!-- A clear and concise description of what you expected to happen.-->
 
 #### Sample Project
 <!-- if applicable -->
-<!--Very helpful if you provide a minimal solution/project that replicates the issue. Preaferably a link to a public GitHub repository or a zip with that solution. This will allow the maintainers to smoke test the issue and the possible fix.-->
+<!--Very helpful if you provide a minimal solution/project that replicates the issue. Preferably a link to a public GitHub repository or a zip with that solution. This will allow the maintainers to smoke test the issue and the possible fix.-->
 
 ### Screenshot
 <!-- if applicable/relevant -->
 <!--Very helpful if you send along a few screenshots to help visualize the issue!-->
 
 ### Additional context
+<!-- Add any other context about the problem here.-->
 
-Add any other context about the problem here.
-
-### Make an effort to fix the bug
-
-Attempt to submit a [Pull Request (PR)](https://help.github.com/articles/about-pull-requests/) that fixes the bug. Include in this PR a test that verifies the fix. If you were not able to fix the bug, a PR that illustrates your partial progress will suffice.
+### I've made an effort to fix the bug
+<!-- Attempt to submit a [Pull Request (PR)](https://help.github.com/articles/about-pull-requests/) that fixes the bug. Include in this PR a test that verifies the fix. If you were not able to fix the bug, a PR that illustrates your partial progress will suffice. -->
 
 <!-- bug-report-clas-lib-tag DO NOT REMOVE -->
