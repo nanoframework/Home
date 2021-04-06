@@ -204,6 +204,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><a href="https://github.com/TerryFogg">Terry Fogg</a></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/TiagoCasas.png?size=50" height="50" width="50"></td>
+    <td><a href="https://github.com/TiagoCasas">Tiago Casas</a></td>
+  </tr>  
+  <tr>
     <td><img src="https://github.com/tbolon.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/tbolon">Thomas Bolon</a></td>
   </tr>
