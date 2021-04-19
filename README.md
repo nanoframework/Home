@@ -18,10 +18,19 @@ Developers can harness the familiar IDE Visual Studio and their .NET (C#) know
 
 It is part of the [.NET Foundation](https://www.dotnetfoundation.org/).
 
-Being a developer you'll probably will fit in one (or maybe both :wink:) of the following _profiles_:
+Being a *developer* you'll probably will fit in one (or more than one😉) of the following *profiles*:
 
-- Developer: if your goal is to develop C# applications for micro-controllers.
-- Contributor: if you are interested in actively contributing by coding (native, managed, C, C++, CMake), writing documentation or participating in the overall project organization.
+- You can enjoy to develop C# applications for micro-controllers.
+- You can become a contributor as there are lots of areas to express yourself:
+  - C/C++ native drivers working low level directly on the MCU with our Platform Abstraction Layer and Hardware Abstraction Layer, RTOS, developing .NET CLR for nanoFramework.
+  - Managed C#  to write new classes and drivers to add more bindings, libraries to .NET nanoFramework.
+  - Managed C# to write tools like the Visual Studio Extensibility, debugger and others mostly .NET Core/.NET 5 CLI applications.
+  - Help in setting up Azure DevOps pipelines to automate as much as possible.
+  - Writing and improving our Unit Tests.
+  - Helping others by answering their questions.
+  - Writing and improving documentation, doing PR reviews or participating in the overall project organization.
+
+.NET nanoFramework is a fun and interesting way to learn. It’s a complete project with a lot of deep engineering. You’ll find a vibrant [community](https://github.com/nanoframework/Home#how-to-engage-contribute-and-provide-feedback) to help you and you’ll be able to help as well. We do welcome all kind of contributions and we aim to give visibility to our contributors. 
 
 # Sponsoring .NET **nanoFramework**
 
