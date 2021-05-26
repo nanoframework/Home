@@ -4,6 +4,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
 
 <table>
   <tr>
+    <td><img src="https://github.com/AndersTh.png?size=50&" height="50" width="50"></td>
+    <td><a href="https://github.com/AndersTh">Anders Thun</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/amgarnier.png?size=50&" height="50" width="50"></td>
     <td><a href="https://github.com/amgarnier">Aaron Garnier</a></td>
   </tr>
@@ -109,11 +113,15 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
   </tr>
   <tr>
     <td><img src="https://github.com/josesimoes.png?size=50" height="50" width="50"></td>
-    <td><a href="https://github.com/kjhughes097">José Simões</a></td>
+    <td><a href="https://github.com/josesimoes">José Simões</a></td>
   </tr>
   <tr>
     <td><img src="https://github.com/kjhughes097.png?size=50" height="50" width="50"></td>
-    <td><a href="https://github.com/josesimoes">Ken Hughes</a></td>
+    <td><a href="https://github.com/kjhughes097">Ken Hughes</a></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/gukoff.png?size=50" height="50" width="50"></td>
+    <td><a href="https://github.com/gukoff">Konstantin Gukov</a></td>
   </tr>
   <tr>
     <td><img src="https://github.com/Ellerbach.png?size=50" height="50" width="50"></td>
@@ -132,12 +140,20 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><a href="https://github.com/manuelxmarquez">Manuel Marquez</a></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/CaronteDemonio.png?size=50" height="50" width="50"></td>
+    <td><a href="https://github.com/CaronteDemonio">Marco Agnoli</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/martin-kuhn.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/martin-kuhn">Martin Kuhn</a></td>
   </tr>
   <tr>
     <td><img src="https://github.com/MateuszKlatecki.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/MateuszKlatecki">Mateusz Klatecki</a></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/zeier.png?size=50" height="50" width="50"></td>
+    <td><a href="https://github.com/zeier">Max Zeier</a></td>
   </tr>
   <tr>
     <td><img src="https://github.com/morali.png?size=50" height="50" width="50"></td>
@@ -168,6 +184,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><a href="https://github.com/doingnz">Richard</a></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/rschiefer.png?size=50" height="50" width="50"></td>
+    <td><a href="https://github.com/rschiefer">Robb Schiefer</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/RolandoMagico.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/RolandoMagico">Rolando</a></td>
   </tr>
@@ -182,6 +202,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
   <tr>
     <td><img src="https://github.com/sake402.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/sake402">Samson Ojetade</a></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/TechPreacher.png?size=50" height="50" width="50"></td>
+    <td><a href="https://github.com/TechPreacher">Sascha Corti</a></td>
   </tr>
   <tr>
     <td><img src="https://github.com/SandorDobos.png?size=50" height="50" width="50"></td>
