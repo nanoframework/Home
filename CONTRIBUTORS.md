@@ -4,10 +4,6 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
 
 <table>
   <tr>
-    <td><img src="https://github.com/AndersTh.png?size=50&" height="50" width="50"></td>
-    <td><a href="https://github.com/AndersTh">Anders Thun</a></td>
-  </tr>
-  <tr>
     <td><img src="https://github.com/amgarnier.png?size=50&" height="50" width="50"></td>
     <td><a href="https://github.com/amgarnier">Aaron Garnier</a></td>
   </tr>
@@ -16,12 +12,20 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><a href="https://github.com/AdrianSoundy">Adrian Soundy</a></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/alberk8.png?size=50&" height="50" width="50"></td>
+    <td><a href="https://github.com/alberk8">Albert K</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/A13xs.png?size=50&" height="50" width="50"></td>
     <td><a href="https://github.com/A13xs">Alex Dguez</a></td>
   </tr>
   <tr>
     <td><img src="https://github.com/aline-almeida.png?size=50&" height="50" width="50"></td>
     <td><a href="https://github.com/aline-almeida">Aline Almeida</a></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/AndersTh.png?size=50&" height="50" width="50"></td>
+    <td><a href="https://github.com/AndersTh">Anders Thun</a></td>
   </tr>
   <tr>
     <td><img src="https://github.com/PlasmaEye.png?size=50&" height="50" width="50"></td>
