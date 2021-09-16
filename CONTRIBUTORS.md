@@ -44,6 +44,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><a href="https://github.com/KiwiBryn">Bryn Lewis</a></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/CarlosSardo.png?size=50&" height="50" width="50" ></td>
+    <td><a href="https://github.com/CarlosSardo">Carlos Sardo</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/NemesisXB.png?size=50&" height="50" width="50"></td>
     <td><a href="https://github.com/NemesisXB">Christiaan Alberts</a></td>
   </tr>
@@ -80,6 +84,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><a href="https://github.com/denis-susan">Denis Susan</a></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/devbotas.png?size=50&" height="50" width="50" ></td>
+    <td><a href="https://github.com/devbotas">devbotas</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/edleno2.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/edleno2">Edward Lenoir</a></td>
   </tr>
@@ -102,6 +110,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
   <tr>
     <td><img src="https://github.com/hbraasch.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/hbraasch">Heinrich Braasch</a></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/ikivanc.png?size=50&" height="50" width="50" ></td>
+    <td><a href="https://github.com/ikivanc">Ibrahim KIVANC</a></td>
   </tr>
   <tr>
     <td><img src="https://github.com/ishvedov.png?size=50" height="50" width="50"></td>
@@ -242,6 +254,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
   <tr>
     <td><img src="https://github.com/steffalk.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/steffalk">Stefan Falk</a></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/zoekdestep.png?size=50&" height="50" width="50" ></td>
+    <td><a href="https://github.com/zoekdestep">Stephanie Visser</a></td>
   </tr>
   <tr>
     <td><img src="https://github.com/Roadrunner67.png?size=50" height="50" width="50"></td>
