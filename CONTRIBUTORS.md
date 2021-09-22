@@ -36,6 +36,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><a href="https://github.com/antoniofagundes">António Fagundes</a></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/bart-jansen.png?size=50&" height="50" width="50" ></td>
+    <td><a href="https://github.com/bart-jansen">Bart Jansen</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/techcap.png?size=50&" height="50" width="50"></td>
     <td><a href="https://github.com/techcap">Bongho Lee</a></td>
   </tr>
@@ -126,6 +130,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
   <tr>
     <td><img src="https://github.com/DogFive.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/DogFive">James A</a></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/jantielens.png?size=50&" height="50" width="50" ></td>
+    <td><a href="https://github.com/jantielens">Jan Tielens</a></td>
   </tr>
   <tr>
     <td><img src="https://github.com/jskubick.png?size=50" height="50" width="50"></td>
