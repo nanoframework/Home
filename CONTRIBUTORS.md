@@ -164,6 +164,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><a href="https://github.com/Ellerbach">Laurent Ellerbach</a></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/laurentksh.png?size=50" height="50" width="50"></td>
+    <td><a href="https://github.com/laurentksh">Laurent Keusch</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/info-lvsys.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/info-lvsys">Lvsys</a></td>
   </tr>
