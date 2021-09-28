@@ -323,9 +323,12 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><img src="https://github.com/xas.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/xas">Xas</a></td>
   </tr>
-  </tr>
   <tr>
     <td><img src="https://github.com/gligorov.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/gligorov">Zan Gligorov</a></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/Luk164.png?size=50&" height="50" width="50" ></td>
+    <td><a href="https://github.com/Luk164">Lukas Josai</a></td>
   </tr>
 </table>
