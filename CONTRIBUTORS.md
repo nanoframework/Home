@@ -172,6 +172,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><a href="https://github.com/info-lvsys">Lvsys</a></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/Luk164.png?size=50&" height="50" width="50" ></td>
+    <td><a href="https://github.com/Luk164">Lukas Josai</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/kurtnelle.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/kurtnelle">Kurtnelle</a></td>
   </tr>
@@ -242,6 +246,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
   <tr>
     <td><img src="https://github.com/RoSchmiSec.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/RoSchmiSec">Roland Schmidt</a></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/romanmashta.png?size=50&" height="50" width="50" ></td>
+    <td><a href="https://github.com/romanmashta">Roman Mashta</a></td>
   </tr>
   <tr>
     <td><img src="https://github.com/RoySalisbury.png?size=50" height="50" width="50"></td>
