@@ -2,7 +2,7 @@
 
 ## Acknowledgment
 
-The **.NET nanoFramework** logo was designed by [M. Parvej](https://www.freelancer.com/u/mdparvej19840.html).
+The current **.NET nanoFramework** logo was introduced in October 2021 and it was designed by [Juliana Pires](https://www.linkedin.com/in/julianampires).
 
 ## Logo usage
 
