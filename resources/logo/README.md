@@ -7,6 +7,7 @@ The current **.NET nanoFramework** logo was introduced in October 2021 and it wa
 ## Logo usage
 
 To use the **.NET nanoFramework** logo you must first receive written permission from a team member.
+The usage of the logo must follow the guidelines explained in [this](nanoframework-brand-guidelines.pdf) document.
 
 ## **.NET nanoFramework** name
 
