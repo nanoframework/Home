@@ -52,6 +52,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><a href="https://github.com/KiwiBryn">Bryn Lewis</a></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/cammurray.png?size=50&" height="50" width="50" ></td>
+    <td><a href="https://github.com/cammurray">Cam Murray</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/CarlosSardo.png?size=50&" height="50" width="50" ></td>
     <td><a href="https://github.com/CarlosSardo">Carlos Sardo</a></td>
   </tr>
