@@ -16,11 +16,11 @@ If you have a **question**, need clarification on something, need help on a part
 Ask the question on one of our [Discord channels](https://discordapp.com/invite/gCyBu8T), making sure to select the channel that's most appropriate to the context so subject matter experts are most likely to answer promptly. 
 Or, alternatively, on [Stack Overflow](https://stackoverflow.com/questions/tagged/nanoframework) using the `nanoframework` tag. 
 
-:exclamation: Remove the content above here and fill out details below. :exclamation:
+# :exclamation: **Remove** the content above here and fill out details below. :exclamation:
 
 ### Details about Problem
 
-**nanoFramework area:** ( Visual Studio extension | Other tools )
+**.NET nanoFramework area:** ( Visual Studio extension | nanoff | Other tools )
 
 **VS version<!--(if relevant)-->:**
 
