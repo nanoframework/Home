@@ -131,7 +131,6 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><img src="https://github.com/hbraasch.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/hbraasch">Heinrich Braasch</a></td>
   </tr>
-  </tr>
   <tr>
     <td><img src="https://github.com/Henrik98.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/Henrik98">Henrik Olsson</a></td>
@@ -175,6 +174,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
   <tr>
     <td><img src="https://github.com/kjhughes097.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/kjhughes097">Ken Hughes</a></td>
+  </tr>
+   <tr>
+    <td><img src="https://github.com/kbeaugrand.png?size=50&" height="50" width="50" ></td>
+    <td><a href="https://github.com/kbeaugrand">Kevin BEAUGRAND</a></td>
   </tr>
   <tr>
     <td><img src="https://github.com/KhyberPass.png?size=50" height="50" width="50"></td>
@@ -376,9 +379,5 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
   <tr>
     <td><img src="https://github.com/gligorov.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/gligorov">Zan Gligorov</a></td>
-  </tr>
-   <tr>
-    <td><img src="https://github.com/kbeaugrand.png?size=50&" height="50" width="50" ></td>
-    <td><a href="https://github.com/kbeaugrand">Kevin BEAUGRAND</a></td>
   </tr>
 </table>
