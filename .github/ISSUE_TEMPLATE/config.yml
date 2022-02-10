@@ -3,9 +3,9 @@ contact_links:
     - name: .NET nanoFramework Discord Community
       url: https://discordapp.com/invite/gCyBu8T
       about: Please join for QUESTIONS, conversations or discussions.
-    - name: Stack Overflow
-      url: https://stackoverflow.com/questions/tagged/nanoframework
-      about: Please ask and answer QUESTIONS here.
     - name: GitHub Discussions
       url: https://github.com/nanoframework/Home/discussions
       about: Alternative channel for asking QUESTIONS.
+    - name: Stack Overflow
+      url: https://stackoverflow.com/questions/tagged/nanoframework
+      about: Please ask and answer QUESTIONS here.
