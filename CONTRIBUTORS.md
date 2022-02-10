@@ -33,7 +33,7 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
   </tr>
   <tr>
     <td><img src="https://github.com/DevTown.png?size=50&" height="50" width="50" ></td>
-    <td><a href="https://github.com/DevTown">Andre</a></td>
+    <td><a href="https://github.com/DevTown">Andre S.</a></td>
   </tr>
   <tr>
     <td><img src="https://github.com/PlasmaEye.png?size=50&" height="50" width="50"></td>
