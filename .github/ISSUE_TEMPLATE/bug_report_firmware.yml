@@ -1,17 +1,13 @@
 name: Firmware bug report
-description: Create a bug report related with firmware
-title: ''
-labels: ["Type: Bug","Status: Waiting triage"]
-assignees: ''
+description: Create a bug report related with the firmware (CLR, excutiton engine, HAL, PAL, etc.)
+labels: 
+  - "Type: Bug"
+  - "Status: Waiting triage"
 body:
   - type: markdown
-     attributes:
-      value: Please read the following information before posting the issue. Whenever it's clear that the below content was not read and follower, the issue is likely to be closed with "please read the template". Don't take offense at this. It is simply a time management decision. Whenever an issue is raised without following the template and the required information is not provided, very often too much time is then spent going back and forth to obtain details that are outlined below.
-
-  - type: markdown
-     attributes:
+    attributes:
       value: |
-        # **Before posting the issue**
+        # :warning: **Please read before raising the issue** :warning:
 
         If you have a **question**, need clarification on something, need help on a particular situation or want to start a discussion, **DO NOT** open an issue here. _It will be automatically closed!_ 
         
@@ -19,11 +15,13 @@ body:
         If you're not keen to Discord, you can also use [GitHub Discussions](https://github.com/nanoframework/Home/discussions) in this same repo.
         Or, alternatively, on [Stack Overflow](https://stackoverflow.com/questions/tagged/nanoframework) using the `nanoframework` tag. 
 
+        If you realy want to raise an issue, please make sure to follow the template and provide the required information. Failing to do so will most likely end up on the issue being close. Don't take offense at this. It is simply a time management decision. Whenever an issue is raised without following the template and the required information is not provided, very often too much time has to be spent going back and forth to obtain the details that are outlined below.
+
   - type: input
     id: target
     attributes:
-      label: Target
-      description: What's the name of target where you're seeing this happening. If applicable.
+      label: Target name(s)
+      description: What's the name(s) of target(s) where you're seeing this happening. If applicable.
       placeholder: ex. ST_STM32F769I_DISCOVERY, ESP_WROVER_KIT, ALL
     validations:
       required: false
@@ -50,18 +48,16 @@ body:
     id: dev_caps
     attributes:
       label: Device capabilities
-      description: Device Capabilites output (if relevant)
+      description: Device Capabilites output. If relevant.
       placeholder: You can grab this from Device Explorer in Visual Studio
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: description
     attributes:
       label: Description
       description: A clear and concise description of what the bug is.
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
     validations:
       required: true
 
@@ -69,8 +65,8 @@ body:
     id: repro_steps
     attributes:
       label: How to reproduce
-      description: Detailed repro steps so we can see the same problem.
-      value: |
+      description: Detailed repro steps so we can see the same problem. If not already explained above.
+      placeholder: |
         1.
         2.
         ...
@@ -81,7 +77,7 @@ body:
     id: expected_behaviour
     attributes:
       label: Expected behaviour
-      description: A clear and concise description of what you expected to happen.
+      description: A clear and concise description of what you expected to happen. If applicable.
     validations:
       required: false
 
@@ -90,7 +86,7 @@ body:
     attributes:
       label: Screenshots
       description: Very helpful if you send along a few screenshots to help visualize the issue!
-      placeholder: if applicable/relevant
+      placeholder: drag and drop here, if applicable
     validations:
       required: false
 
@@ -98,16 +94,15 @@ body:
     id: other_things
     attributes:
       label: Aditional information
-      description: Other suggested things.
+      description: Other suggested things. If applicable/relevant.
       placeholder: |
-        if applicable/relevant
         for example link to the repository with sample code
         code snippets
     validations:
       required: false
 
   - type: markdown
-     attributes:
+    attributes:
       value: |
         ### Make an effort to fix the bug
         
