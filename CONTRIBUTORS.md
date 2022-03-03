@@ -188,6 +188,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><a href="https://github.com/KhyberPass">KhyberPass</a></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/KlausVcb.png?size=50&" height="50" width="50" ></td>
+    <td><a href="https://github.com/KlausVcb">Klaus Vancamelbeke</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/gukoff.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/gukoff">Konstantin Gukov</a></td>
   </tr>
