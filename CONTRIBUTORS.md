@@ -92,6 +92,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><a href="https://github.com/damianog">Damiano</a></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/dao-net.png?size=50&" height="50" width="50"></td>
+    <td><a href="https://github.com/dao-net">David</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/Dweaver309.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/Dweaver309">David E Weaver</a></td>
   </tr>
