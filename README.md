@@ -1,4 +1,4 @@
-[![#yourfirstpr](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](https://github.com/nanoframework/Home/blob/master/CONTRIBUTING.md) 
+[![#yourfirstpr](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](https://github.com/nanoframework/Home/blob/master/CONTRIBUTING.md)
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/nanoframework/home.svg)](http://isitmaintained.com/project/nanoframework/home "Average time to resolve an issue") [![Percentage of issues still open](http://isitmaintained.com/badge/open/nanoframework/home.svg)](http://isitmaintained.com/project/nanoframework/home "Percentage of issues still open") [![](https://badgen.net/opencollective/backers/nanoframework?label=Open%20Collective%20backers)](https://opencollective.com/nanoframework) [![Discord](https://img.shields.io/discord/478725473862549535.svg?logo=discord&logoColor=white&label=Discord&color=7289DA)](https://discord.gg/gCyBu8T)
 
 ![nanoFramework logo](resources/logo/nanoFramework-repo-logo.png)
@@ -18,7 +18,7 @@ Developers can harness the familiar IDE Visual Studio and their .NET (C#) know
 
 It is part of the [.NET Foundation](https://www.dotnetfoundation.org/).
 
-Being a *developer* you'll probably will fit in one (or more than one😉) of the following *profiles*:
+Being a _developer_ you'll probably will fit in one (or more than one😉) of the following _profiles_:
 
 - You can enjoy to develop C# applications for micro-controllers.
 - You can become a contributor as there are lots of areas to express yourself:
@@ -30,7 +30,7 @@ Being a *developer* you'll probably will fit in one (or more than one😉) of th
   - Helping others by answering their questions.
   - Writing and improving documentation, doing PR reviews or participating in the overall project organization.
 
-.NET nanoFramework is a fun and interesting way to learn. It’s a complete project with a lot of deep engineering. You’ll find a vibrant [community](https://github.com/nanoframework/Home#how-to-engage-contribute-and-provide-feedback) to help you and you’ll be able to help as well. We do welcome all kind of contributions and we aim to give visibility to our contributors. 
+.NET nanoFramework is a fun and interesting way to learn. It’s a complete project with a lot of deep engineering. You’ll find a vibrant [community](https://github.com/nanoframework/Home#how-to-engage-contribute-and-provide-feedback) to help you and you’ll be able to help as well. We do welcome all kind of contributions and we aim to give visibility to our contributors.
 
 # Sponsoring .NET **nanoFramework**
 
@@ -89,6 +89,7 @@ Besides the firmware images below, you can find several others for community pro
 |:-|---|
 | ESP32_PSRAM_REV0 | [![Latest Version @ Cloudsmith](https://api-prd.cloudsmith.io/v1/badges/version/net-nanoframework/nanoframework-images/raw/ESP32_PSRAM_REV0/latest/x/?render=true)](https://cloudsmith.io/~net-nanoframework/repos/nanoframework-images/packages/detail/raw/ESP32_PSRAM_REV0/latest/) |
 | ESP32_REV0 | [![Latest Version @ Cloudsmith](https://api-prd.cloudsmith.io/v1/badges/version/net-nanoframework/nanoframework-images/raw/ESP32_REV0/latest/x/?render=true)](https://cloudsmith.io/~net-nanoframework/repos/nanoframework-images/packages/detail/raw/ESP32_REV0/latest/) |
+| ESP32_PSRAM_XTAL26_REV0 | [![Latest Version @ Cloudsmith](https://api-prd.cloudsmith.io/v1/badges/version/net-nanoframework/nanoframework-images/raw/ESP32_PSRAM_XTAL26_REV0/latest/x/?render=true)](https://cloudsmith.io/~net-nanoframework/repos/nanoframework-images/packages/detail/raw/ESP32_PSRAM_XTAL26_REV0/latest/) |
 | ESP32_PSRAM_REV3 | [![Latest Version @ Cloudsmith](https://api-prd.cloudsmith.io/v1/badges/version/net-nanoframework/nanoframework-images/raw/ESP32_PSRAM_REV3/latest/x/?render=true)](https://cloudsmith.io/~net-nanoframework/repos/nanoframework-images/packages/detail/raw/ESP32_PSRAM_REV3/latest/) |
 | ESP32_REV3 | [![Latest Version @ Cloudsmith](https://api-prd.cloudsmith.io/v1/badges/version/net-nanoframework/nanoframework-images/raw/ESP32_REV3/latest/x/?render=true)](https://cloudsmith.io/~net-nanoframework/repos/nanoframework-images/packages/detail/raw/ESP32_REV3/latest/) |
 | ESP32_BLE_REV0 | [![Latest Version @ Cloudsmith](https://api-prd.cloudsmith.io/v1/badges/version/net-nanoframework/nanoframework-images/raw/ESP32_BLE_REV0/latest/x/?render=true)](https://cloudsmith.io/~net-nanoframework/repos/nanoframework-images/packages/detail/raw/ESP32_BLE_REV0/latest/) |
@@ -141,6 +142,7 @@ The above firmware builds include support for the class libraries and features m
   |:-:                      |:-:                 |:-:                 |:-:                 |:-:                 |:-:                 |:-:                 |:-:                 |:-:                 |:-:                 |:-:                 |:-:                 |:-:                 |:-:                 |:-:                 |
   | ESP32_PSRAM_REV0          | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    |
   | ESP32_REV0          | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    |
+  | ESP32_PSRAM_XTAL26_REV0          | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    |
   | ESP32_PSRAM_REV3          | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    |
   | ESP32_REV3          | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    |
   | ESP32_BLE_REV0      | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark: |                    |                    |
@@ -174,7 +176,7 @@ You can find [here](docs/organization/README.md) a list and a description of eac
 Some of the best ways to contribute are to try things out, file bugs, and join in design conversations.
 
 If you have a question, need clarification on something, need help on a particular situation or want to start a discussion, **do not** open an issue here. We ask you to open an issue only when you have a real and confirmed one.
-It is best to ask the question on one of our [Discord channels](https://discordapp.com/invite/gCyBu8T). Make sure to select the channel that's most appropriate to the context so subject matter experts are most likely to answer promptly. Or you can go over to [Stack Overflow](https://stackoverflow.com/questions/tagged/nanoframework) and ask the question there, make sure to use the `nanoframework` tag. 
+It is best to ask the question on one of our [Discord channels](https://discordapp.com/invite/gCyBu8T). Make sure to select the channel that's most appropriate to the context so subject matter experts are most likely to answer promptly. Or you can go over to [Stack Overflow](https://stackoverflow.com/questions/tagged/nanoframework) and ask the question there, make sure to use the `nanoframework` tag.
 
 If you can't use Discord, you should start a conversation at [Discussion](https://github.com/nanoframework/Home/discussions).
 
