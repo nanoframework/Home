@@ -1,7 +1,7 @@
 # .NET **nanoFramework** GitHub organization
 
-Our GitHub organization holds the various repositories for firmware, class libraries, documentation and tools.
-Follows a list and description of the repositories under .NET **nanoFramework** organization.
+The .NET **nanoFramework** GitHub organization holds the various repositories for firmware, class libraries, documentation and tools.
+Some of the current repositories included under .NET **nanoFramework** organization are listed below.
 
 ## Repositories
 
@@ -19,28 +19,28 @@ Follows a list and description of the repositories under .NET **nanoFramework** 
 ### .NET System libraries
 
 - [CoreLibrary](https://github.com/nanoframework/CoreLibrary) - this repo contains the Base Class Library (Core library - mscorlib) that is used in developing C# applications.
-- [nanoFramework.System.Net](https://github.com/nanoframework/nanoFramework.System.Net) - this repo contains the nanoFramework.System.Net library that is used in developing C# applications with networking capabilities.
-- [nanoFramework.System.Net.Http](https://github.com/nanoframework/nanoFramework.System.Net.Http) - this repo contains nanoFramework System.Net.Http class library.
-- [System.Net](https://github.com/nanoframework/System.Net) - this repo contains the System.Net library that is the foundation for networking in .NET **nanoFramework**.
-- [System.IO.FileSystem](https://github.com/nanoframework/System.IO.FileSystem) - this repo contains System.IO.Stream and other related classes.
-- [nanoFramework.System.Text](https://github.com/nanoframework/nanoFramework.System.Text) - this repo contains nanoFramework System.Text Class Library offering advance Text manipulation.
-- [nanoFramework.System.Text.RegularExpressions](https://github.com/nanoframework/nanoFramework.System.Text.RegularExpressions) - this repo contains nanoFramework System.Text.RegularExpressions Class Library.
-- [nanoFramework.System.Math](https://github.com/nanoframework/nanoFramework.System.Math) - this repo contains nanoFramework System.Math Class Library.
-- [nanoFramework.System.Collections](https://github.com/nanoframework/nanoFramework.System.Collections) - this repo contains nanoFramework System.Collections Class Library.
-- [nanoFramework.System.Threading](https://github.com/nanoframework/nanoFramework.System.Threading) - this repo contains nanoFramework System.Threading class library.
+- [nanoFramework.System.Net](https://github.com/nanoframework/nanoFramework.System.Net) - this repo contains the `nanoFramework.System.Net` library that is used in developing C# applications with networking capabilities.
+- [nanoFramework.System.Net.Http](https://github.com/nanoframework/nanoFramework.System.Net.Http) - this repo contains `nanoFramework System.Net.Http` class library.
+- [System.Net](https://github.com/nanoframework/System.Net) - this repo contains the `System.Net` library that is the foundation for networking in .NET **nanoFramework**.
+- [System.IO.FileSystem](https://github.com/nanoframework/System.IO.FileSystem) - this repo contains `System.IO.Stream` and other related classes.
+- [nanoFramework.System.Text](https://github.com/nanoframework/nanoFramework.System.Text) - this repo contains nanoFramework `System.Text` Class Library offering advance Text manipulation.
+- [nanoFramework.System.Text.RegularExpressions](https://github.com/nanoframework/nanoFramework.System.Text.RegularExpressions) - this repo contains nanoFramework `System.Text.RegularExpressions` Class Library.
+- [nanoFramework.System.Math](https://github.com/nanoframework/nanoFramework.System.Math) - this repo contains nanoFramework `System.Math` Class Library.
+- [nanoFramework.System.Collections](https://github.com/nanoframework/nanoFramework.System.Collections) - this repo contains nanoFramework `System.Collections` Class Library.
+- [nanoFramework.System.Threading](https://github.com/nanoframework/nanoFramework.System.Threading) - this repo contains nanoFramework `System.Threading` class library.
 - [nanoFramework.ResourceManager](https://github.com/nanoframework/nanoFramework.ResourceManager) - this repo contains what's needed to add resources in any .NET nanoFramework project. It's important to use this specific package to add resource support.
 
 ### System.Device Libraries
-- [System.Device.Dac](https://github.com/nanoframework/System.Device.Dac) - this repo contains the nanoFramework.System.Devices.Dac library that is used in developing C# applications that require DAC (Digital Analog Converter) capabilities.
-- [System.Device.Adc](https://github.com/nanoframework/System.Device.Adc) - this repo contains the `System.Device.Adc` library that is used in developing C# applications, **this replaces the deprecated `Windows.Devices.Adc` library**.
-- [System.Device.Gpio](https://github.com/nanoframework/System.Device.Gpio) - this repo contains the `System.Device.Gpio` library that is used in developing C# applications, **this replaces the deprecated** `Windows.Devices.Gpio` library**.
-- [System.Device.I2c](https://github.com/nanoframework/System.Device.I2c) - this repo contains the `System.Device.I2c` library that is used in developing C# applications, **this replaces the deprecated ** `Windows.Devices.I2c` library**.
-- [System.Device.Pwm](https://github.com/nanoframework/System.Device.Pwm) - this repo contains the `System.Device.Pwm` library that is used in developing C# applications, **this replaces the deprecated `Windows.Devices.Pwm` library**.
-- [System.IO.Ports](https://github.com/nanoframework/System.IO.Ports) - this repo contains the `System.IO.Ports` library that is used in developing C# applications, **this replaces the deprecated `Windows.Devices.SerialCommunication` library**.
-- [System.Device.Spi](https://github.com/nanoframework/System.Device.Spi)- this repo contains the `System.Device.Spi` library that is used in developing C# applications, **this replaces the deprecated`Windows.Devices.Spi` library**.
-- [System.Device.WiFi](https://github.com/nanoframework/System.Device.WiFi) - this repo contains the `System.Device.WiFi` library that is used in developing C# applications, **this replaces the deprecated `Windows.Devices.WiFi` library**.
-- [System.IO.FileSystem](https://github.com/nanoframework/System.IO.FileSystem) - this repo contains the `System.IO.FileSystem` library that is used in developing C# applications, **this replaces the deprecated `Windows.Storage` library**.
-- [System.IO.Streams](https://github.com/nanoframework/System.IO.Streams) - this repo contains the `System.IO.Streams` library that is used in developing C# applications, **this replaces the deprecated `Windows.Storage.Streams` library**.
+- [System.Device.Dac](https://github.com/nanoframework/System.Device.Dac) - this repo contains the `System.Devices.Dac` library that is used in developing C# applications that require DAC (Digital Analog Converter) capabilities.
+- [System.Device.Adc](https://github.com/nanoframework/System.Device.Adc) - this repo contains the `System.Device.Adc` library that is used in developing C# applications.
+- [System.Device.Gpio](https://github.com/nanoframework/System.Device.Gpio) - this repo contains the `System.Device.Gpio` library that is used in developing C# applications.
+- [System.Device.I2c](https://github.com/nanoframework/System.Device.I2c) - this repo contains the `System.Device.I2c` library that is used in developing C# applications.
+- [System.Device.Pwm](https://github.com/nanoframework/System.Device.Pwm) - this repo contains the `System.Device.Pwm` library that is used in developing C# applications.
+- [System.IO.Ports](https://github.com/nanoframework/System.IO.Ports) - this repo contains the `System.IO.Ports` library that is used in developing C# applications.
+- [System.Device.Spi](https://github.com/nanoframework/System.Device.Spi)- this repo contains the `System.Device.Spi` library that is used in developing C# applications.
+- [System.Device.WiFi](https://github.com/nanoframework/System.Device.WiFi) - this repo contains the `System.Device.WiFi` library that is used in developing C# applications.
+- [System.IO.FileSystem](https://github.com/nanoframework/System.IO.FileSystem) - this repo contains the `System.IO.FileSystem` library that is used in developing C# applications.
+- [System.IO.Streams](https://github.com/nanoframework/System.IO.Streams) - this repo contains the `System.IO.Streams` library that is used in developing C# applications.
 - [nanoFramework.Devices.Can](https://github.com/nanoframework/nanoFramework.Devices.Can) - this repo contains `nanoFramework.Devices.Can` Class Library.
 - [nanoFramework.Device.OneWire](https://github.com/nanoframework/nanoFramework.Device.OneWire) - this repo contains `nanoFramework.Device.OneWire` Class Library
 
@@ -50,11 +50,11 @@ Follows a list and description of the repositories under .NET **nanoFramework** 
 - [nanoFramework.Azure.Devices](https://github.com/nanoframework/nanoFramework.Azure.Devices) - this repo contains an SDK for Azure IoT.
 - [nanoFramework.Aws.IoTCore.Devices](https://github.com/nanoframework/nanoFramework.Aws.IoTCore.Devices) - this repo contains a library to support connection to Amazon Web Services IoT.
 - [nanoFramework.Graphics](https://github.com/nanoframework/nanoFramework.Graphics) - this repo contains nanoFramework.Graphics class library to allow using graphics on screens.
-- [nanoFramework.Json](https://github.com/nanoframework/nanoFramework.Json) - this repo contains a Json Serializer and Deserializer Library for nanoFramework, **this replaces the deprecated `Json.NetMF` library**.
+- [nanoFramework.Json](https://github.com/nanoframework/nanoFramework.Json) - this repo contains a Json Serializer and Deserializer Library for nanoFramework.
 - [nanoFramework.Logging](https://github.com/nanoframework/nanoFramework.Logging) - this repo contains a logging library for .NET nanoFramework compatible with Microsoft.Extensions.Logging. It does include Debug, Serial and Stream logging.
 - [nanoFramework.m2mqtt](https://github.com/nanoframework/nanoFramework.m2mqtt) - this repo contains a library to support nanoFramework devices using MQTT.
 - [nanoFramework.Networking.Sntp](https://github.com/nanoframework/nanoFramework.Networking.Sntp) - this repo contains the nanoFramework.Networking.Sntp library that is used in developing C# applications.
-- [nanoFramework.TestFramework](https://github.com/nanoframework/nanoFramework.TestFramework) - this repo contains nanoFramework Unit Test platform. It brings an integrated experience for unit testing nanoFramework including on a device fully integrated with Visual Studio 2019.
+- [nanoFramework.TestFramework](https://github.com/nanoframework/nanoFramework.TestFramework) - this repo contains nanoFramework Unit Test platform. It brings an integrated experience for unit testing nanoFramework including on a device fully integrated with Visual Studio 2019/2022.
 - [nanoFramework.WebServer](https://github.com/nanoframework/nanoFramework.WebServer) - this repo contains Web server for nanoFramework packed with features: REST api using attributes, multithread requests, parameters in query URL, static files serving.
 
 ### Hardware specific libraries
@@ -80,9 +80,9 @@ Follows a list and description of the repositories under .NET **nanoFramework** 
 - [nFBot](https://github.com/nanoframework/nFBot) - this repo contains our lovely and chatty bot for issues, PR on all nanoFramework repos and posting on our Discord server.
 - [Home](https://github.com/nanoframework/Home) - The landing page for nanoFramework repositories.
 
-### RTOS clone repositories
+### RTOS dependencies
 
-- [ChibiOS](https://github.com/nanoframework/ChibiOS) - this repo contains a mirror of the official ChibiOS SVN repository. It's used as the default source for building .NET **nanoFramework** images.
+- [ChibiOS](https://svn.osdn.net/svnroot/chibios/) - this repo is the official ChibiOS SVN repository (requires an SVN client). It's used as the default source for building .NET **nanoFramework** images.
 - [ChibiOS-Contrib](https://github.com/nanoframework/ChibiOS-Contrib) - this repo contains a forked from ChibiOS/ChibiOS-Contrib. Community contributed code (ports, drivers, etc).
 - [mbedtls](https://github.com/nanoframework/mbedtls) - this repo contains a mirror of the official mbedtls repository. It's used as the default source for building .NET **nanoFramework** images implementing TLS for networking.
 - [TI_XDCTools](https://github.com/nanoframework/TI_XDCTools) - this repo contains Texas Instruments XDCTools (this is NOT an official repository of the tools).
