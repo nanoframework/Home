@@ -308,6 +308,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><a href="https://github.com/rschiefer">Robb Schiefer</a></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/rdeveen.png?size=50" height="50" width="50"></td>
+    <td><a href="https://github.com/rdeveen">Robert de Veen</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/networkfusion.png?size=50&" height="50" width="50" ></td>
     <td><a href="https://github.com/networkfusion">Robin Jones</a></td>
   </tr>
