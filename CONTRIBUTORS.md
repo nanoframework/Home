@@ -264,6 +264,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><a href="https://github.com/MichaelWheeley">Michael R Wheeley</a></td>
   </tr>  
   <tr>
+    <td><img src="https://github.com/mikeoliphant.png?size=50&" height="50" width="50" ></td>
+    <td><a href="https://github.com/mikeoliphant">Mike Oliphant</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/morali.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/morali">morali</a></td>
   </tr>
