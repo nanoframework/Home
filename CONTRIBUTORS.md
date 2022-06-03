@@ -240,8 +240,8 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><a href="https://github.com/manuelxmarquez">Manuel Marquez</a></td>
   </tr>
   <tr>
-    <td><img src="https://github.com/microhobby.png?size=50" height="50" width="50"></td>
-    <td><a href="https://github.com/microhobby">Matheus Castello</a></td>
+    <td><img src="https://github.com/torbacz.png?size=50&" height="50" width="50" ></td>
+    <td><a href="https://github.com/torbacz">Marcin Torba</a></td>
   </tr>
   <tr>
     <td><img src="https://github.com/CaronteDemonio.png?size=50" height="50" width="50"></td>
@@ -254,6 +254,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
   <tr>
     <td><img src="https://github.com/MateuszKlatecki.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/MateuszKlatecki">Mateusz Klatecki</a></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/microhobby.png?size=50" height="50" width="50"></td>
+    <td><a href="https://github.com/microhobby">Matheus Castello</a></td>
   </tr>
   <tr>
     <td><img src="https://github.com/zeier.png?size=50" height="50" width="50"></td>
