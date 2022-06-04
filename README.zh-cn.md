@@ -10,20 +10,28 @@
 
 [<img align="right" width="100px" src="https://dotnetfoundation.org/img/logo_big.svg" />](https://dotnetfoundation.org/)
 
-本库是开发者了解 .NET **nanoFramework** 的起点，也可以贡献或提问。它包含了 .NET **nanoFramework** 所使用到的各个GitHub库链接。
+这个 _Home_ 存储库对于想要了解 .NET nanoFramework、为其做出贡献或提出问题的开发人员来说，是个起点。它包含指向 .NET **nanoFramework** 使用的各种 GitHub 存储库的链接。
 
-.NET **nanoFramework** 的目标是在受限嵌入式设备上使用托管代码编写应用。开发者可以利用熟悉的IDE(Visual Studio)和 .NET(C#)知识快速编写应用程序，而无需担心微控制器的低级硬件复杂性。
+.NET **nanoFramework** 的目标是成为一个能够为受限嵌入式设备编写托管代码应用程序的平台。开发者可以利用熟悉的 IDE Visual Studio 和 .NET(C#) 知识快速编写应用程序，而无需担心微控制器的低层硬件复杂性。
 
 它是 [.NET Foundation](https://www.dotnetfoundation.org/) 的一部分。
 
-作为一名开发者，你可以选择以下一种（或两种）角色：
+作为一名 _开发人员_，您可能会适合以下的一个(或多个😉)_角色_：
 
-- 开发者：如果你的目标是为微控制器开发C#应用。
-- 贡献者：如果你有兴趣通过编码（原生，托管，C/C++，CMake）积极贡献，包括编写文档或者参与整个项目组织。
+- 您可以享受为微控制器开发 C# 应用程序的乐趣。
+- 您可以成为贡献者，因为有很多领域可以表达自己：
+  - 使用我们的平台抽象层和硬件抽象层 RTOS 直接在 MCU 上低层工作的 C/C++ 原生驱动程序，为 nanoFramework 开发 .NET CLR。
+  - 托管 C# 以编写新的类和驱动程序，以向 .NET nanoFramework 添加更多绑定、库。
+  - 托管 C# 以编写 Visual Studio Extensibility、debugger，主要是 .NET Core/.NET 5 CLI 应用程序。
+  - 帮助设置 Azure DevOps Pipelines 以尽可能实现自动化。
+  - 编写和改进我们的单元测试。
+  - 通过回答他人的问题来帮助他人。
+  - 编写和改进文档、进行 PR 审查或参与整个项目组织。
 
+.NET nanoFramework 是一种有趣的学习方式。这是一个完整的项目，有很多深入的工程。你会发现一个充满活力的社区来帮助你，你也将能够提供帮助。我们欢迎各种贡献，我们的目标是提高贡献者的知名度。
 # 赞助 .NET **nanoFramework**
 
-大多数核心团队成员和贡献者都是嵌入式系统爱好者，热衷于编码和喜欢挑战的人。.NET **nanoFramework** 工作都是他们在工作之余完成。一些核心成员恰好工作于那些大力赞助 .NET **nanoFramework** 并为其提供工作时间的公司。如果你想把 .NET **nanoFramework** 用于正式工作并支持它，请捐赠。这样可以支付基础设施成本，并为项目投入更多的时间。除了货币捐助，还有其它几种捐助方式，请参考 [这里](http://docs.nanoframework.net/content/contributing/index.html).
+大多数核心团队成员和贡献者都是嵌入式系统爱好者，对编码充满热情，喜欢挑战。.NET **nanoFramework** 的工作主要在空闲时间完成。一些核心成员碰巧在赞助大量 **nanoFramework** 的公司工作，并为该项目提供工作时间。如果您使用 .NET **nanoFramework** 进行严肃的工作或想要支持它，请捐赠。这允许支付基础设施成本和更多的时间投入到项目上。除了捐款外，还有其他几种方式可以贡献。请在 [这里](http://docs.nanoframework.net/content/contributing/index.html) 阅读有关此内容的文档。
 
 我们如何使用捐赠：
 
@@ -40,33 +48,40 @@
 
 <a href="https://opencollective.com/nanoframework#support"><img src="https://opencollective.com/nanoframework/tiers/sponsor.svg?avatarHeight=80"></a>
 
+### 铜牌赞助商
+
+<a href="https://opencollective.com/nanoframework/tiers/bronze-sponsor/0/website" target="_blank" rel="noopener noreferrer">
+<img src="https://opencollective.com/nanoframework/tiers/bronze-sponsor/0/avatar.svg"></a>
+<a href="https://www.orgpal.com"><img src="https://www.orgpal.com/orgpallogo.png" height="50" width="114"/></a>
+
 ## 支持者
 
-支持者是那些用金钱帮助支持 .NET **nanoFramework** 的人。每一点点的帮助，我们都很感激所有的贡献，即使是最小的贡献。
+支持者是那些用钱帮助支持 nanoFramework 的个人。每一点都有帮助，我们感谢所有的贡献，即使是最小的贡献。
 
 <a href="https://opencollective.com/nanoframework#support"><img src="https://opencollective.com/nanoframework/tiers/backer.svg?avatarHeight=80"></a>
 
 ## 其他支持者和赞助商
 
-还有其他人和组织一直以多种方式为.NET **NanoFramework**做出贡献：赞助对缺失或需要改进的功能进行编码、支付费用、对功能进行编码或……我们要感谢这些赞助商。
+还有其他人和组织一直以多种方式为 .NET **NanoFramework** 做出贡献：赞助对缺失或需要改进的功能进行编码、支付费用、对功能进行编码或……我们要感谢这些赞助商。
 
 <table>
  <tr>
   <td><a href="http://www.eclo.solutions"><img src="http://www.eclo.solutions/images/eclo-solutions-logo-tall.svg" height="100" width="151"/></a></td>
-  <td><a href="https://www.orgpal.com"><img src="https://www.orgpal.com/orgpallogo.png" height="100" width="228"/></a></td>
-  <td><a href="http://www.chibios.org"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/ChibiOS_Embeddedware_Official_Logo.jpg" height="100" width="100" alt="ChibiOS RTOS"/></a></td>
+    <td><a href="http://www.chibios.org"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/ChibiOS_Embeddedware_Official_Logo.jpg" height="100" width="100" alt="ChibiOS RTOS"/></a></td>
  </tr>
 </table>
 
-## 评估板固件
+## 参考板固件
 
-以下每个ZIP文件包括了nanoBooter和nanoCLR镜像（HEX，BIN，DFU）。可以使用相应烧写工具把它们写入目标板卡中。
+以下每个ZIP文件包括了 nanoBooter 和 nanoCLR 图像文件（HEX，BIN，DFU）。可以使用相应烧写工具把它们写入目标板卡中。
 
-**稳定** 版是RTM最小大小编译。它包含了最后稳定版本，关闭调试功能，仅有最少或没有错误信息。
-**预览** 版是目标板持续编译。它包含所有功能和错误修正的最后版本，也包括调试信息和详细错误信息。
-您还可以为社区提供的目标板找到其他几个映像。在 [社区目标库](https://github.com/nanoframework/nf-Community-Targets) 上检查可用的链接并下载。
+**稳定** 版本是 RTM 构建，具有尽可能小的编译。它们包括最新的稳定版本。调试功能处于禁用状态，并且只有极少（或无）错误消息。
 
-### ESP32 modules and boards
+**预览** 版是目标板持续编译。它包含所有功能和错误修正的最新版本，也包括调试信息和详细错误信息。
+
+您还可以为社区提供的目标板找到其他几个固件映像。在 [社区目标库](https://github.com/nanoframework/nf-Community-Targets) 上检查可用的链接并下载。
+
+### ESP32 模块和板卡
 
 | 目标 | 稳定 |
 |:-|---|
@@ -93,7 +108,7 @@
 | [M5StickCPlus](https://docs.m5stack.com/en/core/m5stickc_plus) | [![Latest Version @ Cloudsmith](https://api-prd.cloudsmith.io/v1/badges/version/net-nanoframework/nanoframework-images/raw/M5StickCPlus/latest/x/?render=true)](https://cloudsmith.io/~net-nanoframework/repos/nanoframework-images/packages/detail/raw/M5StickCPlus/latest/) |
 | [M5Core2](https://docs.m5stack.com/en/core/core2) | [![Latest Version @ Cloudsmith](https://api-prd.cloudsmith.io/v1/badges/version/net-nanoframework/nanoframework-images/raw/M5Core2/latest/x/?render=true)](https://cloudsmith.io/~net-nanoframework/repos/nanoframework-images/packages/detail/raw/M5Core2/latest/) |
 
-### STM32 boards and chip based
+### STM32 基于电路板和芯片
 
 | 目标 | 稳定 |
 |:-|---|
@@ -102,13 +117,13 @@
 | ST_STM32F769I_DISCOVERY | [![Latest Version @ Cloudsmith](https://api-prd.cloudsmith.io/v1/badges/version/net-nanoframework/nanoframework-images/raw/ST_STM32F769I_DISCOVERY/latest/x/?render=true)](https://cloudsmith.io/~net-nanoframework/repos/nanoframework-images/packages/detail/raw/ST_STM32F769I_DISCOVERY/latest/) |
 | ORGPAL_PALTHREE | [![Latest Version @ Cloudsmith](https://api-prd.cloudsmith.io/v1/badges/version/net-nanoframework/nanoframework-images/raw/ORGPAL_PALTHREE/latest/x/?render=true)](https://cloudsmith.io/~net-nanoframework/repos/nanoframework-images/packages/detail/raw/ORGPAL_PALTHREE/latest/) |
 
-### NXP boards
+### NXP 板卡
 
 | 目标 | 稳定 |
 |:-|---|
 | NXP_MIMXRT1060_EVK | [![Latest Version @ Cloudsmith](https://api-prd.cloudsmith.io/v1/badges/version/net-nanoframework/nanoframework-images/raw/NXP_MIMXRT1060_EVK/latest/x/?render=true)](https://cloudsmith.io/~net-nanoframework/repos/nanoframework-images/packages/detail/raw/NXP_MIMXRT1060_EVK/latest/) |
 
-### TI boards
+### TI 板卡
 
 | 目标 | 稳定 |
 |:-|---|
@@ -149,21 +164,19 @@
   | NXP_MIMXRT1060_EVK           | :heavy_check_mark: |  |  |  |  |  | :heavy_check_mark:  |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    | :heavy_check_mark: |                    |
 </details>
 
-## 项目库
+## 存储库
 
-我们的GitHub团队拥有用于固件、类库、文档和工具的各种项目库。
-你可以在 [这里](docs/organization/README.md) 得到一个列表和描述。
+我们的GitHub团队拥有用于固件、类库、文档和工具的各种存储库。你可以在 [这里](docs/organization/README.md) 得到一个列表和描述。
 
 ## 如何参与、贡献和提供反馈
 
-贡献的一些最好方法是尝试去整理问题解决问题，并参与到设计讨论中。
-如果你有好的创意，或者希望表达清楚某个问题，最好不要打开问题，而是在我们的 [Discord](https://discord.gg/gCyBu8T) 频道中讨论。
-请选择最适合您所面临的问题的解决方案。
+贡献的一些最佳方法是尝试一下，记录错误并加入设计对话。
 
-如果你发现一个bug，或者不能使用 Discord，请打开问题 [Issues](https://github.com/nanoframework/Home/issues)。
-我们希望你只有在你有一个真实确定的问题是才打开一个问题，而不是为了请求支持或开展讨论。使用 [Discord](https://discord.gg/gCyBu8T) 会得到更好的支持反馈。
+如果你有一个问题，需要澄清某件事，需要对特定情况的帮助或想要开始讨论，请不要在这里 (Github Issues) 提出问题。我们要求您仅在有真实且已确认的问题时才在 Github Issues 提出问题。最好先在我们的 [Discord](https://discord.gg/gCyBu8T) 频道中讨论。请选择最适合您所面临的问题的频道，以便主题专家最有可能及时回答。或者你可以去 [Stack Overflow](https://stackoverflow.com/questions/tagged/nanoframework) 并在那里提问题，确保使用 `nanoframework` 标签。
 
-这个列表可以找到需要解决的若干问题， [up-for-grabs issues](https://github.com/nanoframework/Home/issues?q=is%3Aissue+is%3Aopen+label%3Aup-for-grabs) ，这是一个不错的切入点。
+如果您无法使用 Discord，则应在 [Discussion](https://github.com/nanoframework/Home/discussions) 中开始讨论。
+
+在寻找需要解决的若干问题？请查看主存储库上的待抓问题列表，[up-for-grabs issues](https://github.com/nanoframework/Home/issues?q=is%3Aissue+is%3Aopen+label%3Aup-for-grabs) ，这是一个很好的切入点。
 
 有关更多详细信息，请参阅我们的一些指南：
 
@@ -178,21 +191,21 @@
 
 ### [文档](https://docs.nanoframework.net)
 
-无论您是新手还是老手，项目文档都是查找有关.NET **nanoFramework**信息的好地方。它按以下类别组织：
+无论您是新手还是老手，项目文档都是查找有关 .NET **nanoFramework** 信息的好地方。它按以下类别组织：
 
 - [API手册](http://docs.nanoframework.net/api) 各种类库的文档。
 - [开发C#应用](https://docs.nanoframework.net/content/getting-started-guides/getting-started-managed.html#coding-a-hello-world-application) 使用 .NET **nanoFramework**.
-- [编译镜像](https://docs.nanoframework.net/content/building/index.html) 加载到目标板上。
-- [.NET **nanoFramework**架构](https://docs.nanoframework.net/content/architecture/index.html) 不同的部分是如何组合在一起的。
-- [贡献.NET **nanoFramework**](https://docs.nanoframework.net/content/contributing/index.html) 包括如何为项目做出贡献的概述。
+- [编译映像](https://docs.nanoframework.net/content/building/index.html) 加载到目标板上。
+- [.NET **nanoFramework** 架构](https://docs.nanoframework.net/content/architecture/index.html) 不同的部分是如何组合在一起的。
+- [贡献 .NET **nanoFramework**](https://docs.nanoframework.net/content/contributing/index.html) 包括如何为项目做出贡献的概述。
 
 ### [博客](https://www.nanoframework.net/blog)
 
-有一个博客，我们尝试发布关于开发状态的详细更新，关于某个特定功能的技术文章，或者设计选项。
+我们通过博客尝试发布关于开发状态的详细更新，关于某个特定功能的技术文章，或者设计选项。
 
 ### [YouTube 频道](https://www.youtube.com/c/nanoFramework)
 
-我们还有一个YouTube频道，里面有视频教程，还有关于我们正在试验的功能演示和新想法构思。
+我们还有一个YouTube 频道，里面有视频教程，还有关于我们正在试验的功能演示和新想法构思。
 
 ## 行为准则
 
