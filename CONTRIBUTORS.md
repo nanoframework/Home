@@ -223,6 +223,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><img src="https://github.com/LwServices.png?size=50&" height="50" width="50" ></td>
     <td><a href="https://github.com/LwServices">Lech Wiecierzynski</a></td>
   </tr>
+    <tr>
+    <td><img src="https://github.com/lsd-techno.png?size=50&" height="50" width="50" ></td>
+    <td><a href="https://github.com/lsd-techno">lsd-techno</a></td>
+  </tr>
   <tr>
     <td><img src="https://github.com/info-lvsys.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/info-lvsys">Lvsys</a></td>
