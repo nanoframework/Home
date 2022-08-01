@@ -77,9 +77,9 @@ There are other people and organizations that have contributed to .NET **nanoFra
 
 Each of the following ZIP files contains the image files for nanoBooter and nanoCLR in various formats (HEX, BIN and DFU). They should be flashed in the target boards using an appropriate software utility.
 
-The **stable** versions are continuous builds of the reference targets. They include the latest version of all features and bug corrections. They also have the debugging feature enabled along with detailed error messages.
+The **stable** versions are continuous builds of the reference targets. They include the latest version of all features and bug corrections. They also have **managed** debugging features enabled along with detailed error messages, but exclude **native** debugging features and only minimal (or no) error messages.
 
-**RTM** builds with the smallest possible size must be built manually against a stable version by selecting the "MinSizeRel" option. The debugging feature is disabled and only minimal (or none) error messages.
+For native debugging, please download the firmware and compile locally.
 
 Besides the firmware images below, you can find several others for community provided target boards. Check the available ones and download links on the [Community Targets repo](https://github.com/nanoframework/nf-Community-Targets).
 
