@@ -79,7 +79,7 @@ Each of the following ZIP files contains the image files for nanoBooter and nano
 
 The **stable** versions are continuous builds of the reference targets. They include the latest version of all features and bug corrections. They also have **managed** debugging features enabled along with detailed error messages, but exclude **native** debugging features and only minimal (or no) error messages.
 
-For native debugging, please download the firmware and compile locally.
+For native debugging, please download the [nf-interpreter](https://github.com/nanoframework/nf-interpreter) repository and build locally.
 
 Besides the firmware images below, you can find several others for community provided target boards. Check the available ones and download links on the [Community Targets repo](https://github.com/nanoframework/nf-Community-Targets).
 
