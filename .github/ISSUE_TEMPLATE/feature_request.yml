@@ -53,5 +53,7 @@ body:
         code snnipets
         screenshots
         mockups
+        
+        <!-- feature-request-tag DO NOT REMOVE -->
     validations:
       required: false
