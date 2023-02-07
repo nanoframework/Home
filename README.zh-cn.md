@@ -66,7 +66,7 @@
 
 <table>
  <tr>
-  <td><a href="http://www.eclo.solutions"><img src="http://www.eclo.solutions/images/eclo-solutions-logo-tall.svg" height="100" width="151"/></a></td>
+    <td><a href="https://www.eclo.solutions"><img src="https://www.eclo.solutions/wp-content/uploads/2023/02/logo-colour-tall-large-square-borders.png" height="100"></a></td>
     <td><a href="http://www.chibios.org"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/ChibiOS_Embeddedware_Official_Logo.jpg" height="100" width="100" alt="ChibiOS RTOS"/></a></td>
  </tr>
 </table>
