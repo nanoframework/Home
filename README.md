@@ -53,8 +53,9 @@ Sponsors will get their logo and link to a website on our GitHub readme and also
 
 ### Bronze Sponsors
 
-<a href="https://opencollective.com/nanoframework/tiers/bronze-sponsor/0/website" target="_blank" rel="noopener noreferrer"><img src="https://opencollective.com/nanoframework/tiers/bronze-sponsor/0/avatar.svg"></a>
-<a href="https://www.orgpal.com"><img src="https://www.orgpal.com/orgpallogo.png" height="50" width="114"/></a>
+<a href="https://opencollective.com/nanoframework/tiers/bronze-sponsor/0/website" target="_blank" rel="noopener noreferrer"><img src="https://opencollective.com/nanoframework/tiers/bronze-sponsor/0/avatar.svg"></a></br>
+<a href="https://www.orgpal.com" target="_blank"><img src="https://www.orgpal.com/orgpallogo.png" height="50" width="114"/></a></br>
+<a href="https://hive.linkit.nl/" target="_blank"><img src="https://docs.nanoframework.net/images/logos/LINKIT.png" height="50" ></a></br>
 
 ## Backers
 
@@ -68,7 +69,7 @@ There are other people and organizations that have contributed to .NET **nanoFra
 
 <table>
  <tr>
-  <td><a href="https://www.eclo.solutions"><img src="https://www.eclo.solutions/wp-content/uploads/2023/02/logo-colour-tall-large-square-borders.png" height="100"></a></td>
+  <td><a href="https://www.eclo.solutions"><img src="https://docs.nanoframework.net/images/logos/eclo-solutions-logo-tall.svg" height="100" width="151"></a></td>
   <td><a href="http://www.chibios.org"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/ChibiOS_Embeddedware_Official_Logo.jpg" height="100" width="100" alt="ChibiOS RTOS"/></a></td>
  </tr>
 </table>
