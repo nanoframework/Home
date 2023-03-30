@@ -8,7 +8,7 @@ Document Language: [English](README.md) | [简体中文](README.zh-cn.md)
 
 # .NET **nanoFramework** Home
 
-[<img align="right" width="100px" src="https://dotnetfoundation.org/img/logo_big.svg" />](https://dotnetfoundation.org/)
+[<img align="right" width="100px" src="https://raw.githubusercontent.com/dotnet-foundation/website/main/input/img/logo_big.svg" />](https://dotnetfoundation.org/)
 
 This _Home_ repository is the starting point for developers that want to learn about .NET **nanoFramework**, contribute to it or opening issues.
 It contains links to the various GitHub repositories used by .NET **nanoFramework**.
