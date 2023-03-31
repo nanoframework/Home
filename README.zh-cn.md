@@ -8,7 +8,7 @@
 
 # .NET **nanoFramework** 首页
 
-[<img align="right" width="100px" src="https://dotnetfoundation.org/img/logo_big.svg" />](https://dotnetfoundation.org/)
+[<img align="right" width="100px" src="https://raw.githubusercontent.com/dotnet-foundation/website/main/input/img/logo_big.svg" />](https://dotnetfoundation.org/)
 
 这个 _Home_ 存储库对于想要了解 .NET nanoFramework、为其做出贡献或提出问题的开发人员来说，是个起点。它包含指向 .NET **nanoFramework** 使用的各种 GitHub 存储库的链接。
 
