@@ -172,6 +172,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><a href="https://github.com/ikivanc">Ibrahim KIVANC</a></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/Arhell.png?size=50&" height="50" width="50" ></td>
+    <td><a href="https://github.com/Arhell">Ihor Sychevskyi</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/ishvedov.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/ishvedov">Ivan Shvedov</a></td>
   </tr>
