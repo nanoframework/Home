@@ -50,9 +50,10 @@
 
 ### 铜牌赞助商
 
-<a href="https://opencollective.com/nanoframework/tiers/bronze-sponsor/0/website" target="_blank" rel="noopener noreferrer">
-<img src="https://opencollective.com/nanoframework/tiers/bronze-sponsor/0/avatar.svg"></a>
-<a href="https://www.orgpal.com"><img src="https://www.orgpal.com/orgpallogo.png" height="50" width="114"/></a>
+<a href="https://opencollective.com/nanoframework/tiers/bronze-sponsor/0/website" target="_blank" rel="noopener noreferrer"><img src="https://opencollective.com/nanoframework/tiers/bronze-sponsor/0/avatar.svg"></a></br>
+<a href="https://www.orgpal.com" target="_blank"><img src="https://www.orgpal.com/orgpallogo.png" height="50" width="114"/></a></br>
+<a href="https://hive.linkit.nl/" target="_blank"><img src="https://docs.nanoframework.net/images/logos/LINKIT.png" height="50" ></a></br>
+<a href="https://d-fens.ch/" target="_blank"><img src="https://dfch.files.wordpress.com/2014/11/logo.gif?w=64" height="50" ></a></br>
 
 ## 支持者
 
