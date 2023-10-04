@@ -104,6 +104,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><a href="https://github.com/cbagpipe">Conroy Bagpipe</a></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/CoryCharlton.png?size=50&" height="50" width="50" ></td>
+    <td><a href="https://github.com/CoryCharlton">Cory Charlton</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/cw2.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/cw2">CW2</a></td>
   </tr>
