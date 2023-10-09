@@ -151,6 +151,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><img src="https://github.com/JohnKiller.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/JohnKiller">Gianni Angelozzi</a></td>
   </tr>
+   <tr>
+    <td><img src="https://github.com/Ghislain1.png?size=50&" height="50" width="50" ></td>
+    <td><a href="https://github.com/Ghislain1">Ghislain Zeus</a></td>
+  </tr>
   <tr>
     <td><img src="https://github.com/gojimmypi.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/gojimmypi">GoJimmyPi</a></td>
