@@ -84,6 +84,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><a href="https://github.com/CarlosSardo">Carlos Sardo</a></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/cmanoliu.png?size=50&" height="50" width="50" ></td>
+    <td><a href="https://github.com/cmanoliu">Catalin Manoliu</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/NemesisXB.png?size=50&" height="50" width="50"></td>
     <td><a href="https://github.com/NemesisXB">Christiaan Alberts</a></td>
   </tr>
