@@ -432,6 +432,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><a href="https://github.com/sake402">Samson Ojetade</a></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/sandervandevelde.png?size=50&" height="50" width="50" ></td>
+    <td><a href="https://github.com/sandervandevelde">Sander van de Velde</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/sangyuxiaowu.png?size=50" height="50" width="50" ></td>
     <td><a href="https://github.com/sangyuxiaowu">桑榆肖物</a></td>
   </tr>
