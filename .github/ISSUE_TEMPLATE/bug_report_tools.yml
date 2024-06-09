@@ -29,6 +29,7 @@ body:
         - nanoff
         - nanodu
         - nanovc
+        - nanoCLR
     validations:
       required: true
 
