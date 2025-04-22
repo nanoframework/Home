@@ -155,6 +155,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><img src="https://github.com/devbotas.png?size=50&" height="50" width="50" ></td>
     <td><a href="https://github.com/devbotas">devbotas</a></td>
   </tr>
+   <tr>
+    <td><img src="https://github.com/RelaxSpirit.png?size=50" height="50" width="50" ></td>
+    <td><a href="https://github.com/RelaxSpirit">Dmitry Spirin</a></td>
+  </tr>
   <tr>
     <td><img src="https://github.com/DmytroKoval.png?size=50" height="50" width="50" ></td>
     <td><a href="https://github.com/DmytroKoval">Dmytro Koval</a></td>
