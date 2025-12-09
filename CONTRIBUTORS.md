@@ -48,6 +48,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><a href="https://github.com/andrewpono">Andrew Pono</a></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/axtox.png?size=50" height="50" width="50"></td>
+    <td><a href="https://github.com/axtox">Anton Kulikov</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/antoniofagundes.png?size=50&" height="50" width="50"></td>
     <td><a href="https://github.com/antoniofagundes">António Fagundes</a></td>
   </tr>
