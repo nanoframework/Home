@@ -60,6 +60,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><a href="https://github.com/appfrastructure">Appfrastructure</a></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/zandiarash.png?size=50" height="50" width="50" ></td>
+    <td><a href="https://github.com/zandiarash">Arash Zandi</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/bart-jansen.png?size=50&" height="50" width="50" ></td>
     <td><a href="https://github.com/bart-jansen">Bart Jansen</a></td>
   </tr>
