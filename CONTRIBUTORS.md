@@ -76,6 +76,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><a href="https://github.com/BWalti">Beat Walti</a></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/benyuz.png?size=50" height="50" width="50" alt="Ben" ></td>
+    <td><a href="https://github.com/benyuz">Ben</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/techcap.png?size=50&" height="50" width="50"></td>
     <td><a href="https://github.com/techcap">Bongho Lee</a></td>
   </tr>
@@ -614,9 +618,5 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
   <tr>
     <td><img src="https://github.com/dcyonce.png?size=50" height="50" width="50" ></td>
     <td><a href="https://github.com/dcyonce">Don Yonce</a></td>
-  </tr>
-    <tr>
-    <td><img src="https://github.com/benyuz.png?size=50" height="50" width="50" ></td>
-    <td><a href="https://github.com/benyuz">Ben</a></td>
   </tr>
 </table>
