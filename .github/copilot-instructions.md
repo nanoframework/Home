@@ -41,7 +41,7 @@ unzip stubs.zip -d ./stubs
 The issue body also contains a ready-to-run `az pipelines runs artifact download` command. Copy it from the issue and run it directly. It requires the `azure-devops` CLI extension and that you are already signed in (`az login`):
 
 ```bash
-az extension add --name azure-devops   # if not already installed
+az extension add --name azure-devops  # if not already installed
 az pipelines runs artifact download --run-id <buildId> --artifact-name stubs --path ./stubs --org https://dev.azure.com/nanoframework --project "<project>"
 ```
 
@@ -49,7 +49,7 @@ The artifact contains a `Stubs/<LibraryName>/` subfolder with the `.cpp`, `.h`, 
 
 Do NOT generate, infer, or modify the stub files. Use exactly what is in the artifact — these files were produced by the CI pipeline and are the authoritative source of truth for the new declarations.
 
-After extracting, inspect the artifact files before making any changes. Their structure:
+After extracting, inspect the artifact files to understand their structure before comparing with nf-interpreter:
 
 - **`.cpp` file** contains: `#include` directives; the `static const CLR_RT_MethodHandler method_lookup[]` array (one entry per managed method, in declaration order); and the `const CLR_RT_NativeAssemblyData g_CLR_AssemblyNative_...` struct (assembly name, checksum, `method_lookup` reference, native version tuple).
 - **`.h` file** contains: enum/typedef declarations; per-class `struct Library_...` definitions with `FIELD__*` integer constants and `NANOCLR_NATIVE_DECLARE(...)` macros; and the `extern` data declaration.
@@ -88,17 +88,21 @@ There will usually be one `.cpp` file and one `.h` file per library. The artifac
 
 ### 5. Merge the stub files into nf-interpreter
 
-For **each `.cpp` and `.h` file** in the artifact, find its matching file in nf-interpreter by name, then apply the following updates:
-
 Apply **all** of the following updates. Do not stop after updating only the checksum and version — those are necessary but not sufficient.
 
-**In the `.cpp` file (four changes required):**
+**In the `.cpp` file (three changes required):**
 
-1. **`method_lookup[]` array** — Replace the **entire** `static const CLR_RT_MethodHandler method_lookup[]` array body with the one from the artifact `.cpp`. This array must exactly match the managed assembly method table: entries that were added, removed, or reordered must all be reflected. Do **not** preserve old entries that are absent from the artifact.
+1. **`method_lookup[]` array** — Replace the **entire** `static const CLR_RT_MethodHandler method_lookup[]` array body with the one from the artifact `.cpp`. This array must exactly match the managed assembly method table. Then, for every difference in the array, also update the corresponding C++ function bodies in the same `.cpp` file:
+
+   - **New entry** (function appears in artifact `method_lookup[]` but not in nf-interpreter): add the new function body from the artifact `.cpp` to nf-interpreter. Also add the corresponding `NANOCLR_NATIVE_DECLARE(...)` line in the `.h` file.
+   - **Removed entry** (function in nf-interpreter `method_lookup[]` but absent from artifact): remove the corresponding C++ function body **only if it contains a stub implementation** (e.g. returning `S_OK`, `NANOCLR_SET_AND_LEAVE_HR_VOID(S_OK)`, or similar no-op). If the body contains a real implementation, do **not** delete it — instead note the discrepancy in the PR description for human review.
+   - **Reordered entries** (same functions, different order): only the array order changes; no function bodies need to be touched.
+
+   To identify which functions changed, diff the `method_lookup[]` array between the artifact `.cpp` and the nf-interpreter `.cpp` before making edits.
 
 2. **Checksum** — Replace the old hex value with the new value from the issue table.
 
-3. **Native version** — Replace the old version tuple with the new one. The C format is a four-element initializer list: version `1.5.0.0` → `{ 1, 5, 0, 0 }`.
+3. **Native version** — Replace the old version tuple with the new one. The C format is a four-element initializer list: e.g. version `1.5.0.0` → `{ 1, 5, 0, 0 }`.
 
 **In the `.h` file (one change required):**
 
@@ -106,19 +110,23 @@ Apply **all** of the following updates. Do not stop after updating only the chec
 
 Ignore any `.cmake` files in the artifact — no changes are needed to CMake files in nf-interpreter.
 
-**Critical rule — preserve existing C++ function body implementations**: Do NOT delete C++ function body implementations (`Library_...::MethodName(CLR_RT_StackFrame &stack) { ... }`) that exist in the nf-interpreter `.cpp` file. Artifact stubs only contain placeholder bodies (returning `S_OK` or similar); nf-interpreter contains the real implementations. If a function body exists in nf-interpreter but not in the artifact, keep it. Only add function bodies that are genuinely new (present in artifact but absent in nf-interpreter).
-Ignore any `.cmake` files that may be present in the artifact — no changes are needed to CMake files in nf-interpreter.
-
-**Critical rule — do not remove existing declarations**: Do NOT delete or overwrite any existing `static` method or field declarations that are already present in the nf-interpreter files, even if those declarations are absent from the artifact stubs. Merge in any new or changed function signatures or bodies from the artifact, but preserve everything that is already there.
+**Critical rule — preserve existing C++ function body implementations**: Do NOT delete C++ function body implementations (`Library_...::MethodName(CLR_RT_StackFrame &stack) { ... }`) that exist in the nf-interpreter `.cpp` file. Artifact stubs only contain placeholder bodies; nf-interpreter may contain real implementations. Only add function bodies that are genuinely new (present in artifact but absent in nf-interpreter).
 
 ---
 
 ### 6. Open a PR against nf-interpreter
 
-Use the [nf-interpreter PR template](https://github.com/nanoframework/nf-interpreter/blob/main/.github/PULL_REQUEST_TEMPLATE.md) exactly. Use the [nf-interpreter PR template](https://github.com/nanoframework/nf-interpreter/blob/main/.github/PULL_REQUEST_TEMPLATE.md) **verbatim**. Copy the block below exactly, substituting the `{...}` placeholders. Do not write a custom description — GitHub will not auto-fill the template for PRs opened via CLI or API.
+Use the [nf-interpreter PR template](https://github.com/nanoframework/nf-interpreter/blob/main/.github/PULL_REQUEST_TEMPLATE.md) **verbatim**. Copy the block below exactly, substituting the `{...}` placeholders. Do not write a custom description — GitHub will not auto-fill the template for PRs opened via CLI or API.
 
----
+**Title:**
 
+```
+Update {LibraryName} native declaration to v{newNativeVersion}
+```
+
+**Body — copy this exactly and fill in the placeholders:**
+
+```
 ## Description
 
 - Updated `{LibraryName}` native assembly declaration.
@@ -156,10 +164,7 @@ _N/A_
 - [ ] I have updated the documentation accordingly (the changes require an update on the docs in this repo).
 - [x] I have read the [CONTRIBUTING](https://github.com/nanoframework/.github/blob/main/CONTRIBUTING.md) document.
 - [ ] I have tested everything locally and all new and existing tests passed (only if there are changes in source code).
-
----
-
-**Title:** `Update {LibraryName} native declaration to v{newNativeVersion}`
+```
 
 ---
 
@@ -172,7 +177,7 @@ The `Resolves nanoFramework/Home#NNNN` reference in the PR description will auto
 ### Important constraints
 
 - **Never** regenerate stub files — always use the artifact downloaded from the CI pipeline link in the issue body.
-- **Never** delete existing `static` declarations from nf-interpreter files.
+- **Never** delete existing C++ function body implementations from nf-interpreter files unless the corresponding `method_lookup[]` entry was removed from the artifact and the body is a stub.
 - The PR must target **`nanoframework/nf-interpreter`**, not the originating class library repository.
 - Always work on a feature branch and open a PR — never push directly to `main` or `develop`.
 - The base branch in nf-interpreter (`main` vs `develop`) must match the target branch of the originating PR in the class library repo — check the originating PR link in the issue body to determine this.
