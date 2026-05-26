@@ -49,6 +49,13 @@ The artifact contains a `Stubs/<LibraryName>/` subfolder with the `.cpp`, `.h`, 
 
 Do NOT generate, infer, or modify the stub files. Use exactly what is in the artifact — these files were produced by the CI pipeline and are the authoritative source of truth for the new declarations.
 
+After extracting, inspect the artifact files before making any changes. Their structure:
+
+- **`.cpp` file** contains: `#include` directives; the `static const CLR_RT_MethodHandler method_lookup[]` array (one entry per managed method, in declaration order); and the `const CLR_RT_NativeAssemblyData g_CLR_AssemblyNative_...` struct (assembly name, checksum, `method_lookup` reference, native version tuple).
+- **`.h` file** contains: enum/typedef declarations; per-class `struct Library_...` definitions with `FIELD__*` integer constants and `NANOCLR_NATIVE_DECLARE(...)` macros; and the `extern` data declaration.
+
+Your goal in step 5 is to make the nf-interpreter files match these artifact files exactly, except for preserving any existing C++ function body implementations (see step 5 critical rule).
+
 ---
 
 ### 3. Clone and branch nf-interpreter
@@ -83,9 +90,23 @@ There will usually be one `.cpp` file and one `.h` file per library. The artifac
 
 For **each `.cpp` and `.h` file** in the artifact, find its matching file in nf-interpreter by name, then apply the following updates:
 
-- **Checksum**: replace the old checksum with the new value from the issue table.
-- **Native version**: replace the old version with the new value. The nanoFramework C format for a version is a four-element initializer list — for example, version `1.5.0.0` is written as `{ 1, 5, 0, 0 }`.
+Apply **all** of the following updates. Do not stop after updating only the checksum and version — those are necessary but not sufficient.
 
+**In the `.cpp` file (four changes required):**
+
+1. **`method_lookup[]` array** — Replace the **entire** `static const CLR_RT_MethodHandler method_lookup[]` array body with the one from the artifact `.cpp`. This array must exactly match the managed assembly method table: entries that were added, removed, or reordered must all be reflected. Do **not** preserve old entries that are absent from the artifact.
+
+2. **Checksum** — Replace the old hex value with the new value from the issue table.
+
+3. **Native version** — Replace the old version tuple with the new one. The C format is a four-element initializer list: version `1.5.0.0` → `{ 1, 5, 0, 0 }`.
+
+**In the `.h` file (one change required):**
+
+4. **Struct and method declarations** — Diff the artifact `.h` against the nf-interpreter `.h`. Apply every difference: new or removed `FIELD__*` constants, new or removed `NANOCLR_NATIVE_DECLARE(...)` entries, new or removed enum values, new or removed `struct Library_...` blocks. The nf-interpreter `.h` must match the artifact `.h` exactly.
+
+Ignore any `.cmake` files in the artifact — no changes are needed to CMake files in nf-interpreter.
+
+**Critical rule — preserve existing C++ function body implementations**: Do NOT delete C++ function body implementations (`Library_...::MethodName(CLR_RT_StackFrame &stack) { ... }`) that exist in the nf-interpreter `.cpp` file. Artifact stubs only contain placeholder bodies (returning `S_OK` or similar); nf-interpreter contains the real implementations. If a function body exists in nf-interpreter but not in the artifact, keep it. Only add function bodies that are genuinely new (present in artifact but absent in nf-interpreter).
 Ignore any `.cmake` files that may be present in the artifact — no changes are needed to CMake files in nf-interpreter.
 
 **Critical rule — do not remove existing declarations**: Do NOT delete or overwrite any existing `static` method or field declarations that are already present in the nf-interpreter files, even if those declarations are absent from the artifact stubs. Merge in any new or changed function signatures or bodies from the artifact, but preserve everything that is already there.
@@ -94,35 +115,51 @@ Ignore any `.cmake` files that may be present in the artifact — no changes are
 
 ### 6. Open a PR against nf-interpreter
 
-Use the [nf-interpreter PR template](https://github.com/nanoframework/nf-interpreter/blob/main/.github/PULL_REQUEST_TEMPLATE.md) exactly. Fill it in as follows:
+Use the [nf-interpreter PR template](https://github.com/nanoframework/nf-interpreter/blob/main/.github/PULL_REQUEST_TEMPLATE.md) exactly. Use the [nf-interpreter PR template](https://github.com/nanoframework/nf-interpreter/blob/main/.github/PULL_REQUEST_TEMPLATE.md) **verbatim**. Copy the block below exactly, substituting the `{...}` placeholders. Do not write a custom description — GitHub will not auto-fill the template for PRs opened via CLI or API.
 
-**Title**
-```
-Update {LibraryName} native declaration to v{newNativeVersion}
-```
+---
 
-**Description**
-A bulleted list of what changed, for example:
+## Description
+
 - Updated `{LibraryName}` native assembly declaration.
 - Checksum: `{oldChecksum}` → `{newChecksum}`.
 - Native version: `{oldNativeVersion}` → `{newNativeVersion}`.
 
-**Motivation and Context**
-```
-Resolves nanoFramework/Home#NNNN
+## Motivation and Context
+
+Resolves nanoFramework/Home#{issueNumber}
 Triggered by {originating-repo}#{PR-number}
-```
 
-Replace `NNNN` with the issue number from this Home repository, and `{originating-repo}#{PR-number}` with the originating class library PR reference from the issue body.
+## How Has This Been Tested?
 
-**How Has This Been Tested?**
-State that the stub files were taken directly from the CI pipeline artifact without modification.
+Stub files were taken directly from the CI pipeline artifact without modification.
 
-**Types of changes**
-Check **only** the `Dependencies/declarations` checkbox. Leave all other checkboxes unchecked.
+## Screenshots
 
-**Checklist**
-Tick only the boxes that genuinely apply to this change.
+_N/A_
+
+## Types of changes
+
+- [ ] Improvement (non-breaking change that improves a feature, code or algorithm)
+- [ ] Bug fix (non-breaking change which fixes an issue with code or algorithm)
+- [ ] New feature (non-breaking change which adds functionality to code)
+- [ ] Breaking change (fix or feature that would cause existing functionality to change)
+- [ ] Config and build (change in the configuration and build system, has no impact on code or features)
+- [ ] Dev Containers (changes related with Dev Containers, has no impact on code or features)
+- [x] Dependencies/declarations (update dependencies or assembly declarations and changes associated, has no impact on code or features)
+- [ ] Documentation (changes or updates in the documentation, has no impact on code or features)
+
+## Checklist
+
+- [ ] My code follows the code style of this project (only if there are changes in source code).
+- [ ] My changes require an update to the documentation (there are changes that require the docs website to be updated).
+- [ ] I have updated the documentation accordingly (the changes require an update on the docs in this repo).
+- [x] I have read the [CONTRIBUTING](https://github.com/nanoframework/.github/blob/main/CONTRIBUTING.md) document.
+- [ ] I have tested everything locally and all new and existing tests passed (only if there are changes in source code).
+
+---
+
+**Title:** `Update {LibraryName} native declaration to v{newNativeVersion}`
 
 ---
 
