@@ -25,9 +25,29 @@ Before doing anything else, read the issue body carefully and extract:
 
 ### 2. Obtain the stub files
 
-Download the `stubs` artifact from the Azure DevOps pipeline link provided in the issue body. The artifact contains the updated `.cpp`, `.h`, and `.cmake` files for the library.
+The issue body provides two ways to download the `stubs` artifact. Use whichever works in your environment:
 
-**Do NOT generate, infer, or modify the stub files.** Use exactly what is in the artifact — these files were produced by the CI pipeline and are the authoritative source of truth for the new declarations.
+**Option 1 — direct zip URL (no authentication, works for public projects)**
+
+The issue body contains a direct URL ending in `&$format=zip`. Download it with:
+
+```bash
+curl -L -o stubs.zip "<url from issue body>"
+unzip stubs.zip -d ./stubs
+```
+
+**Option 2 — Azure CLI**
+
+The issue body also contains a ready-to-run `az pipelines runs artifact download` command. Copy it from the issue and run it directly. It requires the `azure-devops` CLI extension and that you are already signed in (`az login`):
+
+```bash
+az extension add --name azure-devops   # if not already installed
+az pipelines runs artifact download --run-id <buildId> --artifact-name stubs --path ./stubs --org https://dev.azure.com/nanoframework --project "<project>"
+```
+
+The artifact contains a `Stubs/<LibraryName>/` subfolder with the `.cpp`, `.h`, and `.cmake` files.
+
+Do NOT generate, infer, or modify the stub files. Use exactly what is in the artifact — these files were produced by the CI pipeline and are the authoritative source of truth for the new declarations.
 
 ---
 
