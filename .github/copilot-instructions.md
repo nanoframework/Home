@@ -6,15 +6,19 @@ When you are assigned to an issue titled **"Update {LibraryName} declaration"** 
 ---
 ### 1. Understand the task
 You are updating the native assembly declaration for a class library in [nanoframework/nf-interpreter](https://github.com/nanoframework/nf-interpreter). The CI pipeline in the class library repository detected that either the native checksum or the native version changed. It opened this issue to request that the corresponding stub files in nf-interpreter be updated to reflect the new values.
-Before doing anything else, read the issue body carefully and extract:
+Before doing anything else, read the issue body carefully.
+
+Extract all of the following before touching any file:
+
 - **Library name** — from the issue title (`Update {LibraryName} declaration`)
-- **Old checksum** — from the table in the issue body
-- **New checksum** — from the table in the issue body
-- **Old native version** — from the table in the issue body
-- **New native version** — from the table in the issue body
-- **Stubs artifact link** — a link to an Azure DevOps pipeline artifact named `stubs`
-- **Originating PR** — a reference to the PR in the class library repo that triggered this issue (e.g. `nanoframework/nf-System.Math#42`)
-- **This issue's number** — from the URL of this Home issue (e.g. `#NNNN`)
+- **Old checksum** — from the table (`Previously published` column)
+- **New checksum** — from the table (`New` column)
+- **Old native version** — from the table (`Previously published` column)
+- **New native version** — from the table (`New` column)
+- **Stubs artifact link** — direct zip URL or Azure DevOps build link in the issue body
+- **Originating PR** — the PR in the class library repo that triggered this issue (e.g. `nanoframework/System.Device.Spi#171`)
+- **This issue's number** — from the URL of the nf-interpreter issue (e.g. `#NNNN`)
+
 ---
 ### 2. Obtain the stub files
 The issue body provides two ways to download the `stubs` artifact. Use whichever works in your environment:
@@ -46,6 +50,8 @@ Do NOT generate, infer, or modify the stub files. Use exactly what is in the art
 After extracting, inspect the artifact files to understand their structure before comparing with nf-interpreter:
 - **`.cpp` file** contains: `#include` directives; the `static const CLR_RT_MethodHandler method_lookup[]` array (one entry per managed method, in declaration order); and the `const CLR_RT_NativeAssemblyData g_CLR_AssemblyNative_...` struct (assembly name, checksum, `method_lookup` reference, native version tuple).
 - **`.h` file** contains: enum/typedef declarations; per-class `struct Library_...` definitions with `FIELD__*` integer constants and `NANOCLR_NATIVE_DECLARE(...)` macros; and the `extern` data declaration.
+- **`Find{LibraryName}.cmake`**: CMake module — **ignore this file**, DO NOT make any changes to it.
+
 Your goal in step 5 is to make the nf-interpreter files match these artifact files, while preserving any existing local additions (see step 5 critical rules).
 ---
 ### 3. Prepare the nf-interpreter branch
@@ -62,61 +68,111 @@ Do not commit directly to `main` or `develop`.
 ### 4. Find the files to update
 Search the nf-interpreter repository for the files that correspond to the library. They are typically located under `src/` or `targets/`. Use one or both of the following strategies:
 - Search for files whose names match the pattern `{LibraryName}_<something>.cpp` / `.h` / `.cmake`.
-- Search file contents for the **old checksum value** shown in the issue table — this reliably identifies the files that need updating.
-There will usually be one `.cpp` file and one `.h` file per library. The artifact may also contain a `.cmake` file — ignore it.
----
-### 5. Merge the stub files into nf-interpreter
+- Search for the files by **old checksum value**:
 
-Apply **all** of the following updates. Do not stop after updating only the checksum and version — those are necessary but not sufficient.
-> ⚠️ **The `method_lookup[]` array is the most critical and most commonly missed update.** The array encodes the exact position of every managed method in the assembly. A single entry added, removed, or reordered — including `nullptr` placeholder entries — will cause runtime method dispatch to fail silently, even if the checksum and version are correct. Always diff the **complete** array, entry by entry, before making edits.
-**In the `.cpp` file (three changes required):**
-1. **`method_lookup[]` array** — Diff the **entire** `static const CLR_RT_MethodHandler method_lookup[]` array between the artifact `.cpp` and the nf-interpreter `.cpp`. Replace the nf-interpreter array body with the one from the artifact exactly. The diff must account for all of:
-   - `nullptr` entries added or removed (these shift every subsequent entry's index)
-   - Named function entries added, removed, or reordered
-   - Changes to which specific named function appears at a given index (a `nullptr` replaced by a function name, or vice versa)
-   - Total entry count (must match exactly)
-   Do not assume that only `nullptr` entries changed. Named entries may also have been added, removed, or reordered between versions.
-   Then, for every difference in named function entries, also update the corresponding C++ function bodies in the same `.cpp` file:
-   - **New entry** (function appears in artifact `method_lookup[]` but not in nf-interpreter): add the new function body from the artifact `.cpp` to nf-interpreter. Also add the corresponding `NANOCLR_NATIVE_DECLARE(...)` line in the `.h` file.
-   - **Removed entry** (function in nf-interpreter `method_lookup[]` but absent from artifact): remove the corresponding C++ function body **only if it contains a stub implementation** (e.g. returning `S_OK`, `NANOCLR_SET_AND_LEAVE_HR_VOID(S_OK)`, or similar no-op). If the body contains a real implementation, do **not** delete it — instead note the discrepancy in the PR description for human review.
-   - **Reordered entries** (same functions, different order): only the array order changes; no function bodies need to be touched.
-2. **Checksum** — Replace the old hex value with the new value from the issue table.
-3. **Native version** — Replace the old version tuple with the new one. The C format is a four-element initializer list: e.g. version `1.5.0.0` → `{ 1, 5, 0, 0 }`.
-**In the `.h` file (one change required):**
-4. **Struct and method declarations** — Diff the artifact `.h` against the nf-interpreter `.h`. Apply every difference: new or removed `FIELD__*` constants, new or removed `NANOCLR_NATIVE_DECLARE(...)` entries, new or removed enum values, new or removed `struct Library_...` blocks.
-   > **Note:** The nf-interpreter `.h` may contain additional declarations not present in the artifact — for example, extra `#include` directives, helper method declarations, or additional `extern` references that support the real C++ implementations. **Preserve these additions.** Only ensure that all declarations present in the artifact are also present in nf-interpreter. Do not remove local additions that support existing implementations.
-Ignore any `.cmake` files in the artifact — no changes are needed to CMake files in nf-interpreter.
-**Critical rules — preserve existing local content:**
-- Do NOT delete C++ function body implementations (`Library_...::MethodName(CLR_RT_StackFrame &stack) { ... }`) that exist in the nf-interpreter `.cpp` file. Artifact stubs only contain placeholder bodies; nf-interpreter may contain real implementations. Only add function bodies that are genuinely new (present in artifact but absent in nf-interpreter).
-- Do NOT remove additional `#include` directives, helper declarations, or `extern` references present in the nf-interpreter `.h` file that are absent from the artifact `.h`. These exist to support real implementations in the `.cpp` files.
-**Pre-commit checklist — verify all of the following before committing:**
-- [ ] `method_lookup[]` entry count matches artifact exactly
-- [ ] `method_lookup[]` entry order matches artifact exactly (every `nullptr` and named entry at the correct index)
-- [ ] No named function entries were overlooked — the diff covered both `nullptr` changes and named function changes
-- [ ] Checksum hex value matches artifact
-- [ ] Version tuple matches artifact
-- [ ] All named function entries added to or removed from `method_lookup[]` have corresponding `.cpp` function body changes
-- [ ] All added named function entries have a corresponding `NANOCLR_NATIVE_DECLARE(...)` in the `.h` file
-- [ ] No existing real C++ implementations were deleted
+```bash
+grep -r "0x{oldChecksum}" --include="*.cpp" --include="*.h" .
+```
+
+Typically one `.cpp` and one `.h` file under `src/` or `targets/`.
+There will usually be one `.cpp` file and one `.h` file per library. The artifact may also contain a `.cmake` file — IGNORE IT.
+
 ---
-### 6. Open a PR against nf-interpreter
+### 5. Update the `.cpp` file — three changes required
+
+#### 5a. Update `method_lookup[]` array (CRITICAL — most commonly missed)
+
+The `method_lookup[]` array encodes the exact position of every managed method. A single wrong entry (including a misplaced `nullptr`) will cause runtime dispatch failures.
+
+**Diff the entire array** between the artifact and nf-interpreter:
+
+```bash
+diff <artifact>/sys_dev_spi_native.cpp <nf-interpreter>/src/.../sys_dev_spi_native.cpp
+```
+
+Replace the nf-interpreter `method_lookup[]` body **exactly** with the artifact's array body. Check for:
+- `nullptr` entries added or removed (these shift all subsequent indices)
+- Named function entries added, removed, or reordered
+- Total entry count (must match the artifact exactly)
+
+For each **new** named function entry (appears in artifact but not in nf-interpreter):
+- Add the function body from the artifact `.cpp`
+- Add `NANOCLR_NATIVE_DECLARE(...)` in the `.h` file
+
+For each **removed** named function entry (in nf-interpreter but not in artifact):
+- Remove the function body **only if it is a stub** (returns `S_OK` / `NANOCLR_SET_AND_LEAVE_HR_VOID(S_OK)` / calls `stack.NotImplementedStub()`)
+- If the function contains a real implementation, **do not delete it** — note the discrepancy in the PR description
+
+#### 5b. Update the checksum
+
+```cpp
+// Before:
+0xOLDCHECKSUM,
+// After:
+0xNEWCHECKSUM,
+```
+
+#### 5c. Update the native version tuple
+
+```cpp
+// Before:
+{ 100, 2, 0, 0 }
+// After:
+{ 100, 2, 0, 1 }
+```
+### 6. Update the `.h` file — apply only additive changes
+
+**CRITICAL RULES — read before touching the header:**
+
+### What TO update:
+- Add any new `FIELD___*` constants present in the artifact but missing in nf-interpreter
+- Add any new `NANOCLR_NATIVE_DECLARE(...)` entries present in the artifact but missing in nf-interpreter
+- Add any new struct blocks, enums, or typedefs that exist in the artifact but not in nf-interpreter
+
+### What NOT to change:
+- **Do NOT uncomment code** that is intentionally commented out. Comments such as `// moved to src/PAL/...` indicate deliberate decisions — if code is commented out in nf-interpreter but appears active in the artifact, preserve the commented-out form in nf-interpreter.
+- **Do NOT remove helper method declarations** (e.g. `static HRESULT NativeTransfer(CLR_RT_StackFrame &stack, bool bufferIs16bits);`) that exist in nf-interpreter but not in the artifact. These declarations support real implementations in the `.cpp` file.
+- **Do NOT remove** `#include` directives, `extern` references, or any other local additions that are absent from the artifact. They exist to support platform-specific implementations.
+- **Do NOT remove** commented-out blocks or documentation comments.
+
+> **Rule of thumb**: When the artifact `.h` is a *subset* of the nf-interpreter `.h` (artifact has less content), the correct action is to leave the extra content in place and only add what is genuinely new. When the artifact `.h` has *more* content (new entries), add only those new entries.
+
+---
+
+### 7. Pre-commit checklist
+
+Before committing, verify **all** of the following:
+
+- [ ] `method_lookup[]` entry count matches the artifact exactly
+- [ ] `method_lookup[]` entry order matches the artifact exactly (every `nullptr` and named entry at the correct index)
+- [ ] Checksum hex value updated to match the new value from the issue
+- [ ] Version tuple updated to match the new value from the issue
+- [ ] No existing real C++ function bodies were deleted
+- [ ] No intentionally commented-out code was uncommented
+- [ ] No local helper declarations were removed from `.h`
+- [ ] All new named function entries have a corresponding function body in `.cpp`
+- [ ] All new named function entries have a corresponding `NANOCLR_NATIVE_DECLARE(...)` in `.h`
+
+---
+### 7. Open a PR against nf-interpreter
 Use the [nf-interpreter PR template](https://github.com/nanoframework/nf-interpreter/blob/main/.github/PULL_REQUEST_TEMPLATE.md) **verbatim**. Copy the block below exactly, substituting the `{...}` placeholders. Do not write a custom description — GitHub will not auto-fill the template for PRs opened via CLI or API.
 
 **Title:**
 ```
 Update {LibraryName} native declaration to v{newNativeVersion}
 ```
-**Body — copy this exactly and fill in the placeholders:**
-```
+
+**Body — use the PR template exactly:**
+```markdown
 ## Description
 - Updated `{LibraryName}` native assembly declaration.
 - Checksum: `{oldChecksum}` → `{newChecksum}`.
 - Native version: `{oldNativeVersion}` → `{newNativeVersion}`.
-- `method_lookup[]`: {add this if any changes were made in the array, no need to list the changes}.
+- `method_lookup[]`: updated to match artifact (entry count changed).
 
 ## Motivation and Context
-Resolves nanoFramework/Home#{issueNumber}
-Triggered by {originating-repo}#{PR-number}
+Resolves nanoFramework/nf-interpreter#{issueNumber}
+Triggered by nanoframework/{ClassLibraryRepo}#{PR-number}
 
 ## How Has This Been Tested?
 Stub files were taken directly from the CI pipeline artifact without modification.
@@ -141,15 +197,15 @@ _N/A_
 - [x] I have read the [CONTRIBUTING](https://github.com/nanoframework/.github/blob/main/CONTRIBUTING.md) document.
 - [ ] I have tested everything locally and all new and existing tests passed (only if there are changes in source code).
 ```
+
 ---
-### 7. Close the issue
-The `Resolves nanoFramework/Home#NNNN` reference in the PR description will automatically close this Home issue when the nf-interpreter PR is merged. No separate action is needed.
----
-### Important constraints
-- **Never** regenerate stub files — always use the artifact downloaded from the CI pipeline link in the issue body.
-- **Never** delete existing C++ function body implementations from nf-interpreter files unless the corresponding `method_lookup[]` entry was removed from the artifact and the body is a stub.
-- **Never** remove additional declarations in nf-interpreter `.h` files that are absent from the artifact — they exist to support real implementations.
-- The PR must target **`nanoframework/nf-interpreter`**, not the originating class library repository.
-- Always work on a feature branch and open a PR — never push directly to `main` or `develop`.
-- The base branch in nf-interpreter (`main` vs `develop`) must match the target branch of the originating PR in the class library repo — check the originating PR link in the issue body to determine this.
-- The Home issue number and the originating PR link are both in the issue body — read them carefully before starting.
+## Common mistakes to avoid
+
+| Mistake | Correct behaviour |
+|---|---|
+| Uncommenting code that is intentionally commented out in nf-interpreter | Preserve the commented-out form; only add genuinely new content |
+| Removing `static HRESULT Helper(...)` declarations from `.h` | Keep them — they support real implementations in `.cpp` |
+| Updating only the checksum/version and skipping `method_lookup[]` | Always diff and update the complete `method_lookup[]` array |
+| Copying the artifact `.h` verbatim over the nf-interpreter `.h` | Merge: add new entries, preserve all existing nf-interpreter content |
+| Removing function body implementations from `.cpp` | Only remove stubs; never delete real implementations |
+| Writing a custom PR description instead of following the template | Always use the template from this guide verbatim |
