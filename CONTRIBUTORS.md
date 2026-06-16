@@ -116,7 +116,7 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><a href="https://github.com/ChristophLindemann">Christoph Lindemann</a></td>
   </tr>
   <tr>
-    <td><img src="https://github.com/MBNSoftware.png?size=50" he ight="50" width="50"></td>
+    <td><img src="https://github.com/MBNSoftware.png?size=50" height="50" width="50"></td>
     <td><a href="https://github.com/MBNSoftware">Christophe Gerbier</a></td>
   </tr>
   <tr>
@@ -144,7 +144,7 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><a href="https://github.com/CZEMacLeod">Cynthia MacLeod</a></td>
   </tr>
   <tr>
-    <td><img src="https://github.com/danielmeza.png?size=50" height="50" width="50" ></td>
+    <td><img src="https://github.com/danielmeza.png?size=50" height="50" width="50" alt="Daniel Meza"></td>
     <td><a href="https://github.com/danielmeza">Daniel Meza</a></td>
   </tr>
   <tr>
