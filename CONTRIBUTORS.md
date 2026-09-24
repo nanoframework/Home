@@ -348,7 +348,7 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><a href="https://github.com/kurtnelle">Kurtnelle</a></td>
   </tr>
   <tr>
-    <td><img src="https://github.com/ManuelEnzo.png?size=50" height="50" width="50" ></td>
+    <td><img src="https://github.com/ManuelEnzo.png?size=50" height="50" width="50" alt=""></td>
     <td><a href="https://github.com/ManuelEnzo">Manuel Enzo</a></td>
   </tr>
   <tr>
