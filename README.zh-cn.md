@@ -79,6 +79,8 @@
 
 您还可以为社区提供的目标板找到其他几个固件映像。在 [社区目标库](https://github.com/nanoframework/nf-Community-Targets) 上检查可用的链接并下载。
 
+下表列出了已发布固件映像的参考目标板。受支持目标板的权威且始终最新的列表位于 [nf-interpreter](https://github.com/nanoframework/nf-interpreter) 存储库的 [targets](https://github.com/nanoframework/nf-interpreter/tree/main/targets) 目录中。
+
 ### ESP32 modules and boards
 
 | 目标 | 说明 | 稳定版 | 预览版 |

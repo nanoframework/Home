@@ -82,6 +82,8 @@ For native debugging, please download the [nf-interpreter](https://github.com/na
 
 Besides the firmware images below, you can find several others for community provided target boards. Check the available ones and download links on the [Community Targets repo](https://github.com/nanoframework/nf-Community-Targets).
 
+The tables below list the reference targets for which firmware images are published. The authoritative and always up to date list of supported targets is the one in the [nf-interpreter](https://github.com/nanoframework/nf-interpreter) repository, in the [targets](https://github.com/nanoframework/nf-interpreter/tree/main/targets) folder.
+
 | Available pre-built targets | | | |
 |---|---|---|---|
 | [ESP32 boards](#user-content-esp32-modules-and-boards) | [ESP32 boards with ethernet](#user-content-esp32-boards-with-inbuilt-Ethernet) | [ESP32_S2 & ESP32_S3 boards](#user-content-esp32_s2-and-esp32_s3-boards) |
@@ -89,6 +91,7 @@ Besides the firmware images below, you can find several others for community pro
 | [STM32 boards](#user-content-stm32-boards-and-chip-based) | | | |
 | [Silicon Labs Giant Gecko](#user-content-silicon-labs-giant-gecko-boards) | | | |
 | [NXP boards](#user-content-nxp-boards) | | | |
+| [Raspberry Pi boards](#user-content-raspberry-pi-boards) | | | |
 | [TI boards](#user-content-ti-boards) | | | |
 
 ***
