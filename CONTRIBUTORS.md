@@ -124,6 +124,10 @@ The following is a list of contributors to the .NET **nanoFramework** project (a
     <td><a href="https://github.com/Elastino">CJ Lee</a></td>
   </tr>
   <tr>
+    <td><img src="https://github.com/CliffAgius.png?size=50" height="50" width="50" ></td>
+    <td><a href="https://github.com/CliffAgius">Clifford Agius</a></td>
+  </tr>
+  <tr>
     <td><img src="https://github.com/JohnMasen.png?size=50&" height="50" width="50" ></td>
     <td><a href="https://github.com/JohnMasen">Clock Set Bird</a></td>
   </tr>
